@@ -1,9 +1,3 @@
-alergia(tomate).
-alergia(zanahoria).
-alergia(lacteos).
-alergia(gluten).
-alergia(frutos_secos).
-
 
 % Definición del hecho para almacenar la información del usuario
 :- dynamic usuario/10.
