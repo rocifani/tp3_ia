@@ -9,8 +9,8 @@ alergia(frutos_secos).
 :- dynamic usuario/10.
 
 % Almacenar la información del usuario
-almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas) :-
-    assert(usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas)).
+almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad) :-
+    assert(usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad)).
 
 % Cálculo del IMC
 calcular_imc(Peso, Altura, IMC) :-
@@ -53,44 +53,6 @@ preguntar_actividad_fisica(Actividad) :-
     write('Ingresa el número correspondiente: '),
     read(Actividad).
 
-% hasta acá todo ok 
-
-
-
-
-
-
-
-
-% Preguntar preferencias alimenticias
-preguntar_preferencias(Preferencias) :-
-    write('¿Cuáles son sus preferencias alimenticias?'), nl,
-    write('1. Ninguna'), nl,
-    write('2. Vegano'), nl,
-    write('3. Vegetariano'), nl,
-    write('4. Sin azúcar'), nl,
-    write('5. Otro (especifique)'), nl,
-    read(Opcion),
-    (Opcion == 1 -> Preferencias = 'Ninguna';
-     Opcion == 2 -> Preferencias = 'Vegano';
-     Opcion == 3 -> Preferencias = 'Vegetariano';
-     Opcion == 4 -> Preferencias = 'Sin azúcar';
-     Opcion == 5 -> write('Especifique su preferencia: '), read(PreferenciaEspecifica), Preferencias = PreferenciaEspecifica).
-
-% Preguntar condiciones medicas
-preguntar_condiciones_medicas(CondicionesMedicas) :-
-    write('¿Tiene alguna condición médica?'), nl,
-    write('1. Ninguna'), nl,
-    write('2. Diabetes'), nl,
-    write('3. Hipertensión'), nl,
-    write('4. Problemas cardíacos'), nl,
-    write('5. Otro (especifique)'), nl,
-    read(Opcion),
-    (Opcion == 1 -> CondicionesMedicas = 'Ninguna';
-     Opcion == 2 -> CondicionesMedicas = 'Diabetes';
-     Opcion == 3 -> CondicionesMedicas = 'Hipertensión';
-     Opcion == 4 -> CondicionesMedicas = 'Problemas cardíacos';
-     Opcion == 5 -> write('Especifique su condición: '), read(CondicionEspecifica), CondicionesMedicas = CondicionEspecifica).
 
 % Calcular la TMB
 calcular_tmb(Peso, Altura, Edad, Genero, TMB) :-
@@ -116,35 +78,10 @@ ajustar_por_imc(TDEE, IMC, CaloriasRecomendadas) :-
         CaloriasRecomendadas is TDEE - 500  % Obesidad
     ).
 
-% Ofrecer recomendaciones alimenticias
-ofrecer_recomendaciones(CaloriasRecomendadas, Alergias, Preferencias) :-
-    write('Se recomienda consumir aproximadamente '), write(CaloriasRecomendadas), write(' calorías al día.'), nl,
-    write('Recomendaciones alimenticias:'), nl,
-    (Alergias == 'Ninguna' ->
-        write('- Incluye una variedad de frutas y verduras.'), nl,
-        write('- Consume proteínas magras como pollo, pescado o legumbres.'), nl,
-        write('- Opta por granos enteros como arroz integral o quinoa.'), nl;
-    Alergias == 'Alergia a lácteos' ->
-        write('- Incluye alternativas como leches vegetales (almendra, soja).'), nl,
-        write('- Consume tofu y otras fuentes de proteína.'), nl;
-    Alergias == 'Alergia a gluten' ->
-        write('- Opta por granos sin gluten como arroz o quinoa.'), nl;
-    Alergias == 'Alergia a frutos secos' ->
-        write('- Evita frutos secos y opta por semillas.'), nl;
-    write('- Ten en cuenta tu alergia específica.'), nl),
-
-    (Preferencias == 'Vegano' ->
-        write('- Incluye legumbres, granos enteros, frutas y verduras.'), nl;
-    Preferencias == 'Vegetariano' ->
-        write('- Consume huevos y productos lácteos junto con plantas.'), nl;
-    Preferencias == 'Sin azúcar' ->
-        write('- Opta por frutas para endulzar tus comidas.'), nl).
-
-
 % Función principal para consultar al usuario
 consultar :-
     preguntar_nombre(Nombre),
-    almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas),
+    almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad),
     write('Hola, '), write(Nombre), write('. Te voy a hacer una serie de preguntas, para conocerte un poco más y determinar que cantidad de calorias diarias es recomendable que consumas, ademas de sugerencias de platos y/o alimentos. Consulta siempre con tu medico!'),
     nl,
     preguntar_peso(Peso),
@@ -153,7 +90,7 @@ consultar :-
     preguntar_genero(Genero),
     preguntar_edad(Edad),
     preguntar_actividad_fisica(Actividad),
-    almacenar_usuario(Nombre,Peso,Altura,IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas),
+    almacenar_usuario(Nombre,Peso,Altura,IMC, Genero, Edad, Actividad),
     nl,
     calcular_tmb(Peso, Altura, Edad, Genero, TMB),
     calcular_tdee(TMB, Actividad, TDEE),
@@ -161,16 +98,9 @@ consultar :-
 
     write('La cantidad de calorías recomendadas a consumir segun la informacion que me diste son: '),write(CaloriasRecomendadas),write('. Ahora, te voy a hacer algunas preguntas mas para sugerirte un plan de alimentacion que se ajuste a esas calorias'),
     nl,
-    preguntar_alergias(Alergias),
-    preguntar_preferencias(Preferencias),
-    preguntar_condiciones_medicas(CondicionesMedicas),
 
     % Almacenar la información del usuario
-    almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas),
-
-
-    % Ofrecer recomendaciones alimenticias
-    ofrecer_recomendaciones(CaloriasRecomendadas, Alergias, Preferencias),
+    almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad),
 
     write('Gracias por proporcionar su información.'), nl.
 
