@@ -1,13 +1,25 @@
+alergia(tomate).
+alergia(zanahoria).
+alergia(lacteos).
+alergia(gluten).
+alergia(frutos_secos).
+
+
 % Definición del hecho para almacenar la información del usuario
-usuario(_, _, _, _, _, _, _, _).
+:- dynamic usuario/10.
 
 % Almacenar la información del usuario
-almacenar_usuario(Peso, Altura, IMC, Genero, Edad, Actividad, Frecuencia, Objetivo, TipoEjercicio, Alergias, Preferencias, CondicionesMedicas) :-
-    assert(usuario(Peso, Altura, IMC, Genero, Edad, Actividad, Frecuencia, Objetivo, TipoEjercicio, Alergias, Preferencias, CondicionesMedicas)).
+almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas) :-
+    assert(usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas)).
 
 % Cálculo del IMC
 calcular_imc(Peso, Altura, IMC) :-
     IMC is Peso / (Altura * Altura).
+
+% Pregunta el nombre al usuario
+preguntar_nombre(Nombre) :-
+    write('¿Cuál es tu nombre? '),
+    read(Nombre).
 
 % Pregunta el peso al usuario
 preguntar_peso(Peso) :-
@@ -18,23 +30,6 @@ preguntar_peso(Peso) :-
 preguntar_altura(Altura) :-
     write('¿Cuál es tu altura en metros? '),
     read(Altura).
-
-% Pregunta sobre el objetivo del usuario
-preguntar_objetivo(Objetivo) :-
-    write('¿Cuál es tu objetivo actual?'), 
-    nl,
-    write('1. Bajar de peso'), 
-    nl,
-    write('2. Aumentar masa muscular'), 
-    nl,
-    write('3. Mejorar rendimiento deportivo'), 
-    nl,
-    write('4. Aumentar de peso'), 
-    nl,
-    write('5. Ningún objetivo en específico'), 
-    nl,
-    write('Ingresa el número correspondiente: '),
-    read(Objetivo).
 
 preguntar_genero(Genero) :-
     write('¿Cuál es tu género?'), nl,
@@ -51,41 +46,20 @@ preguntar_edad(Edad) :-
 preguntar_actividad_fisica(Actividad) :-
     write('¿Qué nivel de actividad física realizas?'), nl,
     write('1. Sedentario (poco o nada de ejercicio)'), nl,
-    write('2. Ligero (ejercicio ligero 1-3 veces por semana)'), nl,
+    write('2. Ligero (ejercicio ligero 1-2 veces por semana)'), nl,
     write('3. Moderado (ejercicio moderado 3-5 veces por semana)'), nl,
     write('4. Activo (ejercicio intenso 6-7 veces por semana)'), nl,
     write('5. Muy activo (ejercicio muy intenso, trabajo físico duro)'), nl,
     write('Ingresa el número correspondiente: '),
     read(Actividad).
 
-preguntar_frecuencia(Frecuencia) :-
-    write('¿Con qué frecuencia haces actividad física a la semana? (en número de días): '),
-    read(Frecuencia).
+% hasta acá todo ok 
 
-% Preguntar tipo de ejercicio
-preguntar_tipo_ejercicio(TipoEjercicio) :-
-    write('¿Qué tipo de ejercicio realiza?'), nl,
-    write('1. Aeróbico (correr, nadar, bicicleta)'), nl,
-    write('2. Pesas (levantamiento de pesas, entrenamiento de fuerza)'), nl,
-    write('3. Combinación de ambos'), nl,
-    write('4. Otro'), nl,
-    write('Ingresa el número correspondiente: '),
-    read(TipoEjercicio).
 
-% Preguntar alergias
-preguntar_alergias(Alergias) :-
-    write('¿Tiene alguna alergia?'), nl,
-    write('1. Ninguna'), nl,
-    write('2. Alergia a lácteos'), nl,
-    write('3. Alergia a gluten'), nl,
-    write('4. Alergia a frutos secos'), nl,
-    write('5. Otra (especifique)'), nl,
-    read(Opcion),
-    (Opcion == 1 -> Alergias = 'Ninguna';
-     Opcion == 2 -> Alergias = 'Alergia a lácteos';
-     Opcion == 3 -> Alergias = 'Alergia a gluten';
-     Opcion == 4 -> Alergias = 'Alergia a frutos secos';
-     Opcion == 5 -> write('Especifique su alergia: '), read(AlergiaEspecifica), Alergias = AlergiaEspecifica).
+
+
+
+
 
 
 % Preguntar preferencias alimenticias
@@ -118,48 +92,35 @@ preguntar_condiciones_medicas(CondicionesMedicas) :-
      Opcion == 4 -> CondicionesMedicas = 'Problemas cardíacos';
      Opcion == 5 -> write('Especifique su condición: '), read(CondicionEspecifica), CondicionesMedicas = CondicionEspecifica).
 
-% Calcular las calorías recomendadas
-calorias_recomendadas(IMC, Actividad, Objetivo, CaloriasRecomendadas) :-
-    % Base de calorías en función del IMC (simplificado)
-    calorias_base(IMC, CaloriasBase),
-    
-    % Ajustar las calorías según la actividad física
-    calorias_ajustadas(CaloriasBase, Actividad, CaloriasAjustadas),
-
-    % Ajustar según el objetivo
-    ajustar_por_objetivo(CaloriasAjustadas, Objetivo, CaloriasRecomendadas).
-
-% Base de calorías en función del IMC
-calorias_base(IMC, CaloriasBase) :-
-    (   IMC < 18.5 -> CaloriasBase is 2500  % Bajo peso
-    ;   IMC >= 18.5, IMC < 25 -> CaloriasBase is 2000  % Peso normal
-    ;   IMC >= 25, IMC < 30 -> CaloriasBase is 1800  % Sobrepeso
-    ;   CaloriasBase is 1600  % Obesidad
+% Calcular la TMB
+calcular_tmb(Peso, Altura, Edad, Genero, TMB) :-
+    (   Genero == 1 ->  % Masculino
+        TMB is 88.362 + (13.397 * Peso) + (4.799 * (Altura * 100)) - (5.677 * Edad)
+    ;   Genero == 2 ->  % Femenino
+        TMB is 447.593 + (9.247 * Peso) + (3.098 * (Altura * 100)) - (4.330 * Edad)
     ).
 
-% Ajustar las calorías según la actividad física
-calorias_ajustadas(CaloriasBase, Actividad, CaloriasAjustadas) :-
-    (   Actividad == 1 -> CaloriasAjustadas is CaloriasBase  % Sedentario
-    ;   Actividad == 2 -> CaloriasAjustadas is CaloriasBase * 1.2  % Actividad ligera
-    ;   Actividad == 3 -> CaloriasAjustadas is CaloriasBase * 1.5  % Actividad moderada
-    ;   Actividad == 4 -> CaloriasAjustadas is CaloriasBase * 1.8  % Actividad intensa
-    ;   CaloriasAjustadas is CaloriasBase * 2  % Actividad muy intensa
+% Calcular el TDEE
+calcular_tdee(TMB, Actividad, TDEE) :-
+    (   Actividad == 1 -> TDEE is TMB * 1.2  % Sedentario
+    ;   Actividad == 2 -> TDEE is TMB * 1.375  % Actividad ligera
+    ;   Actividad == 3 -> TDEE is TMB * 1.55  % Actividad moderada
+    ;   Actividad == 4 -> TDEE is TMB * 1.725  % Activo
+    ;   TDEE is TMB * 1.9  % Muy activo
     ).
 
-% Ajustar las calorías según el objetivo
-ajustar_por_objetivo(CaloriasAjustadas, Objetivo, CaloriasRecomendadas) :-
-    (   Objetivo == 1 -> CaloriasRecomendadas is CaloriasAjustadas - 500  % Bajar de peso
-    ;   Objetivo == 2 -> CaloriasRecomendadas is CaloriasAjustadas + 500  % Aumentar masa muscular
-    ;   Objetivo == 3 -> CaloriasRecomendadas is CaloriasAjustadas  % Mejorar rendimiento
-    ;   Objetivo == 4 -> CaloriasRecomendadas is CaloriasAjustadas + 200  % Aumentar de peso
-    ;   CaloriasRecomendadas is CaloriasAjustadas  % Ningún objetivo
+ajustar_por_imc(TDEE, IMC, CaloriasRecomendadas) :-
+    (   IMC < 18.5 -> CaloriasRecomendadas is TDEE + 500;  % Bajo peso
+        IMC >= 18.5, IMC < 25 -> CaloriasRecomendadas is TDEE;  % Peso normal
+        IMC >= 25, IMC < 30 -> CaloriasRecomendadas is TDEE - 300;  % Sobrepeso
+        CaloriasRecomendadas is TDEE - 500  % Obesidad
     ).
 
 % Ofrecer recomendaciones alimenticias
 ofrecer_recomendaciones(CaloriasRecomendadas, Alergias, Preferencias) :-
     write('Se recomienda consumir aproximadamente '), write(CaloriasRecomendadas), write(' calorías al día.'), nl,
     write('Recomendaciones alimenticias:'), nl,
-    (Alergias == 'Ninguna' -> 
+    (Alergias == 'Ninguna' ->
         write('- Incluye una variedad de frutas y verduras.'), nl,
         write('- Consume proteínas magras como pollo, pescado o legumbres.'), nl,
         write('- Opta por granos enteros como arroz integral o quinoa.'), nl;
@@ -171,7 +132,7 @@ ofrecer_recomendaciones(CaloriasRecomendadas, Alergias, Preferencias) :-
     Alergias == 'Alergia a frutos secos' ->
         write('- Evita frutos secos y opta por semillas.'), nl;
     write('- Ten en cuenta tu alergia específica.'), nl),
-    
+
     (Preferencias == 'Vegano' ->
         write('- Incluye legumbres, granos enteros, frutas y verduras.'), nl;
     Preferencias == 'Vegetariano' ->
@@ -182,30 +143,35 @@ ofrecer_recomendaciones(CaloriasRecomendadas, Alergias, Preferencias) :-
 
 % Función principal para consultar al usuario
 consultar :-
+    preguntar_nombre(Nombre),
+    almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas),
+    write('Hola, '), write(Nombre), write('. Te voy a hacer una serie de preguntas, para conocerte un poco más y determinar que cantidad de calorias diarias es recomendable que consumas, ademas de sugerencias de platos y/o alimentos. Consulta siempre con tu medico!'),
+    nl,
     preguntar_peso(Peso),
     preguntar_altura(Altura),
     calcular_imc(Peso, Altura, IMC),
-    write('Su IMC es: '), write(IMC), nl,
-    preguntar_objetivo(Objetivo),
     preguntar_genero(Genero),
     preguntar_edad(Edad),
     preguntar_actividad_fisica(Actividad),
-    preguntar_frecuencia(Frecuencia),
-    preguntar_tipo_ejercicio(TipoEjercicio),
+    almacenar_usuario(Nombre,Peso,Altura,IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas),
+    nl,
+    calcular_tmb(Peso, Altura, Edad, Genero, TMB),
+    calcular_tdee(TMB, Actividad, TDEE),
+    ajustar_por_imc(TDEE, IMC, CaloriasRecomendadas),
+
+    write('La cantidad de calorías recomendadas a consumir segun la informacion que me diste son: '),write(CaloriasRecomendadas),write('. Ahora, te voy a hacer algunas preguntas mas para sugerirte un plan de alimentacion que se ajuste a esas calorias'),
+    nl,
     preguntar_alergias(Alergias),
     preguntar_preferencias(Preferencias),
     preguntar_condiciones_medicas(CondicionesMedicas),
-    
-    % Almacenar la información del usuario
-    almacenar_usuario(Peso, Altura, IMC, Genero, Edad, Actividad, Frecuencia, Objetivo, TipoEjercicio, Alergias, Preferencias, CondicionesMedicas),
 
-    % Calcular calorías recomendadas
-    calorias_recomendadas(IMC, Actividad, Objetivo, CaloriasRecomendadas),
-    
+    % Almacenar la información del usuario
+    almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Alergias, Preferencias, CondicionesMedicas),
+
+
     % Ofrecer recomendaciones alimenticias
     ofrecer_recomendaciones(CaloriasRecomendadas, Alergias, Preferencias),
-    
-    % Aquí puedes agregar lógica adicional para calcular calorías recomendadas y ofrecer recomendaciones
+
     write('Gracias por proporcionar su información.'), nl.
 
 % Iniciar el programa
