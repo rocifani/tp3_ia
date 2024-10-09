@@ -97,7 +97,7 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(2, 2, 'granola', 58).
     comida(2, 2, 'tortitas de arroz', 80).
     comida(2, 2, 'cereal de trigo', 67).
-    comida(2, 2, 'frutas', 17).
+    comida(2, 2, 'fruta', 17).
 
     % ALMUERZO/CENA por 100g es valor "1"
     comida(1, 2, 'arroz', 28).
@@ -108,7 +108,7 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(1, 2, 'lentejas', 60).
     comida(1, 2, 'frijoles negros', 62).
     comida(1, 2, 'garbanzos', 61).
-    comida(2, 2, 'verduras', 8).
+    comida(1, 2, 'verdura', 8).
 
 
 % GRASAS "3"
@@ -163,6 +163,110 @@ calcular_macronutrientes(CaloriasProteinas, CaloriasCarbohidratos, CaloriasGrasa
     GrasasGramos is CaloriasGrasas / 9,  % 1 gramo de grasa = 9 kcal
     CarbohidratosGramos is CaloriasCarbohidratos / 4.  % 1 gramo de carbohidrato = 4 kcal
 
+% Sugerir plan de alimentación con distribución 65% en almuerzo/cena y 35% en desayuno/merienda
+sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Alergias, Preferencias) :-
+    % Dividimos los macronutrientes en las proporciones adecuadas
+    ProteinasAlmuerzoCena is 0.65 * ProteinasGramos,
+    CarbohidratosAlmuerzoCena is 0.65 * CarbohidratosGramos,
+    GrasasAlmuerzoCena is 0.65 * GrasasGramos,
+
+    ProteinasDesayunoMerienda is 0.35 * ProteinasGramos,
+    CarbohidratosDesayunoMerienda is 0.35 * CarbohidratosGramos,
+    GrasasDesayunoMerienda is 0.35 * GrasasGramos,
+    
+    % Desayuno
+    write('Desayuno:'), nl,
+    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias),
+    nl,
+    
+    % Merienda
+    write('Merienda:'), nl,
+    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias),
+    nl,
+    
+    % Almuerzo
+    write('Almuerzo:'), nl,
+    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias),
+    nl,
+    
+    % Cena
+    write('Cena:'), nl,
+    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias).
+
+% Sugerir una comida específica
+sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo ,CondMedica,Alergias,Preferencias) :-
+    % Luego, sugerimos las proteínas, carbohidratos y grasas
+    write('Proteínas: '), nl,
+    sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida,Preferencias, CondMedica, Alergias),
+
+    write('Carbohidratos: '), nl,
+     % Primero, agregar frutas o verduras según el tipo de comida
+    sugerir_comida_fija(TipoFijo, FijoGramos),
+    comida(TipoComida, 2, TipoFijo ,GramosARestar), NuevaCarbohidratosRequeridos is CarbohidratosRequeridos - (GramosARestar*FijoGramos/100), % 10g de carbos en 100g de fruta/verdura
+    sugerir_comidas_por_macronutriente(2, NuevaCarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias),
+    write('Grasas: '), nl,
+    sugerir_comidas_por_macronutriente(3, GrasasRequeridas, TipoComida, Preferencias, CondMedica, Alergias).
+
+% Sugerir comidas para un macronutriente específico
+sugerir_comidas_por_macronutriente(TipoMacronutriente, GramosRequeridos, TipoComida, Preferencias, CondMedica, Alergias) :-
+    findall([Comida, Cantidad], comida(TipoComida, TipoMacronutriente, Comida, Cantidad), ListaComidas), 
+    filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada),
+   % write(ListaFiltrada) %ver aca
+    elegir_comidas(ListaFiltrada, GramosRequeridos).
+ 
+
+% Sugerir comida fija (fruta o verduras)
+sugerir_comida_fija('fruta', 150) :-
+    write('150g de fruta'), nl.
+
+sugerir_comida_fija('verdura', 200) :-
+    write('200g de verduras'), nl.
+
+% Elegir comidas para cubrir la cantidad requerida
+elegir_comidas([], _) :- !.
+elegir_comidas([[Comida, Cantidad]|Restantes], GramosRequeridos) :-
+    GramosRequeridos > 0,
+    GramosParaComer is (GramosRequeridos / Cantidad)*100,
+    floor(GramosParaComer, GramosParaComerEntero),
+    write(GramosParaComerEntero), write('g de '), write(Comida), nl,
+    elegir_comidas(Restantes, GramosRequeridos).
+
+% Filtrar comidas según preferencias, condiciones médicas y alergias
+filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada) :-
+    findall([Comida, Cantidad],
+        (
+            member([Comida, Cantidad], ListaComidas),
+            verificar_preferencias(Comida, Preferencias),
+            verificar_condiciones(Comida, CondMedica),
+            verificar_alergias(Comida, Alergias)
+        ),
+        ListaFiltrada).
+
+% Caso sin preferencias (valor 3)
+verificar_preferencias(_, 3).
+% Caso vegetariano (valor 1)
+verificar_preferencias(Comida, 1) :-
+    preferencias(1, AlimentosPermitidos),
+    member(Comida, AlimentosPermitidos).
+% Caso vegano (valor 2)
+verificar_preferencias(Comida, 2) :-
+    preferencias(2, AlimentosPermitidos),
+    member(Comida, AlimentosPermitidos).
+% Verificar que una comida esté permitida según las condiciones médicas
+verificar_condiciones(Comida, CondMedica) :-
+    ( CondMedica = []  % Si no hay condiciones médicas, no se aplica ningún filtro
+    ; forall(member(CondMedica, CondMedica), 
+             (condicion_medica(CondMedica, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
+    ).
+
+% Verificar que una comida no esté restringida por las alergias
+verificar_alergias(Comida, Alergias) :-
+    ( Alergias = []  % Si no hay alergias, no se aplica ningún filtro
+    ; forall(member(Alergia, Alergias), 
+             (alergias(Alergia, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
+    ).
+
+
 % Definición del hecho para almacenar la información del usuario
 :- dynamic usuario/11.
 
@@ -186,8 +290,9 @@ preguntar_peso(Peso) :-
 
 % Pregunta la altura al usuario
 preguntar_altura(Altura) :-
-    write('¿Cuál es tu altura en metros? '),
-    read(Altura).
+    write('¿Cuál es tu altura en centimetros? '),
+    read(AlturaCM),
+    Altura is AlturaCM / 100.
 
 % Pregunta el género al usuario
 preguntar_genero(Genero) :-
@@ -352,8 +457,9 @@ consultar :-
     write('Proteínas: '), write(GramosProteinas), write(' kcal'), nl,
     write('Grasas: '), write(GramosGrasas), write(' kcal'), nl,
     write('Carbohidratos: '), write(GramosCarbohidratos), write(' kcal'), nl,
+    sugerir_plan(GramosProteinas, GramosCarbohidratos, GramosGrasas, CondMedica, Alergias, Preferencias),
+    nl,
     write('¡Gracias por usar el sistema experto en nutrición!').
-
 % Iniciar el programa
 iniciar :-
     write('Bienvenido al sistema experto en nutrición.'), nl,
