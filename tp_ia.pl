@@ -25,36 +25,36 @@ recomendaciones(30, 100, 4, -300,'Dado tu IMC deberias disminuir tu ingesta calo
 
 % CONDICIONES MEDICAS
 % Celiaco (sin alimentos con gluten)
-condicion_medica(2, ['pollo', 'carne','yogur griego', 'pescado', 'huevos', 'frutas', 'verduras', 'quinua', 'arroz', 'papas', 'frijoles', 'lentejas', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia', 'tofu', 'tempeh']).
+condicion_medica(2, ['pollo', 'carne','yogur griego', 'pescado', 'huevo', 'frutas', 'verduras', 'quinua', 'arroz', 'papas', 'frijoles', 'lentejas', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia', 'tofu', 'tempeh','queso','jamon cocido','batido de proteinas','soja']).
 
-% Intolerante a la lactosa (sin lácteos)
-condicion_medica(3, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani', 'palta', 'semillas de chia', 'nueces', 'almendras', 'aceitunas']).
+% Intolerante a la lactosa (sin lacteos)
+condicion_medica(3, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani', 'palta', 'semillas de chia', 'nueces', 'almendras', 'aceitunas','soja']).
 
 % Hipertenso (bajo en sodio, sin alimentos procesados)
-condicion_medica(4, ['pollo', 'pescado', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'frutas', 'verduras', 'palta', 'nueces', 'almendras', 'aceite de oliva']).
+condicion_medica(4, ['pollo', 'pescado', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'frutas', 'verduras', 'palta', 'nueces', 'almendras', 'aceite de oliva','soja']).
 
-% Hipertiroidismo (evitar alimentos que puedan interferir con la función tiroidea)
-condicion_medica(5, ['pollo', 'carne', 'pescado', 'cerdo', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'nueces', 'almendras', 'aceite de oliva', 'palta']).
+% Hipertiroidismo (evitar alimentos que puedan interferir con la funcion tiroidea)
+condicion_medica(5, ['pollo', 'carne', 'pescado', 'cerdo', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'nueces', 'almendras', 'aceite de oliva', 'palta','soja']).
 
 % Diabetes (bajo en carbohidratos simples, preferencia por alimentos integrales)
-condicion_medica(6, ['pollo', 'pescado', 'frijoles', 'lentejas', 'arroz', 'quinua', 'batata', 'verduras', 'palta', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva']).
+condicion_medica(6, ['pollo', 'pescado', 'frijoles', 'lentejas', 'arroz', 'quinua', 'batata', 'verduras', 'palta', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva','soja']).
 
 % Colesterol alto (bajo en grasas saturadas y colesterol)
-condicion_medica(7, ['pescado', 'pollo sin piel', 'frutas', 'verduras', 'frijoles', 'lentejas', 'arroz', 'quinua', 'batata', 'palta', 'nueces', 'almendras', 'aceite de oliva', 'semillas de chia']).
+condicion_medica(7, ['pescado', 'pollo sin piel', 'frutas', 'verduras', 'frijoles', 'lentejas', 'arroz', 'quinua', 'batata', 'palta', 'nueces', 'almendras', 'aceite de oliva', 'semillas de chia','soja']).
 
 
 % ALERGIAS
 % Alergia a los frutos secos
-alergias(1, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'aceite de oliva', 'aceite de coco', 'mantequilla']).
+alergias(1, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'aceite de oliva', 'aceite de coco', 'mantequilla','queso','soja']).
 
 % Alergia a los mariscos
-alergias(2, ['pollo', 'carne', 'cerdo', 'tofu', 'tempeh', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva']).
+alergias(2, ['pollo', 'carne', 'cerdo', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva','soja','avena','pan integral','tortitas de arroz', 'arroz inflado', 'granola', 'cereal de trigo']).
 
 % Alergia al chocolate
-alergias(3, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia']).
+alergias(3, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia','soja']).
 
 % Alergia al huevo
-alergias(4, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani']).
+alergias(4, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani','soja']).
 
 % Alergia a la soja
 alergias(5, ['pollo', 'carne', 'pescado', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva']).
@@ -62,18 +62,19 @@ alergias(5, ['pollo', 'carne', 'pescado', 'huevos', 'frijoles', 'lentejas', 'arr
 
 % PREFERENCIAS
 % Vegetariano
-preferencias(1, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia']).
+preferencias(1, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja']).
 
 % Vegano
-preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia']).
+preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja']).
 
 
 %COMIDAS
-% PROTEÍNAS "1"
+% PROTEINAS "1"
     % DESAYUNO/MERIENDA por 100g es valor "2"
     comida(2, 1, 'huevo', 13).
     comida(2, 1, 'queso', 11).
     comida(2, 1, 'jamon cocido', 18).
+    comida(2, 1, 'tofu', 8).
     comida(2, 1, 'leche', 3).
     comida(2, 1, 'yogur griego', 10).
     comida(2, 1, 'batido de proteinas', 20).
@@ -86,8 +87,9 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(1, 1, 'tofu', 8).
     comida(1, 1, 'tempeh', 19).
     comida(1, 1, 'huevos', 13).
+    comida(1, 1, 'soja', 51).
     comida(1, 1, 'frijoles', 9).
-    comida(1, 1, 'lentejas', 9).
+
 
 % CARBOHIDRATOS "2"
     % DESAYUNO/MERIENDA por 100g es valor "2"
@@ -98,6 +100,7 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(2, 2, 'tortitas de arroz', 80).
     comida(2, 2, 'cereal de trigo', 67).
     comida(2, 2, 'fruta', 17).
+    
 
     % ALMUERZO/CENA por 100g es valor "1"
     comida(1, 2, 'arroz', 28).
@@ -131,11 +134,15 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(1, 3, 'crema de leche', 30).
 
 
+objetivo(1,'mantenimiento').
+objetivo(2,'perdida de grasa').
+objetivo(3,'aumento muscular').
+objetivo(4,'rendimiento deportivo').
 
 
-% Predicado para obtener la recomendación basada en el IMC
-obtener_recomendacion(IMC, Objetivo, Ajuste ,Mensaje) :-
-    recomendaciones(Min, Max, Objetivo, Ajuste,Mensaje),  % Compara con los rangos de IMC
+% Predicado para obtener la recomendacion basada en el IMC
+obtener_recomendacion(IMC, Objetivo, Ajuste,Mensaje) :-
+    recomendaciones(Min, Max, Objetivo, Ajuste, Mensaje),  % Compara con los rangos de IMC
     IMC >= Min,
     IMC < Max.
 
@@ -145,7 +152,7 @@ porcentajes_objetivo(Objetivo, CaloriasRecomendadas, Proteinas, Grasas, Carbohid
         Proteinas is 20 * CaloriasRecomendadas / 100,
         Grasas is 30 * CaloriasRecomendadas / 100,
         Carbohidratos is 50 * CaloriasRecomendadas / 100
-    ;   Objetivo == 2 ->  % Pérdida de grasa
+    ;   Objetivo == 2 ->  % Perdida de grasa
         Proteinas is 35 * CaloriasRecomendadas / 100,
         Grasas is 30 * CaloriasRecomendadas / 100,
         Carbohidratos is 35 * CaloriasRecomendadas / 100
@@ -164,54 +171,52 @@ calcular_macronutrientes(CaloriasProteinas, CaloriasCarbohidratos, CaloriasGrasa
     CarbohidratosGramos is CaloriasCarbohidratos / 4.  % 1 gramo de carbohidrato = 4 kcal
 
 % Sugerir plan de alimentación con distribución 65% en almuerzo/cena y 35% en desayuno/merienda
-sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Alergias, Preferencias) :-
+sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Alergias, Preferencias ) :-
     % Dividimos los macronutrientes en las proporciones adecuadas
-    ProteinasAlmuerzoCena is 0.65 * ProteinasGramos,
-    CarbohidratosAlmuerzoCena is 0.65 * CarbohidratosGramos,
-    GrasasAlmuerzoCena is 0.65 * GrasasGramos,
+    ProteinasAlmuerzoCena is 0.60 * ProteinasGramos,
+    CarbohidratosAlmuerzoCena is 0.60 * CarbohidratosGramos,
+    GrasasAlmuerzoCena is 0.60 * GrasasGramos,
 
-    ProteinasDesayunoMerienda is 0.35 * ProteinasGramos,
-    CarbohidratosDesayunoMerienda is 0.35 * CarbohidratosGramos,
-    GrasasDesayunoMerienda is 0.35 * GrasasGramos,
-    
-    % Desayuno
-    write('Desayuno:'), nl,
+    ProteinasDesayunoMerienda is (0.40 * ProteinasGramos),
+    CarbohidratosDesayunoMerienda is (0.40 * CarbohidratosGramos),
+    GrasasDesayunoMerienda is (0.40 * GrasasGramos),
+    nl,nl,
+    % Desayuno merienda
+    write('Desayuno y Merienda:'), 
+    nl,
     sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias),
     nl,
     
-    % Merienda
-    write('Merienda:'), nl,
-    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias),
+    % Almuerzo cena
+    write('Almuerzo y Cena:'), 
     nl,
-    
-    % Almuerzo
-    write('Almuerzo:'), nl,
     sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias),
-    nl,
-    
-    % Cena
-    write('Cena:'), nl,
-    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias).
+    nl.
 
-% Sugerir una comida específica
-sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo ,CondMedica,Alergias,Preferencias) :-
-    % Luego, sugerimos las proteínas, carbohidratos y grasas
-    write('Proteínas: '), nl,
-    sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida,Preferencias, CondMedica, Alergias),
+    
+% Sugerir una comida especifica
+sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo,CondMedica,Alergias,Preferencias) :-
+    % Luego, sugerimos las proteinas, carbohidratos y grasas
+    write('Proteinas: '), nl,
+    sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida, Preferencias, CondMedica, Alergias), % ACA ESTA EL PROBLEMAAAAAAAAAAA
 
     write('Carbohidratos: '), nl,
-     % Primero, agregar frutas o verduras según el tipo de comida
+     % Primero, agregar frutas o verduras segun el tipo de comida
     sugerir_comida_fija(TipoFijo, FijoGramos),
-    comida(TipoComida, 2, TipoFijo ,GramosARestar), NuevaCarbohidratosRequeridos is CarbohidratosRequeridos - (GramosARestar*FijoGramos/100), % 10g de carbos en 100g de fruta/verdura
+    comida(TipoComida, 2, TipoFijo, GramosARestar ), 
+    write(GramosARestar),nl,
+    write(FijoGramos),nl,
+    NuevaCarbohidratosRequeridos is CarbohidratosRequeridos - (GramosARestar*FijoGramos/100), % 10g de carbos en 100g de fruta/verdura
+    write(NuevaCarbohidratosRequeridos),nl,
     sugerir_comidas_por_macronutriente(2, NuevaCarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias),
+    
     write('Grasas: '), nl,
     sugerir_comidas_por_macronutriente(3, GrasasRequeridas, TipoComida, Preferencias, CondMedica, Alergias).
 
-% Sugerir comidas para un macronutriente específico
+% Sugerir comidas para un macronutriente especifico
 sugerir_comidas_por_macronutriente(TipoMacronutriente, GramosRequeridos, TipoComida, Preferencias, CondMedica, Alergias) :-
     findall([Comida, Cantidad], comida(TipoComida, TipoMacronutriente, Comida, Cantidad), ListaComidas), 
     filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada),
-   % write(ListaFiltrada) %ver aca
     elegir_comidas(ListaFiltrada, GramosRequeridos).
  
 
@@ -228,10 +233,11 @@ elegir_comidas([[Comida, Cantidad]|Restantes], GramosRequeridos) :-
     GramosRequeridos > 0,
     GramosParaComer is (GramosRequeridos / Cantidad)*100,
     floor(GramosParaComer, GramosParaComerEntero),
-    write(GramosParaComerEntero), write('g de '), write(Comida), nl,
+    write(GramosParaComerEntero), write('grs de '), write(Comida), nl,
     elegir_comidas(Restantes, GramosRequeridos).
 
-% Filtrar comidas según preferencias, condiciones médicas y alergias
+% Filtrar comidas segun preferencias, condiciones medicas y alergias
+filtrar_comidas([],_,_,_,_) :- !.
 filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada) :-
     findall([Comida, Cantidad],
         (
@@ -245,99 +251,96 @@ filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada)
 % Caso sin preferencias (valor 3)
 verificar_preferencias(_, 3).
 % Caso vegetariano (valor 1)
-verificar_preferencias(Comida, 1) :-
-    preferencias(1, AlimentosPermitidos),
+verificar_preferencias(Comida, Preferencias) :-
+    preferencias(Preferencias, AlimentosPermitidos),
     member(Comida, AlimentosPermitidos).
-% Caso vegano (valor 2)
-verificar_preferencias(Comida, 2) :-
-    preferencias(2, AlimentosPermitidos),
-    member(Comida, AlimentosPermitidos).
-% Verificar que una comida esté permitida según las condiciones médicas
+
+% Verificar que una comida este permitida segun las condiciones medicas
+verificar_condiciones(_, []) :- !.
 verificar_condiciones(Comida, CondMedica) :-
-    ( CondMedica = []  % Si no hay condiciones médicas, no se aplica ningún filtro
-    ; forall(member(CondMedica, CondMedica), 
-             (condicion_medica(CondMedica, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
+    ( forall(member(Condicion, CondMedica), 
+             (condicion_medica(Condicion, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
     ).
 
-% Verificar que una comida no esté restringida por las alergias
+% Verificar que una comida no este restringida por las alergias
+verificar_alergias(_, []):- !.
 verificar_alergias(Comida, Alergias) :-
-    ( Alergias = []  % Si no hay alergias, no se aplica ningún filtro
-    ; forall(member(Alergia, Alergias), 
+    (forall(member(Alergia, Alergias), 
              (alergias(Alergia, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
     ).
 
 
-% Definición del hecho para almacenar la información del usuario
+% Definicion del hecho para almacenar la informacion del usuario
 :- dynamic usuario/11.
 
-% Almacenar la información del usuario
+% Almacenar la informacion del usuario
 almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Objetivo, CondMedica, Preferencias, Alergias) :-
     assertz(usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Objetivo, CondMedica, Preferencias, Alergias)).
 
-% Cálculo del IMC
+% Calculo del IMC
 calcular_imc(Peso, Altura, IMC) :-
     IMC is Peso / (Altura * Altura).
 
-% Pregunta el nombre al usuario y lo convierte en un átomo
+% Pregunta el nombre al usuario y lo convierte en un atomo
 preguntar_nombre(Nombre) :-
-    write('¿Cuál es tu nombre? '),
+    write('Cual es tu nombre? '),
     read_line_to_string(user_input, Nombre).
 
 % Pregunta el peso al usuario
 preguntar_peso(Peso) :-
-    write('¿Cuál es tu peso en kg? '),
+    write('Cual es tu peso en kg? '),
     read(Peso).
 
 % Pregunta la altura al usuario
 preguntar_altura(Altura) :-
-    write('¿Cuál es tu altura en centimetros? '),
+    write('Cual es tu altura en centimetros? '),
     read(AlturaCM),
     Altura is AlturaCM / 100.
 
-% Pregunta el género al usuario
+% Pregunta el genero al usuario
 preguntar_genero(Genero) :-
-    write('¿Cuál es tu género?'), nl,
+    write('Cual es tu genero?'), nl,
     write('1. Masculino'), nl,
     write('2. Femenino'), nl,
-    write('Ingresa el número correspondiente: '),
+    write('Ingresa el numero correspondiente: '),
     read(Genero).
 
 % Preguntar la edad del usuario
 preguntar_edad(Edad) :-
-    write('¿Cuál es tu edad? '),
+    write('Cual es tu edad? '),
     read(Edad).
 
 
 
 
-% Pregunta el nivel de actividad física al usuario
+% Pregunta el nivel de actividad fisica al usuario
 preguntar_actividad_fisica(Actividad) :-
-    write('¿Qué nivel de actividad física realizas?'), nl,
+    write('Que nivel de actividad fisica realizas?'), nl,
     write('1. Sedentario (poco o nada de ejercicio)'), nl,
     write('2. Ligero (ejercicio ligero 1-2 veces por semana)'), nl,
     write('3. Moderado (ejercicio moderado 3-5 veces por semana)'), nl,
     write('4. Activo (ejercicio intenso 6-7 veces por semana)'), nl,
-    write('5. Muy activo (ejercicio muy intenso, trabajo físico duro)'), nl,
-    write('Ingresa el número correspondiente: '),
+    write('5. Muy activo (ejercicio muy intenso, trabajo fisico duro)'), nl,
+    write('Ingresa el numero correspondiente: '),
     read(Actividad).
 
 % Pregunta el objetivo del usuario
 preguntar_objetivo(Objetivo) :-
-    write('¿Cual es tu objetivo?'), nl,
+    write('Cual es tu objetivo?'), nl,
     write('1. Mantenimiento'), nl,
-    write('2. Pérdida de grasa'), nl,
+    write('2. Perdida de grasa'), nl,
     write('3. Aumento muscular'), nl,
     write('4. Rendimiento deportivo'), nl,
-    write('Ingresa el número correspondiente: '),
+    write('Ingresa el numero correspondiente: '),
     read(Objetivo).
 
 
 
 % preguntar_condicion_medica del usuario y almacenarlas en una lista
 preguntar_condicion_medica(CondMedica) :-
-    write('¿Tienes alguna Condicion Medica que debamos saber? (elige más de una si es necesario, o "0" para terminar)'), nl,
+    write('Tienes alguna condicion medica que debamos saber? (elige mas de una si es necesario, o "0" para terminar)'), nl,
     mostrar_opciones_cond_medica,
-    leer_condicion_medica([], CondMedica).
+    leer_array([], CondMedica).
     
 
 % Mostrar las opciones disponibles de preferencias alimenticias
@@ -349,27 +352,13 @@ mostrar_opciones_cond_medica :-
     write('5. Hipertiroidismo'), nl,
     write('6. Diabetes'), nl,
     write('7. Colesterol alto'), nl.
-    
-    
-% Leer las condiciones seleccionadas y almacenarlas en una lista
-leer_condicion_medica(CondicionesAcumuladas, CondicionesFinales) :-
-    write('Seleccione el número de la condición (o "0" para terminar): '),
-    read(Opcion),
-    (   Opcion == 0  % Caso base: Si el usuario selecciona 0, terminamos y devolvemos la lista final
-    ->  CondicionesFinales = CondicionesAcumuladas
-    ;   member(Opcion, CondicionesAcumuladas)  % Si la opción ya está en la lista, mostrar un mensaje y pedir otra
-    ->  write('Esta condición ya ha sido seleccionada. Elige otra.'), nl,
-        leer_condicion_medica(CondicionesAcumuladas, CondicionesFinales)
-    ;   append(CondicionesAcumuladas, [Opcion], NuevasCondiciones),  % Agregar la opción si no está duplicada
-        leer_condicion_medica(NuevasCondiciones, CondicionesFinales)  % Llamada recursiva para seguir seleccionando
-    ).
 
 
 % preguntar_alergias del usuario y almacenarlas en una lista
 preguntar_alergias(Alergias) :-
-    write('¿Tienes alguna alergia que debamos saber? (elige más de una si es necesario, o "0" para terminar)'), nl,
+    write('Tienes alguna alergia que debamos saber? (elige mas de una si es necesario, o "0" para terminar)'), nl,
     mostrar_opciones_alergias,
-    leer_alergias([], Alergias).
+    leer_array([], Alergias).
 
 % Mostrar las opciones disponibles de alergias
 mostrar_opciones_alergias :-
@@ -380,26 +369,29 @@ mostrar_opciones_alergias :-
     write('5. Alergia a la soja'), nl.
 
 % Leer las alergias seleccionadas y almacenarlas en una lista
-leer_alergias(AlergiasAcumuladas, AlergiasFinales) :-
-    write('Seleccione el número de la alergia (o "0" para terminar): '),
+leer_array(ArrayAcumulado, ArrayFinal) :-
+    write('Seleccione una opcion (o "0" para terminar): '),
     read(Opcion),
     (   Opcion == 0  % Caso base: Si el usuario selecciona 0, terminamos y devolvemos la lista final
-    ->  AlergiasFinales = AlergiasAcumuladas
-    ;   member(Opcion, AlergiasAcumuladas)  % Si la opción ya está en la lista, mostrar un mensaje y pedir otra
-    ->  write('Esta alergia ya ha sido seleccionada. Elige otra.'), nl,
-        leer_alergias(AlergiasAcumuladas, AlergiasFinales)
-    ;   append(AlergiasAcumuladas, [Opcion], NuevasAlergias),  % Agregar la opción si no está duplicada
-        leer_alergias(NuevasAlergias, AlergiasFinales)  % Llamada recursiva para seguir seleccionando
+    ->  ArrayFinal = ArrayAcumulado
+    ;   member(Opcion, ArrayAcumulado)  % Si la opcion ya esta en la lista, mostrar un mensaje y pedir otra
+    ->  write('Esta opcion ya ha sido seleccionada. Elige otra.'), nl,
+        leer_array(ArrayAcumulado, ArrayFinal)
+    ;   append(ArrayAcumulado, [Opcion], Nuevas),  % Agregar la opcion si no esta duplicada
+        leer_array(Nuevas, ArrayFinal)  % Llamada recursiva para seguir seleccionando
     ).
 
 
 % Pregunta el objetivo del usuario
 preguntar_preferencias(Preferencias) :-
-    write('¿Tienes alguna preferencia alimenticia?'), nl,
-    write('1. Vegetariano'), nl,
-    write('2. Vegano'), nl,
-    write('3. Sin preferencias'), nl,
-    write('Ingresa el número correspondiente: '),
+    write('Tienes alguna preferencia alimenticia?'), nl,
+    write('1. Vegetariano'), 
+    nl,
+    write('2. Vegano'), 
+    nl,
+    write('3. Sin preferencias'), 
+    nl,
+    write('Ingresa el numero correspondiente: '),
     read(Preferencias).
  
 
@@ -421,14 +413,14 @@ calcular_tdee(TMB, Actividad, TDEE) :-
     ;   TDEE is TMB * 1.9  % Muy activo
     ).
 
-% Ajustar las calorías recomendadas según el IMC
+% Ajustar las calorias recomendadas segun el IMC
 ajustar_por_imc(TDEE, CaloriasAjustar , CaloriasRecomendadas) :-
     CaloriasRecomendadas is TDEE + CaloriasAjustar.
 
-% Función principal para consultar al usuario
+% Funcion principal para consultar al usuario
 consultar :-
     preguntar_nombre(Nombre),
-    write('Hola, '), write(Nombre), write('. Te voy a hacer una serie de preguntas para conocerte un poco más y determinar qué cantidad de calorías diarias es recomendable que consumas, además de sugerencias de platos y/o alimentos. ¡Consulta siempre con tu médico!'),
+    write('Hola, '), write(Nombre), write('. Te voy a hacer una serie de preguntas para conocerte un poco mas y determinar que cantidad de calorias diarias es recomendable que consumas, ademas de sugerencias de platos y/o alimentos. Consulta siempre con tu medico!'),
     nl,
     preguntar_peso(Peso),
     preguntar_altura(Altura),
@@ -440,7 +432,9 @@ consultar :-
     nl,
     calcular_tmb(Peso, Altura, Edad, Genero, TMB),
     calcular_tdee(TMB, Actividad, TDEE),
-    write('La cantidad de calorías recomendadas a consumir según la información que me diste son: '), write(TDEE), write('.'),
+    nl,
+    write('La cantidad de calorias recomendadas a consumir segun la informacion que me diste son: '), write(TDEE), write('.'),
+    nl,
     nl,
     preguntar_objetivo(Objetivo),
     preguntar_condicion_medica(CondMedica),
@@ -449,18 +443,29 @@ consultar :-
     almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Objetivo, CondMedica, Preferencias, Alergias),
     obtener_recomendacion(IMC, Objetivo, Ajuste,Mensaje),
     ajustar_por_imc(TDEE, Ajuste, CaloriasRecomendadas),
-    write(Mensaje), nl,
-    write('Para tu objetivo de '), write(Objetivo), write(' y tu IMC de '), write(IMC), write(' se recomienda consumir '), write(CaloriasRecomendadas), write(' calorías diarias.'),
+    write(Mensaje), 
+    nl,
+    nl,
+    objetivo(Objetivo,ObjetivoTexto),
+    write('Para tu objetivo de '), write(ObjetivoTexto), write(' y tu IMC de '), write(IMC), write(' se recomienda consumir '), write(CaloriasRecomendadas), write(' calorias diarias.'),
+    nl,
+    nl,
     porcentajes_objetivo(Objetivo, CaloriasRecomendadas, Proteinas, Grasas, Carbohidratos),
-    calcular_macronutrientes(Proteinas, Carbohidratos, Grasas, GramosProteinas, GramosCarbohidratos, GramosGrasas ),
-    write('Estos son los porcentajes recomendados de macronutrientes:'), nl,
-    write('Proteínas: '), write(GramosProteinas), write(' kcal'), nl,
-    write('Grasas: '), write(GramosGrasas), write(' kcal'), nl,
-    write('Carbohidratos: '), write(GramosCarbohidratos), write(' kcal'), nl,
+    calcular_macronutrientes(Proteinas, Carbohidratos, Grasas, GramosProteinas, GramosCarbohidratos, GramosGrasas),
+    write('Al total de calorias recomendadas debes dividirlo segun los macronutrientes de la siguiente forma:'), 
+    nl,
+    write('Proteinas: '), write(GramosProteinas), write(' gramos'), 
+    nl,
+    write('Grasas: '), write(GramosGrasas), write(' gramos'), 
+    nl,
+    write('Carbohidratos: '), write(GramosCarbohidratos), write(' gramos'), 
+    nl,
+
     sugerir_plan(GramosProteinas, GramosCarbohidratos, GramosGrasas, CondMedica, Alergias, Preferencias),
     nl,
-    write('¡Gracias por usar el sistema experto en nutrición!').
+    write('Gracias por usar el sistema experto en nutricion!').
 % Iniciar el programa
 iniciar :-
-    write('Bienvenido al sistema experto en nutrición.'), nl,
+    write('Bienvenido al sistema experto en nutricion.'), 
+    nl,
     consultar.
