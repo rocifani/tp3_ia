@@ -25,7 +25,7 @@ recomendaciones(30, 100, 4, -300,'Dado tu IMC deberias disminuir tu ingesta calo
 
 % CONDICIONES MEDICAS
 % Celiaco (sin alimentos con gluten)
-condicion_medica(2, ['pollo', 'carne','yogur griego', 'pescado', 'huevo', 'frutas', 'verduras', 'quinua', 'arroz', 'papas', 'frijoles', 'lentejas', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia', 'tofu', 'tempeh','queso','jamon cocido','batido de proteinas','soja']).
+condicion_medica(2, ['pollo', 'carne','yogur griego', 'pescado', 'huevo', 'frutas', 'verduras', 'quinua', 'arroz', 'papas', 'frijoles', 'lentejas', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia', 'tofu', 'tempeh','queso','jamon cocido','batido de proteinas','soja','arroz','quinoa pop']).
 
 % Intolerante a la lactosa (sin lacteos)
 condicion_medica(3, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani', 'palta', 'semillas de chia', 'nueces', 'almendras', 'aceitunas','soja']).
@@ -51,13 +51,13 @@ alergias(1, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'huevo', 'f
 alergias(2, ['pollo', 'carne', 'cerdo', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva','soja','avena','pan integral','tortitas de arroz', 'arroz inflado', 'granola', 'cereal de trigo']).
 
 % Alergia al chocolate
-alergias(3, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia','soja']).
+alergias(3, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia','soja']).
 
 % Alergia al huevo
 alergias(4, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani','soja']).
 
 % Alergia a la soja
-alergias(5, ['pollo', 'carne', 'pescado', 'huevos', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva']).
+alergias(5, ['pollo', 'carne', 'pescado', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva']).
 
 
 % PREFERENCIAS
@@ -86,7 +86,7 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(1, 1, 'cerdo', 25).
     comida(1, 1, 'tofu', 8).
     comida(1, 1, 'tempeh', 19).
-    comida(1, 1, 'huevos', 13).
+    comida(1, 1, 'huevo', 13).
     comida(1, 1, 'soja', 51).
     comida(1, 1, 'frijoles', 9).
 
@@ -94,6 +94,7 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
 % CARBOHIDRATOS "2"
     % DESAYUNO/MERIENDA por 100g es valor "2"
     comida(2, 2, 'avena', 66).
+    comida(2, 2, 'quinoa pop', 38).
     comida(2, 2, 'pan integral', 45).
     comida(2, 2, 'arroz inflado', 81).
     comida(2, 2, 'granola', 58).
@@ -116,8 +117,8 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
 
 % GRASAS "3"
     % DESAYUNO/MERIENDA por 100g es valor "2"
+    comida(2, 3, 'palta', 26).   
     comida(2, 3, 'mantequilla de mani', 50).
-    comida(2, 3, 'palta', 26).
     comida(2, 3, 'semillas de chia', 31).
     comida(2, 3, 'almendras', 50).
     comida(2, 3, 'nueces', 65).
@@ -132,6 +133,47 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(1, 3, 'almendras', 50).
     comida(1, 3, 'queso', 33).
     comida(1, 3, 'crema de leche', 30).
+
+
+% platos
+platos(['huevo', 'avena', 'palta'], 'Tortilla de huevo con avena y rodajas de palta, acompañada de fruta fresca.').
+platos(['pollo','arroz','aceite de oliva'],'Pollo a la plancha con arroz con aceite de oliva, y verduras hervidas.').
+platos(['tofu','avena','palta'],'').
+
+
+platos(['queso', 'pan integral', 'nueces'], 'Sándwich de queso con pan integral y nueces, acompañado de fruta fresca.').
+platos(['huevo', 'cereal de trigo', 'semillas de chia'], 'Tazón de cereal de trigo con huevo y semillas de chia, con fruta fresca.').
+platos(['soja', 'granola', 'yogur griego'], 'Parfait de soja y granola con yogur griego, acompañado de fruta fresca.').
+platos(['huevo', 'frijoles negros', 'crema de leche'], 'Tacos de huevo con frijoles negros y crema de leche, servidos con fruta fresca.').
+platos(['tofu', 'granola', 'yogur griego'], 'Tazón de yogur griego con tofu y granola, acompañado de fruta fresca.').
+platos(['huevo', 'quinoa', 'nueces'], 'Ensalada de quinoa con huevo duro y nueces, servida con fruta fresca.').
+platos(['huevo', 'frijoles negros', 'almendras'], 'Bowl de huevo revuelto con frijoles negros y almendras, acompañado de fruta fresca.').
+platos(['tofu', 'batata', 'crema de leche'], 'Tofu al horno con puré de batata y crema de leche, servido con fruta fresca.').
+platos(['jamon cocido', 'cereal de trigo', 'yogur griego'], 'Ensalada de cereal de trigo con jamón cocido y yogur griego, acompañada de fruta fresca.').
+platos(['tofu', 'papas', 'palta'], 'Tacos de tofu con papas asadas y guacamole de palta, servidos con fruta fresca.').
+platos(['pescado', 'batata', 'almendras'], 'Pescado al horno con puré de batata y almendras, acompañado de fruta fresca.').
+platos(['carne','papas','queso'],'Carne al horno con papas gratinadas y ensalada.').
+platos(['jamon cocido', 'avena','nueces'],'Cafe negro con pancake de avena y jamon cocido, con nueces.').
+platos(['pollo', 'arroz', 'mantequilla de mani'], 'Pollo al grill con arroz y un toque de mantequilla de mani.').
+platos(['tofu', 'quinoa pop', 'aceite de oliva'], 'Ensalada de tofu con quinoa pop aderezada con aceite de oliva.').
+platos(['jamon cocido', 'batata', 'queso'], 'Tortilla de jamón cocido y batata con queso gratinado.').
+platos(['pescado', 'papas', 'palta'], 'Pescado al horno con papas asadas y guacamole de palta.').
+platos(['cerdo', 'lentejas', 'aceitunas'], 'Cerdo a la plancha con lentejas y aceitunas.').
+platos(['frijoles', 'pasta', 'queso'], 'Pasta con salsa de frijoles y queso derretido.').
+platos(['tempeh', 'batata', 'nueces'], 'Tempeh salteado con batata y nueces tostadas.').
+platos(['carne', 'arroz inflado', 'aceite de coco'], 'Carne salteada con arroz inflado y un toque de aceite de coco.').
+platos(['pescado', 'arroz inflado', 'palta'], 'Pescado empanizado con arroz inflado y guacamole de palta.').
+platos(['pollo', 'arroz', 'nueces'], 'Pollo a la parrilla con arroz y nueces picadas.').
+platos(['carne', 'pasta', 'aceite de oliva'], 'Espaguetis con carne y aderezo de aceite de oliva.').
+platos(['pescado', 'garbanzos', 'aceite de coco'], 'Pescado al curry con garbanzos y aceite de coco.').
+platos(['pollo', 'batata', 'palta'], 'Pollo asado con puré de batata y rodajas de palta.').
+platos(['cerdo', 'quinoa', 'palta'], 'Cerdo asado con quinoa y ensalada de palta.').
+platos(['frijoles negros', 'papas', 'queso'], 'Papas rellenas de frijoles negros y queso.').
+platos(['tempeh', 'pasta', 'aceitunas'], 'Pasta al pesto con tempeh y aceitunas.').
+platos(['huevo', 'lentejas', 'aceite de oliva'], 'Tortilla de lentejas con huevo y un toque de aceite de oliva.').
+
+
+
 
 
 objetivo(1,'mantenimiento').
@@ -184,41 +226,68 @@ sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Ale
     % Desayuno merienda
     write('Desayuno y Merienda:'), 
     nl,
-    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias),
+    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias,ListaFiltradaDesayuno),
     nl,
     
     % Almuerzo cena
     write('Almuerzo y Cena:'), 
     nl,
-    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias),
-    nl.
+    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias,ListaFiltradaCena),
+    nl,
+    sugerir_plato(ListaFiltradaDesayuno,PlatoDesayuno),
+    platos(PlatoDesayuno,PlatoDesayunoTexto),
+    write('Plato sugerido para el desayuno o merienda: '), write(PlatoDesayunoTexto), nl,
+    sugerir_plato(ListaFiltradaCena,PlatoAlmuerzo),
+    platos(PlatoAlmuerzo,PlatoAlmuerzoTexto),
+    write('Plato sugerido para el almuerzo o cena: '), write(PlatoAlmuerzoTexto), nl.
 
     
 % Sugerir una comida especifica
-sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo,CondMedica,Alergias,Preferencias) :-
+sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo,CondMedica,Alergias,Preferencias,ListaFiltradaTotal) :-
     % Luego, sugerimos las proteinas, carbohidratos y grasas
     write('Proteinas: '), nl,
-    sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida, Preferencias, CondMedica, Alergias), % ACA ESTA EL PROBLEMAAAAAAAAAAA
+    sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida, Preferencias, CondMedica, Alergias,ListaFiltradaProteinas),
 
     write('Carbohidratos: '), nl,
      % Primero, agregar frutas o verduras segun el tipo de comida
     sugerir_comida_fija(TipoFijo, FijoGramos),
     comida(TipoComida, 2, TipoFijo, GramosARestar ), 
-    write(GramosARestar),nl,
-    write(FijoGramos),nl,
     NuevaCarbohidratosRequeridos is CarbohidratosRequeridos - (GramosARestar*FijoGramos/100), % 10g de carbos en 100g de fruta/verdura
-    write(NuevaCarbohidratosRequeridos),nl,
-    sugerir_comidas_por_macronutriente(2, NuevaCarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias),
+    sugerir_comidas_por_macronutriente(2, NuevaCarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaCarbohidratos),
     
     write('Grasas: '), nl,
-    sugerir_comidas_por_macronutriente(3, GrasasRequeridas, TipoComida, Preferencias, CondMedica, Alergias).
+    sugerir_comidas_por_macronutriente(3, GrasasRequeridas, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaGrasas),
+    
+    append(ListaFiltradaProteinas, ListaFiltradaCarbohidratos, ListaFiltradaIntermedia),
+    append(ListaFiltradaIntermedia, ListaFiltradaGrasas, ListaFiltradaTotal).
 
 % Sugerir comidas para un macronutriente especifico
-sugerir_comidas_por_macronutriente(TipoMacronutriente, GramosRequeridos, TipoComida, Preferencias, CondMedica, Alergias) :-
-    findall([Comida, Cantidad], comida(TipoComida, TipoMacronutriente, Comida, Cantidad), ListaComidas), 
+sugerir_comidas_por_macronutriente(TipoMacronutriente, GramosRequeridos, TipoComida, Preferencias, CondMedica, Alergias,ListaFiltrada) :-
+    findall([TipoComida, TipoMacronutriente, Comida, Cantidad], comida(TipoComida, TipoMacronutriente, Comida, Cantidad), ListaComidas), 
     filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada),
     elegir_comidas(ListaFiltrada, GramosRequeridos).
  
+
+sugerir_plato(ListaFiltrada, Plato) :-
+    encontrar_comida(ListaFiltrada, 1, Proteina),
+    encontrar_comida(ListaFiltrada, 2, Carbohidrato),
+    encontrar_comida(ListaFiltrada, 3, Grasa),
+    Plato = [Proteina, Carbohidrato, Grasa],
+    write(Plato).
+
+/*encontrar_comida(ListaFiltrada, TipoMacronutriente, Alimento) :-
+    findall(Alimento, (member([_, TipoMacronutriente, Alimento, _], ListaFiltrada)), Alimentos),
+    (Alimentos == [] ->
+    Alimento = ''
+    ;
+    random_member(Alimento, Alimentos)).*/
+
+    encontrar_comida(ListaFiltrada, TipoMacronutriente, Alimento) :-
+    findall(Alimento, (member([_, TipoMacronutriente, Alimento, _], ListaFiltrada)), Alimentos),
+    (Alimentos == [] ->
+    Alimento = ''
+    ;
+    nth1(1, Alimentos, Alimento)).
 
 % Sugerir comida fija (fruta o verduras)
 sugerir_comida_fija('fruta', 150) :-
@@ -229,7 +298,7 @@ sugerir_comida_fija('verdura', 200) :-
 
 % Elegir comidas para cubrir la cantidad requerida
 elegir_comidas([], _) :- !.
-elegir_comidas([[Comida, Cantidad]|Restantes], GramosRequeridos) :-
+elegir_comidas([[_, _, Comida, Cantidad]|Restantes], GramosRequeridos) :-
     GramosRequeridos > 0,
     GramosParaComer is (GramosRequeridos / Cantidad)*100,
     floor(GramosParaComer, GramosParaComerEntero),
@@ -237,23 +306,24 @@ elegir_comidas([[Comida, Cantidad]|Restantes], GramosRequeridos) :-
     elegir_comidas(Restantes, GramosRequeridos).
 
 % Filtrar comidas segun preferencias, condiciones medicas y alergias
-filtrar_comidas([],_,_,_,_) :- !.
 filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada) :-
-    findall([Comida, Cantidad],
+    findall([TipoComida, TipoMacronutriente, Comida, Cantidad],   
         (
-            member([Comida, Cantidad], ListaComidas),
+            member([TipoComida, TipoMacronutriente, Comida, Cantidad], ListaComidas),
             verificar_preferencias(Comida, Preferencias),
             verificar_condiciones(Comida, CondMedica),
             verificar_alergias(Comida, Alergias)
         ),
         ListaFiltrada).
+    
 
 % Caso sin preferencias (valor 3)
 verificar_preferencias(_, 3).
 % Caso vegetariano (valor 1)
 verificar_preferencias(Comida, Preferencias) :-
     preferencias(Preferencias, AlimentosPermitidos),
-    member(Comida, AlimentosPermitidos).
+    member(Comida, AlimentosPermitidos),
+    !. % cambio
 
 % Verificar que una comida este permitida segun las condiciones medicas
 verificar_condiciones(_, []) :- !.
@@ -437,9 +507,13 @@ consultar :-
     nl,
     nl,
     preguntar_objetivo(Objetivo),
+    nl,
     preguntar_condicion_medica(CondMedica),
+    nl,
     preguntar_alergias(Alergias),
+    nl,
     preguntar_preferencias(Preferencias),
+    nl,
     almacenar_usuario(Nombre, Peso, Altura, IMC, Genero, Edad, Actividad, Objetivo, CondMedica, Preferencias, Alergias),
     obtener_recomendacion(IMC, Objetivo, Ajuste,Mensaje),
     ajustar_por_imc(TDEE, Ajuste, CaloriasRecomendadas),
@@ -454,11 +528,14 @@ consultar :-
     calcular_macronutrientes(Proteinas, Carbohidratos, Grasas, GramosProteinas, GramosCarbohidratos, GramosGrasas),
     write('Al total de calorias recomendadas debes dividirlo segun los macronutrientes de la siguiente forma:'), 
     nl,
-    write('Proteinas: '), write(GramosProteinas), write(' gramos'), 
+    floor(GramosProteinas, GramosProteinasEntero),
+    write('Proteinas: '), write(GramosProteinasEntero), write(' gramos'), 
     nl,
-    write('Grasas: '), write(GramosGrasas), write(' gramos'), 
+    floor(GramosGrasas, GramosGrasasEntero),
+    write('Grasas: '), write(GramosGrasasEntero), write(' gramos'), 
     nl,
-    write('Carbohidratos: '), write(GramosCarbohidratos), write(' gramos'), 
+    floor(GramosCarbohidratos, GramosCarbohidratosEntero),
+    write('Carbohidratos: '), write(GramosCarbohidratosEntero), write(' gramos'), 
     nl,
 
     sugerir_plan(GramosProteinas, GramosCarbohidratos, GramosGrasas, CondMedica, Alergias, Preferencias),
