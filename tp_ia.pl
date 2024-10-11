@@ -145,14 +145,12 @@ platos(['huevo', 'avena', 'palta'], 'Tortilla de huevo con avena y rodajas de pa
 platos(['pollo','arroz','aceite de oliva'],'Pollo a la plancha con arroz con aceite de oliva, y verduras hervidas.').
 
 % vegano 
-platos(['tofu','avena','palta'],'Salteado de tofu con avena, palta y verduras.').
-
+platos(['tofu','avena','palta'],'Salteado de tofu con avena, palta y frutas.').
 % vegano y celiaco
-platos(['tofu','arroz','aceite de oliva'],'Tofu salteado con arroz').
+platos(['tofu','arroz','aceite de oliva'],'Tofu salteado con arroz y verduras').
 platos(['tofu','quinoa pop','palta'],'Ensalada de tofu con quinoa pop y palta').
-
-platos(['batido de proteinas','avena','palta'],'').
-platos(['batido de proteinas','avena','palta'],'').
+% vegano, celiaco y alergico a la soja
+platos(['batido de proteinas','avena','palta'],'Batido nutritivo de avena y palta').
 
 
 platos(['queso', 'pan integral', 'nueces'], 'Sándwich de queso con pan integral y nueces, acompañado de fruta fresca.').
