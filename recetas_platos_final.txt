@@ -1,0 +1,992 @@
+platos(['huevo', 'avena', 'palta'], 'huevo revuelto servido con avena y acompañado de palta, además de frutillas.').
+platos(['huevo', 'avena', 'mantequilla de mani'], 'huevo revuelto servido con avena y acompañado de mantequilla de mani, además de uvas.').
+platos(['huevo', 'avena', 'semillas de chia'], 'huevo revuelto servido con avena y acompañado de semillas de chia, además de una manzana.').
+platos(['huevo', 'avena', 'almendras'], 'huevo revuelto servido con avena y acompañado de almendras, además de frutillas.').
+platos(['huevo', 'avena', 'nueces'], 'huevo revuelto servido con avena y acompañado de nueces, además de una banana.').
+platos(['huevo', 'avena', 'aceitunas'], 'huevo revuelto servido con avena y acompañado de aceitunas, además de una naranja.').
+platos(['huevo', 'quinoa pop', 'palta'], 'huevo revuelto servido con quinoa pop y acompañado de palta, además de una naranja.').
+platos(['huevo', 'quinoa pop', 'mantequilla de mani'], 'huevo revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de un mango.').
+platos(['huevo', 'quinoa pop', 'semillas de chia'], 'huevo revuelto servido con quinoa pop y acompañado de semillas de chia, además de una manzana.').
+platos(['huevo', 'quinoa pop', 'almendras'], 'huevo revuelto servido con quinoa pop y acompañado de almendras, además de frutillas.').
+platos(['huevo', 'quinoa pop', 'nueces'], 'huevo revuelto servido con quinoa pop y acompañado de nueces, además de una manzana.').
+platos(['huevo', 'quinoa pop', 'aceitunas'], 'huevo revuelto servido con quinoa pop y acompañado de aceitunas, además de una pera.').
+platos(['huevo', 'pan', 'palta'], 'huevo revuelto servido con pan y acompañado de palta, además de una pera.').
+platos(['huevo', 'pan', 'mantequilla de mani'], 'huevo revuelto servido con pan y acompañado de mantequilla de mani, además de una pera.').
+platos(['huevo', 'pan', 'semillas de chia'], 'huevo revuelto servido con pan y acompañado de semillas de chia, además de una pera.').
+platos(['huevo', 'pan', 'almendras'], 'huevo revuelto servido con pan y acompañado de almendras, además de frutillas.').
+platos(['huevo', 'pan', 'nueces'], 'huevo revuelto servido con pan y acompañado de nueces, además de un kiwi.').
+platos(['huevo', 'pan', 'aceitunas'], 'huevo revuelto servido con pan y acompañado de aceitunas, además de un durazno.').
+platos(['huevo', 'pan integral', 'palta'], 'huevo revuelto servido con pan integral y acompañado de palta, además de una naranja.').
+platos(['huevo', 'pan integral', 'mantequilla de mani'], 'huevo revuelto servido con pan integral y acompañado de mantequilla de mani, además de una banana.').
+platos(['huevo', 'pan integral', 'semillas de chia'], 'huevo revuelto servido con pan integral y acompañado de semillas de chia, además de un mango.').
+platos(['huevo', 'pan integral', 'almendras'], 'huevo revuelto servido con pan integral y acompañado de almendras, además de frutillas.').
+platos(['huevo', 'pan integral', 'nueces'], 'huevo revuelto servido con pan integral y acompañado de nueces, además de una manzana.').
+platos(['huevo', 'pan integral', 'aceitunas'], 'huevo revuelto servido con pan integral y acompañado de aceitunas, además de un durazno.').
+platos(['huevo', 'arroz inflado', 'palta'], 'huevo revuelto servido con arroz inflado y acompañado de palta, además de una banana.').
+platos(['huevo', 'arroz inflado', 'mantequilla de mani'], 'huevo revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['huevo', 'arroz inflado', 'semillas de chia'], 'huevo revuelto servido con arroz inflado y acompañado de semillas de chia, además de un durazno.').
+platos(['huevo', 'arroz inflado', 'almendras'], 'huevo revuelto servido con arroz inflado y acompañado de almendras, además de una banana.').
+platos(['huevo', 'arroz inflado', 'nueces'], 'huevo revuelto servido con arroz inflado y acompañado de nueces, además de una banana.').
+platos(['huevo', 'arroz inflado', 'aceitunas'], 'huevo revuelto servido con arroz inflado y acompañado de aceitunas, además de uvas.').
+platos(['huevo', 'granola', 'palta'], 'huevo revuelto servido con granola y acompañado de palta, además de un mango.').
+platos(['huevo', 'granola', 'mantequilla de mani'], 'huevo revuelto servido con granola y acompañado de mantequilla de mani, además de una pera.').
+platos(['huevo', 'granola', 'semillas de chia'], 'huevo revuelto servido con granola y acompañado de semillas de chia, además de una pera.').
+platos(['huevo', 'granola', 'almendras'], 'huevo revuelto servido con granola y acompañado de almendras, además de una manzana.').
+platos(['huevo', 'granola', 'nueces'], 'huevo revuelto servido con granola y acompañado de nueces, además de uvas.').
+platos(['huevo', 'granola', 'aceitunas'], 'huevo revuelto servido con granola y acompañado de aceitunas, además de una banana.').
+platos(['huevo', 'tortitas de arroz', 'palta'], 'huevo revuelto servido con tortitas de arroz y acompañado de palta, además de un mango.').
+platos(['huevo', 'tortitas de arroz', 'mantequilla de mani'], 'huevo revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de un durazno.').
+platos(['huevo', 'tortitas de arroz', 'semillas de chia'], 'huevo revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de una pera.').
+platos(['huevo', 'tortitas de arroz', 'almendras'], 'huevo revuelto servido con tortitas de arroz y acompañado de almendras, además de un kiwi.').
+platos(['huevo', 'tortitas de arroz', 'nueces'], 'huevo revuelto servido con tortitas de arroz y acompañado de nueces, además de un kiwi.').
+platos(['huevo', 'tortitas de arroz', 'aceitunas'], 'huevo revuelto servido con tortitas de arroz y acompañado de aceitunas, además de frutillas.').
+platos(['huevo', 'cereal de trigo', 'palta'], 'huevo revuelto servido con cereal de trigo y acompañado de palta, además de una banana.').
+platos(['huevo', 'cereal de trigo', 'mantequilla de mani'], 'huevo revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['huevo', 'cereal de trigo', 'semillas de chia'], 'huevo revuelto servido con cereal de trigo y acompañado de semillas de chia, además de un durazno.').
+platos(['huevo', 'cereal de trigo', 'almendras'], 'huevo revuelto servido con cereal de trigo y acompañado de almendras, además de una naranja.').
+platos(['huevo', 'cereal de trigo', 'nueces'], 'huevo revuelto servido con cereal de trigo y acompañado de nueces, además de un kiwi.').
+platos(['huevo', 'cereal de trigo', 'aceitunas'], 'huevo revuelto servido con cereal de trigo y acompañado de aceitunas, además de una banana.').
+platos(['queso', 'avena', 'palta'], 'queso revuelto servido con avena y acompañado de palta, además de un durazno.').
+platos(['queso', 'avena', 'mantequilla de mani'], 'queso revuelto servido con avena y acompañado de mantequilla de mani, además de una pera.').
+platos(['queso', 'avena', 'semillas de chia'], 'queso revuelto servido con avena y acompañado de semillas de chia, además de una pera.').
+platos(['queso', 'avena', 'almendras'], 'queso revuelto servido con avena y acompañado de almendras, además de una banana.').
+platos(['queso', 'avena', 'nueces'], 'queso revuelto servido con avena y acompañado de nueces, además de un durazno.').
+platos(['queso', 'avena', 'aceitunas'], 'queso revuelto servido con avena y acompañado de aceitunas, además de una naranja.').
+platos(['queso', 'quinoa pop', 'palta'], 'queso revuelto servido con quinoa pop y acompañado de palta, además de un kiwi.').
+platos(['queso', 'quinoa pop', 'mantequilla de mani'], 'queso revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de un mango.').
+platos(['queso', 'quinoa pop', 'semillas de chia'], 'queso revuelto servido con quinoa pop y acompañado de semillas de chia, además de uvas.').
+platos(['queso', 'quinoa pop', 'almendras'], 'queso revuelto servido con quinoa pop y acompañado de almendras, además de un kiwi.').
+platos(['queso', 'quinoa pop', 'nueces'], 'queso revuelto servido con quinoa pop y acompañado de nueces, además de una naranja.').
+platos(['queso', 'quinoa pop', 'aceitunas'], 'queso revuelto servido con quinoa pop y acompañado de aceitunas, además de un durazno.').
+platos(['queso', 'pan', 'palta'], 'queso revuelto servido con pan y acompañado de palta, además de un durazno.').
+platos(['queso', 'pan', 'mantequilla de mani'], 'queso revuelto servido con pan y acompañado de mantequilla de mani, además de una manzana.').
+platos(['queso', 'pan', 'semillas de chia'], 'queso revuelto servido con pan y acompañado de semillas de chia, además de un mango.').
+platos(['queso', 'pan', 'almendras'], 'queso revuelto servido con pan y acompañado de almendras, además de uvas.').
+platos(['queso', 'pan', 'nueces'], 'queso revuelto servido con pan y acompañado de nueces, además de una pera.').
+platos(['queso', 'pan', 'aceitunas'], 'queso revuelto servido con pan y acompañado de aceitunas, además de uvas.').
+platos(['queso', 'pan integral', 'palta'], 'queso revuelto servido con pan integral y acompañado de palta, además de una banana.').
+platos(['queso', 'pan integral', 'mantequilla de mani'], 'queso revuelto servido con pan integral y acompañado de mantequilla de mani, además de un durazno.').
+platos(['queso', 'pan integral', 'semillas de chia'], 'queso revuelto servido con pan integral y acompañado de semillas de chia, además de una manzana.').
+platos(['queso', 'pan integral', 'almendras'], 'queso revuelto servido con pan integral y acompañado de almendras, además de un mango.').
+platos(['queso', 'pan integral', 'nueces'], 'queso revuelto servido con pan integral y acompañado de nueces, además de un durazno.').
+platos(['queso', 'pan integral', 'aceitunas'], 'queso revuelto servido con pan integral y acompañado de aceitunas, además de una manzana.').
+platos(['queso', 'arroz inflado', 'palta'], 'queso revuelto servido con arroz inflado y acompañado de palta, además de una pera.').
+platos(['queso', 'arroz inflado', 'mantequilla de mani'], 'queso revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de frutillas.').
+platos(['queso', 'arroz inflado', 'semillas de chia'], 'queso revuelto servido con arroz inflado y acompañado de semillas de chia, además de una pera.').
+platos(['queso', 'arroz inflado', 'almendras'], 'queso revuelto servido con arroz inflado y acompañado de almendras, además de una banana.').
+platos(['queso', 'arroz inflado', 'nueces'], 'queso revuelto servido con arroz inflado y acompañado de nueces, además de una pera.').
+platos(['queso', 'arroz inflado', 'aceitunas'], 'queso revuelto servido con arroz inflado y acompañado de aceitunas, además de una pera.').
+platos(['queso', 'granola', 'palta'], 'queso revuelto servido con granola y acompañado de palta, además de una pera.').
+platos(['queso', 'granola', 'mantequilla de mani'], 'queso revuelto servido con granola y acompañado de mantequilla de mani, además de un mango.').
+platos(['queso', 'granola', 'semillas de chia'], 'queso revuelto servido con granola y acompañado de semillas de chia, además de un kiwi.').
+platos(['queso', 'granola', 'almendras'], 'queso revuelto servido con granola y acompañado de almendras, además de un mango.').
+platos(['queso', 'granola', 'nueces'], 'queso revuelto servido con granola y acompañado de nueces, además de uvas.').
+platos(['queso', 'granola', 'aceitunas'], 'queso revuelto servido con granola y acompañado de aceitunas, además de uvas.').
+platos(['queso', 'tortitas de arroz', 'palta'], 'queso revuelto servido con tortitas de arroz y acompañado de palta, además de uvas.').
+platos(['queso', 'tortitas de arroz', 'mantequilla de mani'], 'queso revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de una manzana.').
+platos(['queso', 'tortitas de arroz', 'semillas de chia'], 'queso revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de una pera.').
+platos(['queso', 'tortitas de arroz', 'almendras'], 'queso revuelto servido con tortitas de arroz y acompañado de almendras, además de una banana.').
+platos(['queso', 'tortitas de arroz', 'nueces'], 'queso revuelto servido con tortitas de arroz y acompañado de nueces, además de un mango.').
+platos(['queso', 'tortitas de arroz', 'aceitunas'], 'queso revuelto servido con tortitas de arroz y acompañado de aceitunas, además de un mango.').
+platos(['queso', 'cereal de trigo', 'palta'], 'queso revuelto servido con cereal de trigo y acompañado de palta, además de un mango.').
+platos(['queso', 'cereal de trigo', 'mantequilla de mani'], 'queso revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de uvas.').
+platos(['queso', 'cereal de trigo', 'semillas de chia'], 'queso revuelto servido con cereal de trigo y acompañado de semillas de chia, además de uvas.').
+platos(['queso', 'cereal de trigo', 'almendras'], 'queso revuelto servido con cereal de trigo y acompañado de almendras, además de frutillas.').
+platos(['queso', 'cereal de trigo', 'nueces'], 'queso revuelto servido con cereal de trigo y acompañado de nueces, además de una manzana.').
+platos(['queso', 'cereal de trigo', 'aceitunas'], 'queso revuelto servido con cereal de trigo y acompañado de aceitunas, además de una naranja.').
+platos(['queso deslactosado', 'avena', 'palta'], 'queso deslactosado revuelto servido con avena y acompañado de palta, además de una manzana.').
+platos(['queso deslactosado', 'avena', 'mantequilla de mani'], 'queso deslactosado revuelto servido con avena y acompañado de mantequilla de mani, además de una manzana.').
+platos(['queso deslactosado', 'avena', 'semillas de chia'], 'queso deslactosado revuelto servido con avena y acompañado de semillas de chia, además de una banana.').
+platos(['queso deslactosado', 'avena', 'almendras'], 'queso deslactosado revuelto servido con avena y acompañado de almendras, además de una naranja.').
+platos(['queso deslactosado', 'avena', 'nueces'], 'queso deslactosado revuelto servido con avena y acompañado de nueces, además de frutillas.').
+platos(['queso deslactosado', 'avena', 'aceitunas'], 'queso deslactosado revuelto servido con avena y acompañado de aceitunas, además de un durazno.').
+platos(['queso deslactosado', 'quinoa pop', 'palta'], 'queso deslactosado revuelto servido con quinoa pop y acompañado de palta, además de una banana.').
+platos(['queso deslactosado', 'quinoa pop', 'mantequilla de mani'], 'queso deslactosado revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de una manzana.').
+platos(['queso deslactosado', 'quinoa pop', 'semillas de chia'], 'queso deslactosado revuelto servido con quinoa pop y acompañado de semillas de chia, además de una banana.').
+platos(['queso deslactosado', 'quinoa pop', 'almendras'], 'queso deslactosado revuelto servido con quinoa pop y acompañado de almendras, además de un kiwi.').
+platos(['queso deslactosado', 'quinoa pop', 'nueces'], 'queso deslactosado revuelto servido con quinoa pop y acompañado de nueces, además de frutillas.').
+platos(['queso deslactosado', 'quinoa pop', 'aceitunas'], 'queso deslactosado revuelto servido con quinoa pop y acompañado de aceitunas, además de una naranja.').
+platos(['queso deslactosado', 'pan', 'palta'], 'queso deslactosado revuelto servido con pan y acompañado de palta, además de un durazno.').
+platos(['queso deslactosado', 'pan', 'mantequilla de mani'], 'queso deslactosado revuelto servido con pan y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['queso deslactosado', 'pan', 'semillas de chia'], 'queso deslactosado revuelto servido con pan y acompañado de semillas de chia, además de uvas.').
+platos(['queso deslactosado', 'pan', 'almendras'], 'queso deslactosado revuelto servido con pan y acompañado de almendras, además de una manzana.').
+platos(['queso deslactosado', 'pan', 'nueces'], 'queso deslactosado revuelto servido con pan y acompañado de nueces, además de un kiwi.').
+platos(['queso deslactosado', 'pan', 'aceitunas'], 'queso deslactosado revuelto servido con pan y acompañado de aceitunas, además de un kiwi.').
+platos(['queso deslactosado', 'pan integral', 'palta'], 'queso deslactosado revuelto servido con pan integral y acompañado de palta, además de frutillas.').
+platos(['queso deslactosado', 'pan integral', 'mantequilla de mani'], 'queso deslactosado revuelto servido con pan integral y acompañado de mantequilla de mani, además de un durazno.').
+platos(['queso deslactosado', 'pan integral', 'semillas de chia'], 'queso deslactosado revuelto servido con pan integral y acompañado de semillas de chia, además de un durazno.').
+platos(['queso deslactosado', 'pan integral', 'almendras'], 'queso deslactosado revuelto servido con pan integral y acompañado de almendras, además de un durazno.').
+platos(['queso deslactosado', 'pan integral', 'nueces'], 'queso deslactosado revuelto servido con pan integral y acompañado de nueces, además de una banana.').
+platos(['queso deslactosado', 'pan integral', 'aceitunas'], 'queso deslactosado revuelto servido con pan integral y acompañado de aceitunas, además de una pera.').
+platos(['queso deslactosado', 'arroz inflado', 'palta'], 'queso deslactosado revuelto servido con arroz inflado y acompañado de palta, además de una manzana.').
+platos(['queso deslactosado', 'arroz inflado', 'mantequilla de mani'], 'queso deslactosado revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de una banana.').
+platos(['queso deslactosado', 'arroz inflado', 'semillas de chia'], 'queso deslactosado revuelto servido con arroz inflado y acompañado de semillas de chia, además de frutillas.').
+platos(['queso deslactosado', 'arroz inflado', 'almendras'], 'queso deslactosado revuelto servido con arroz inflado y acompañado de almendras, además de uvas.').
+platos(['queso deslactosado', 'arroz inflado', 'nueces'], 'queso deslactosado revuelto servido con arroz inflado y acompañado de nueces, además de una pera.').
+platos(['queso deslactosado', 'arroz inflado', 'aceitunas'], 'queso deslactosado revuelto servido con arroz inflado y acompañado de aceitunas, además de una naranja.').
+platos(['queso deslactosado', 'granola', 'palta'], 'queso deslactosado revuelto servido con granola y acompañado de palta, además de una naranja.').
+platos(['queso deslactosado', 'granola', 'mantequilla de mani'], 'queso deslactosado revuelto servido con granola y acompañado de mantequilla de mani, además de una pera.').
+platos(['queso deslactosado', 'granola', 'semillas de chia'], 'queso deslactosado revuelto servido con granola y acompañado de semillas de chia, además de frutillas.').
+platos(['queso deslactosado', 'granola', 'almendras'], 'queso deslactosado revuelto servido con granola y acompañado de almendras, además de una banana.').
+platos(['queso deslactosado', 'granola', 'nueces'], 'queso deslactosado revuelto servido con granola y acompañado de nueces, además de una naranja.').
+platos(['queso deslactosado', 'granola', 'aceitunas'], 'queso deslactosado revuelto servido con granola y acompañado de aceitunas, además de frutillas.').
+platos(['queso deslactosado', 'tortitas de arroz', 'palta'], 'queso deslactosado revuelto servido con tortitas de arroz y acompañado de palta, además de un durazno.').
+platos(['queso deslactosado', 'tortitas de arroz', 'mantequilla de mani'], 'queso deslactosado revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de un mango.').
+platos(['queso deslactosado', 'tortitas de arroz', 'semillas de chia'], 'queso deslactosado revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de una banana.').
+platos(['queso deslactosado', 'tortitas de arroz', 'almendras'], 'queso deslactosado revuelto servido con tortitas de arroz y acompañado de almendras, además de una manzana.').
+platos(['queso deslactosado', 'tortitas de arroz', 'nueces'], 'queso deslactosado revuelto servido con tortitas de arroz y acompañado de nueces, además de un durazno.').
+platos(['queso deslactosado', 'tortitas de arroz', 'aceitunas'], 'queso deslactosado revuelto servido con tortitas de arroz y acompañado de aceitunas, además de una manzana.').
+platos(['queso deslactosado', 'cereal de trigo', 'palta'], 'queso deslactosado revuelto servido con cereal de trigo y acompañado de palta, además de una pera.').
+platos(['queso deslactosado', 'cereal de trigo', 'mantequilla de mani'], 'queso deslactosado revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de una naranja.').
+platos(['queso deslactosado', 'cereal de trigo', 'semillas de chia'], 'queso deslactosado revuelto servido con cereal de trigo y acompañado de semillas de chia, además de uvas.').
+platos(['queso deslactosado', 'cereal de trigo', 'almendras'], 'queso deslactosado revuelto servido con cereal de trigo y acompañado de almendras, además de una manzana.').
+platos(['queso deslactosado', 'cereal de trigo', 'nueces'], 'queso deslactosado revuelto servido con cereal de trigo y acompañado de nueces, además de un kiwi.').
+platos(['queso deslactosado', 'cereal de trigo', 'aceitunas'], 'queso deslactosado revuelto servido con cereal de trigo y acompañado de aceitunas, además de una manzana.').
+platos(['jamon cocido', 'avena', 'palta'], 'jamon cocido revuelto servido con avena y acompañado de palta, además de frutillas.').
+platos(['jamon cocido', 'avena', 'mantequilla de mani'], 'jamon cocido revuelto servido con avena y acompañado de mantequilla de mani, además de una naranja.').
+platos(['jamon cocido', 'avena', 'semillas de chia'], 'jamon cocido revuelto servido con avena y acompañado de semillas de chia, además de una manzana.').
+platos(['jamon cocido', 'avena', 'almendras'], 'jamon cocido revuelto servido con avena y acompañado de almendras, además de frutillas.').
+platos(['jamon cocido', 'avena', 'nueces'], 'jamon cocido revuelto servido con avena y acompañado de nueces, además de una banana.').
+platos(['jamon cocido', 'avena', 'aceitunas'], 'jamon cocido revuelto servido con avena y acompañado de aceitunas, además de una pera.').
+platos(['jamon cocido', 'quinoa pop', 'palta'], 'jamon cocido revuelto servido con quinoa pop y acompañado de palta, además de una banana.').
+platos(['jamon cocido', 'quinoa pop', 'mantequilla de mani'], 'jamon cocido revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de frutillas.').
+platos(['jamon cocido', 'quinoa pop', 'semillas de chia'], 'jamon cocido revuelto servido con quinoa pop y acompañado de semillas de chia, además de un durazno.').
+platos(['jamon cocido', 'quinoa pop', 'almendras'], 'jamon cocido revuelto servido con quinoa pop y acompañado de almendras, además de un mango.').
+platos(['jamon cocido', 'quinoa pop', 'nueces'], 'jamon cocido revuelto servido con quinoa pop y acompañado de nueces, además de un mango.').
+platos(['jamon cocido', 'quinoa pop', 'aceitunas'], 'jamon cocido revuelto servido con quinoa pop y acompañado de aceitunas, además de un durazno.').
+platos(['jamon cocido', 'pan', 'palta'], 'jamon cocido revuelto servido con pan y acompañado de palta, además de una banana.').
+platos(['jamon cocido', 'pan', 'mantequilla de mani'], 'jamon cocido revuelto servido con pan y acompañado de mantequilla de mani, además de una naranja.').
+platos(['jamon cocido', 'pan', 'semillas de chia'], 'jamon cocido revuelto servido con pan y acompañado de semillas de chia, además de frutillas.').
+platos(['jamon cocido', 'pan', 'almendras'], 'jamon cocido revuelto servido con pan y acompañado de almendras, además de una banana.').
+platos(['jamon cocido', 'pan', 'nueces'], 'jamon cocido revuelto servido con pan y acompañado de nueces, además de un mango.').
+platos(['jamon cocido', 'pan', 'aceitunas'], 'jamon cocido revuelto servido con pan y acompañado de aceitunas, además de una naranja.').
+platos(['jamon cocido', 'pan integral', 'palta'], 'jamon cocido revuelto servido con pan integral y acompañado de palta, además de un kiwi.').
+platos(['jamon cocido', 'pan integral', 'mantequilla de mani'], 'jamon cocido revuelto servido con pan integral y acompañado de mantequilla de mani, además de una manzana.').
+platos(['jamon cocido', 'pan integral', 'semillas de chia'], 'jamon cocido revuelto servido con pan integral y acompañado de semillas de chia, además de una naranja.').
+platos(['jamon cocido', 'pan integral', 'almendras'], 'jamon cocido revuelto servido con pan integral y acompañado de almendras, además de uvas.').
+platos(['jamon cocido', 'pan integral', 'nueces'], 'jamon cocido revuelto servido con pan integral y acompañado de nueces, además de un durazno.').
+platos(['jamon cocido', 'pan integral', 'aceitunas'], 'jamon cocido revuelto servido con pan integral y acompañado de aceitunas, además de una manzana.').
+platos(['jamon cocido', 'arroz inflado', 'palta'], 'jamon cocido revuelto servido con arroz inflado y acompañado de palta, además de una banana.').
+platos(['jamon cocido', 'arroz inflado', 'mantequilla de mani'], 'jamon cocido revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de un durazno.').
+platos(['jamon cocido', 'arroz inflado', 'semillas de chia'], 'jamon cocido revuelto servido con arroz inflado y acompañado de semillas de chia, además de una banana.').
+platos(['jamon cocido', 'arroz inflado', 'almendras'], 'jamon cocido revuelto servido con arroz inflado y acompañado de almendras, además de un kiwi.').
+platos(['jamon cocido', 'arroz inflado', 'nueces'], 'jamon cocido revuelto servido con arroz inflado y acompañado de nueces, además de una banana.').
+platos(['jamon cocido', 'arroz inflado', 'aceitunas'], 'jamon cocido revuelto servido con arroz inflado y acompañado de aceitunas, además de una naranja.').
+platos(['jamon cocido', 'granola', 'palta'], 'jamon cocido revuelto servido con granola y acompañado de palta, además de un durazno.').
+platos(['jamon cocido', 'granola', 'mantequilla de mani'], 'jamon cocido revuelto servido con granola y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['jamon cocido', 'granola', 'semillas de chia'], 'jamon cocido revuelto servido con granola y acompañado de semillas de chia, además de un kiwi.').
+platos(['jamon cocido', 'granola', 'almendras'], 'jamon cocido revuelto servido con granola y acompañado de almendras, además de uvas.').
+platos(['jamon cocido', 'granola', 'nueces'], 'jamon cocido revuelto servido con granola y acompañado de nueces, además de una pera.').
+platos(['jamon cocido', 'granola', 'aceitunas'], 'jamon cocido revuelto servido con granola y acompañado de aceitunas, además de una manzana.').
+platos(['jamon cocido', 'tortitas de arroz', 'palta'], 'jamon cocido revuelto servido con tortitas de arroz y acompañado de palta, además de un durazno.').
+platos(['jamon cocido', 'tortitas de arroz', 'mantequilla de mani'], 'jamon cocido revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de una naranja.').
+platos(['jamon cocido', 'tortitas de arroz', 'semillas de chia'], 'jamon cocido revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de frutillas.').
+platos(['jamon cocido', 'tortitas de arroz', 'almendras'], 'jamon cocido revuelto servido con tortitas de arroz y acompañado de almendras, además de un kiwi.').
+platos(['jamon cocido', 'tortitas de arroz', 'nueces'], 'jamon cocido revuelto servido con tortitas de arroz y acompañado de nueces, además de frutillas.').
+platos(['jamon cocido', 'tortitas de arroz', 'aceitunas'], 'jamon cocido revuelto servido con tortitas de arroz y acompañado de aceitunas, además de un kiwi.').
+platos(['jamon cocido', 'cereal de trigo', 'palta'], 'jamon cocido revuelto servido con cereal de trigo y acompañado de palta, además de uvas.').
+platos(['jamon cocido', 'cereal de trigo', 'mantequilla de mani'], 'jamon cocido revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['jamon cocido', 'cereal de trigo', 'semillas de chia'], 'jamon cocido revuelto servido con cereal de trigo y acompañado de semillas de chia, además de uvas.').
+platos(['jamon cocido', 'cereal de trigo', 'almendras'], 'jamon cocido revuelto servido con cereal de trigo y acompañado de almendras, además de frutillas.').
+platos(['jamon cocido', 'cereal de trigo', 'nueces'], 'jamon cocido revuelto servido con cereal de trigo y acompañado de nueces, además de un mango.').
+platos(['jamon cocido', 'cereal de trigo', 'aceitunas'], 'jamon cocido revuelto servido con cereal de trigo y acompañado de aceitunas, además de un durazno.').
+platos(['tofu', 'avena', 'palta'], 'tofu revuelto servido con avena y acompañado de palta, además de una pera.').
+platos(['tofu', 'avena', 'mantequilla de mani'], 'tofu revuelto servido con avena y acompañado de mantequilla de mani, además de un durazno.').
+platos(['tofu', 'avena', 'semillas de chia'], 'tofu revuelto servido con avena y acompañado de semillas de chia, además de una naranja.').
+platos(['tofu', 'avena', 'almendras'], 'tofu revuelto servido con avena y acompañado de almendras, además de una banana.').
+platos(['tofu', 'avena', 'nueces'], 'tofu revuelto servido con avena y acompañado de nueces, además de un kiwi.').
+platos(['tofu', 'avena', 'aceitunas'], 'tofu revuelto servido con avena y acompañado de aceitunas, además de uvas.').
+platos(['tofu', 'quinoa pop', 'palta'], 'tofu revuelto servido con quinoa pop y acompañado de palta, además de un mango.').
+platos(['tofu', 'quinoa pop', 'mantequilla de mani'], 'tofu revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['tofu', 'quinoa pop', 'semillas de chia'], 'tofu revuelto servido con quinoa pop y acompañado de semillas de chia, además de una banana.').
+platos(['tofu', 'quinoa pop', 'almendras'], 'tofu revuelto servido con quinoa pop y acompañado de almendras, además de un mango.').
+platos(['tofu', 'quinoa pop', 'nueces'], 'tofu revuelto servido con quinoa pop y acompañado de nueces, además de una manzana.').
+platos(['tofu', 'quinoa pop', 'aceitunas'], 'tofu revuelto servido con quinoa pop y acompañado de aceitunas, además de una manzana.').
+platos(['tofu', 'pan', 'palta'], 'tofu revuelto servido con pan y acompañado de palta, además de un mango.').
+platos(['tofu', 'pan', 'mantequilla de mani'], 'tofu revuelto servido con pan y acompañado de mantequilla de mani, además de una banana.').
+platos(['tofu', 'pan', 'semillas de chia'], 'tofu revuelto servido con pan y acompañado de semillas de chia, además de una manzana.').
+platos(['tofu', 'pan', 'almendras'], 'tofu revuelto servido con pan y acompañado de almendras, además de uvas.').
+platos(['tofu', 'pan', 'nueces'], 'tofu revuelto servido con pan y acompañado de nueces, además de un durazno.').
+platos(['tofu', 'pan', 'aceitunas'], 'tofu revuelto servido con pan y acompañado de aceitunas, además de un durazno.').
+platos(['tofu', 'pan integral', 'palta'], 'tofu revuelto servido con pan integral y acompañado de palta, además de un kiwi.').
+platos(['tofu', 'pan integral', 'mantequilla de mani'], 'tofu revuelto servido con pan integral y acompañado de mantequilla de mani, además de uvas.').
+platos(['tofu', 'pan integral', 'semillas de chia'], 'tofu revuelto servido con pan integral y acompañado de semillas de chia, además de una manzana.').
+platos(['tofu', 'pan integral', 'almendras'], 'tofu revuelto servido con pan integral y acompañado de almendras, además de un kiwi.').
+platos(['tofu', 'pan integral', 'nueces'], 'tofu revuelto servido con pan integral y acompañado de nueces, además de frutillas.').
+platos(['tofu', 'pan integral', 'aceitunas'], 'tofu revuelto servido con pan integral y acompañado de aceitunas, además de una banana.').
+platos(['tofu', 'arroz inflado', 'palta'], 'tofu revuelto servido con arroz inflado y acompañado de palta, además de un durazno.').
+platos(['tofu', 'arroz inflado', 'mantequilla de mani'], 'tofu revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de una banana.').
+platos(['tofu', 'arroz inflado', 'semillas de chia'], 'tofu revuelto servido con arroz inflado y acompañado de semillas de chia, además de una pera.').
+platos(['tofu', 'arroz inflado', 'almendras'], 'tofu revuelto servido con arroz inflado y acompañado de almendras, además de frutillas.').
+platos(['tofu', 'arroz inflado', 'nueces'], 'tofu revuelto servido con arroz inflado y acompañado de nueces, además de una pera.').
+platos(['tofu', 'arroz inflado', 'aceitunas'], 'tofu revuelto servido con arroz inflado y acompañado de aceitunas, además de una naranja.').
+platos(['tofu', 'granola', 'palta'], 'tofu revuelto servido con granola y acompañado de palta, además de una naranja.').
+platos(['tofu', 'granola', 'mantequilla de mani'], 'tofu revuelto servido con granola y acompañado de mantequilla de mani, además de un durazno.').
+platos(['tofu', 'granola', 'semillas de chia'], 'tofu revuelto servido con granola y acompañado de semillas de chia, además de una pera.').
+platos(['tofu', 'granola', 'almendras'], 'tofu revuelto servido con granola y acompañado de almendras, además de una manzana.').
+platos(['tofu', 'granola', 'nueces'], 'tofu revuelto servido con granola y acompañado de nueces, además de un durazno.').
+platos(['tofu', 'granola', 'aceitunas'], 'tofu revuelto servido con granola y acompañado de aceitunas, además de un mango.').
+platos(['tofu', 'tortitas de arroz', 'palta'], 'tofu revuelto servido con tortitas de arroz y acompañado de palta, además de una banana.').
+platos(['tofu', 'tortitas de arroz', 'mantequilla de mani'], 'tofu revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['tofu', 'tortitas de arroz', 'semillas de chia'], 'tofu revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de una manzana.').
+platos(['tofu', 'tortitas de arroz', 'almendras'], 'tofu revuelto servido con tortitas de arroz y acompañado de almendras, además de una manzana.').
+platos(['tofu', 'tortitas de arroz', 'nueces'], 'tofu revuelto servido con tortitas de arroz y acompañado de nueces, además de frutillas.').
+platos(['tofu', 'tortitas de arroz', 'aceitunas'], 'tofu revuelto servido con tortitas de arroz y acompañado de aceitunas, además de una naranja.').
+platos(['tofu', 'cereal de trigo', 'palta'], 'tofu revuelto servido con cereal de trigo y acompañado de palta, además de uvas.').
+platos(['tofu', 'cereal de trigo', 'mantequilla de mani'], 'tofu revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de una pera.').
+platos(['tofu', 'cereal de trigo', 'semillas de chia'], 'tofu revuelto servido con cereal de trigo y acompañado de semillas de chia, además de frutillas.').
+platos(['tofu', 'cereal de trigo', 'almendras'], 'tofu revuelto servido con cereal de trigo y acompañado de almendras, además de una manzana.').
+platos(['tofu', 'cereal de trigo', 'nueces'], 'tofu revuelto servido con cereal de trigo y acompañado de nueces, además de una pera.').
+platos(['tofu', 'cereal de trigo', 'aceitunas'], 'tofu revuelto servido con cereal de trigo y acompañado de aceitunas, además de frutillas.').
+platos(['leche', 'avena', 'palta'], 'leche revuelto servido con avena y acompañado de palta, además de una pera.').
+platos(['leche', 'avena', 'mantequilla de mani'], 'leche revuelto servido con avena y acompañado de mantequilla de mani, además de una manzana.').
+platos(['leche', 'avena', 'semillas de chia'], 'leche revuelto servido con avena y acompañado de semillas de chia, además de un durazno.').
+platos(['leche', 'avena', 'almendras'], 'leche revuelto servido con avena y acompañado de almendras, además de una naranja.').
+platos(['leche', 'avena', 'nueces'], 'leche revuelto servido con avena y acompañado de nueces, además de frutillas.').
+platos(['leche', 'avena', 'aceitunas'], 'leche revuelto servido con avena y acompañado de aceitunas, además de frutillas.').
+platos(['leche', 'quinoa pop', 'palta'], 'leche revuelto servido con quinoa pop y acompañado de palta, además de un durazno.').
+platos(['leche', 'quinoa pop', 'mantequilla de mani'], 'leche revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de una naranja.').
+platos(['leche', 'quinoa pop', 'semillas de chia'], 'leche revuelto servido con quinoa pop y acompañado de semillas de chia, además de un durazno.').
+platos(['leche', 'quinoa pop', 'almendras'], 'leche revuelto servido con quinoa pop y acompañado de almendras, además de una manzana.').
+platos(['leche', 'quinoa pop', 'nueces'], 'leche revuelto servido con quinoa pop y acompañado de nueces, además de uvas.').
+platos(['leche', 'quinoa pop', 'aceitunas'], 'leche revuelto servido con quinoa pop y acompañado de aceitunas, además de un kiwi.').
+platos(['leche', 'pan', 'palta'], 'leche revuelto servido con pan y acompañado de palta, además de un mango.').
+platos(['leche', 'pan', 'mantequilla de mani'], 'leche revuelto servido con pan y acompañado de mantequilla de mani, además de una banana.').
+platos(['leche', 'pan', 'semillas de chia'], 'leche revuelto servido con pan y acompañado de semillas de chia, además de una naranja.').
+platos(['leche', 'pan', 'almendras'], 'leche revuelto servido con pan y acompañado de almendras, además de frutillas.').
+platos(['leche', 'pan', 'nueces'], 'leche revuelto servido con pan y acompañado de nueces, además de una banana.').
+platos(['leche', 'pan', 'aceitunas'], 'leche revuelto servido con pan y acompañado de aceitunas, además de un kiwi.').
+platos(['leche', 'pan integral', 'palta'], 'leche revuelto servido con pan integral y acompañado de palta, además de uvas.').
+platos(['leche', 'pan integral', 'mantequilla de mani'], 'leche revuelto servido con pan integral y acompañado de mantequilla de mani, además de una banana.').
+platos(['leche', 'pan integral', 'semillas de chia'], 'leche revuelto servido con pan integral y acompañado de semillas de chia, además de una manzana.').
+platos(['leche', 'pan integral', 'almendras'], 'leche revuelto servido con pan integral y acompañado de almendras, además de una manzana.').
+platos(['leche', 'pan integral', 'nueces'], 'leche revuelto servido con pan integral y acompañado de nueces, además de frutillas.').
+platos(['leche', 'pan integral', 'aceitunas'], 'leche revuelto servido con pan integral y acompañado de aceitunas, además de una banana.').
+platos(['leche', 'arroz inflado', 'palta'], 'leche revuelto servido con arroz inflado y acompañado de palta, además de una naranja.').
+platos(['leche', 'arroz inflado', 'mantequilla de mani'], 'leche revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de una naranja.').
+platos(['leche', 'arroz inflado', 'semillas de chia'], 'leche revuelto servido con arroz inflado y acompañado de semillas de chia, además de frutillas.').
+platos(['leche', 'arroz inflado', 'almendras'], 'leche revuelto servido con arroz inflado y acompañado de almendras, además de un durazno.').
+platos(['leche', 'arroz inflado', 'nueces'], 'leche revuelto servido con arroz inflado y acompañado de nueces, además de un kiwi.').
+platos(['leche', 'arroz inflado', 'aceitunas'], 'leche revuelto servido con arroz inflado y acompañado de aceitunas, además de una naranja.').
+platos(['leche', 'granola', 'palta'], 'leche revuelto servido con granola y acompañado de palta, además de una banana.').
+platos(['leche', 'granola', 'mantequilla de mani'], 'leche revuelto servido con granola y acompañado de mantequilla de mani, además de un mango.').
+platos(['leche', 'granola', 'semillas de chia'], 'leche revuelto servido con granola y acompañado de semillas de chia, además de una manzana.').
+platos(['leche', 'granola', 'almendras'], 'leche revuelto servido con granola y acompañado de almendras, además de un durazno.').
+platos(['leche', 'granola', 'nueces'], 'leche revuelto servido con granola y acompañado de nueces, además de uvas.').
+platos(['leche', 'granola', 'aceitunas'], 'leche revuelto servido con granola y acompañado de aceitunas, además de un kiwi.').
+platos(['leche', 'tortitas de arroz', 'palta'], 'leche revuelto servido con tortitas de arroz y acompañado de palta, además de una manzana.').
+platos(['leche', 'tortitas de arroz', 'mantequilla de mani'], 'leche revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de frutillas.').
+platos(['leche', 'tortitas de arroz', 'semillas de chia'], 'leche revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de un kiwi.').
+platos(['leche', 'tortitas de arroz', 'almendras'], 'leche revuelto servido con tortitas de arroz y acompañado de almendras, además de una pera.').
+platos(['leche', 'tortitas de arroz', 'nueces'], 'leche revuelto servido con tortitas de arroz y acompañado de nueces, además de una banana.').
+platos(['leche', 'tortitas de arroz', 'aceitunas'], 'leche revuelto servido con tortitas de arroz y acompañado de aceitunas, además de una manzana.').
+platos(['leche', 'cereal de trigo', 'palta'], 'leche revuelto servido con cereal de trigo y acompañado de palta, además de una banana.').
+platos(['leche', 'cereal de trigo', 'mantequilla de mani'], 'leche revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de un mango.').
+platos(['leche', 'cereal de trigo', 'semillas de chia'], 'leche revuelto servido con cereal de trigo y acompañado de semillas de chia, además de un durazno.').
+platos(['leche', 'cereal de trigo', 'almendras'], 'leche revuelto servido con cereal de trigo y acompañado de almendras, además de uvas.').
+platos(['leche', 'cereal de trigo', 'nueces'], 'leche revuelto servido con cereal de trigo y acompañado de nueces, además de uvas.').
+platos(['leche', 'cereal de trigo', 'aceitunas'], 'leche revuelto servido con cereal de trigo y acompañado de aceitunas, además de un durazno.').
+platos(['leche deslactosada', 'avena', 'palta'], 'leche deslactosada revuelto servido con avena y acompañado de palta, además de una naranja.').
+platos(['leche deslactosada', 'avena', 'mantequilla de mani'], 'leche deslactosada revuelto servido con avena y acompañado de mantequilla de mani, además de un mango.').
+platos(['leche deslactosada', 'avena', 'semillas de chia'], 'leche deslactosada revuelto servido con avena y acompañado de semillas de chia, además de frutillas.').
+platos(['leche deslactosada', 'avena', 'almendras'], 'leche deslactosada revuelto servido con avena y acompañado de almendras, además de una naranja.').
+platos(['leche deslactosada', 'avena', 'nueces'], 'leche deslactosada revuelto servido con avena y acompañado de nueces, además de una manzana.').
+platos(['leche deslactosada', 'avena', 'aceitunas'], 'leche deslactosada revuelto servido con avena y acompañado de aceitunas, además de una manzana.').
+platos(['leche deslactosada', 'quinoa pop', 'palta'], 'leche deslactosada revuelto servido con quinoa pop y acompañado de palta, además de una pera.').
+platos(['leche deslactosada', 'quinoa pop', 'mantequilla de mani'], 'leche deslactosada revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de una banana.').
+platos(['leche deslactosada', 'quinoa pop', 'semillas de chia'], 'leche deslactosada revuelto servido con quinoa pop y acompañado de semillas de chia, además de frutillas.').
+platos(['leche deslactosada', 'quinoa pop', 'almendras'], 'leche deslactosada revuelto servido con quinoa pop y acompañado de almendras, además de un durazno.').
+platos(['leche deslactosada', 'quinoa pop', 'nueces'], 'leche deslactosada revuelto servido con quinoa pop y acompañado de nueces, además de un mango.').
+platos(['leche deslactosada', 'quinoa pop', 'aceitunas'], 'leche deslactosada revuelto servido con quinoa pop y acompañado de aceitunas, además de un kiwi.').
+platos(['leche deslactosada', 'pan', 'palta'], 'leche deslactosada revuelto servido con pan y acompañado de palta, además de una naranja.').
+platos(['leche deslactosada', 'pan', 'mantequilla de mani'], 'leche deslactosada revuelto servido con pan y acompañado de mantequilla de mani, además de una pera.').
+platos(['leche deslactosada', 'pan', 'semillas de chia'], 'leche deslactosada revuelto servido con pan y acompañado de semillas de chia, además de una pera.').
+platos(['leche deslactosada', 'pan', 'almendras'], 'leche deslactosada revuelto servido con pan y acompañado de almendras, además de uvas.').
+platos(['leche deslactosada', 'pan', 'nueces'], 'leche deslactosada revuelto servido con pan y acompañado de nueces, además de una manzana.').
+platos(['leche deslactosada', 'pan', 'aceitunas'], 'leche deslactosada revuelto servido con pan y acompañado de aceitunas, además de una banana.').
+platos(['leche deslactosada', 'pan integral', 'palta'], 'leche deslactosada revuelto servido con pan integral y acompañado de palta, además de un kiwi.').
+platos(['leche deslactosada', 'pan integral', 'mantequilla de mani'], 'leche deslactosada revuelto servido con pan integral y acompañado de mantequilla de mani, además de un durazno.').
+platos(['leche deslactosada', 'pan integral', 'semillas de chia'], 'leche deslactosada revuelto servido con pan integral y acompañado de semillas de chia, además de un kiwi.').
+platos(['leche deslactosada', 'pan integral', 'almendras'], 'leche deslactosada revuelto servido con pan integral y acompañado de almendras, además de una naranja.').
+platos(['leche deslactosada', 'pan integral', 'nueces'], 'leche deslactosada revuelto servido con pan integral y acompañado de nueces, además de una banana.').
+platos(['leche deslactosada', 'pan integral', 'aceitunas'], 'leche deslactosada revuelto servido con pan integral y acompañado de aceitunas, además de un kiwi.').
+platos(['leche deslactosada', 'arroz inflado', 'palta'], 'leche deslactosada revuelto servido con arroz inflado y acompañado de palta, además de una pera.').
+platos(['leche deslactosada', 'arroz inflado', 'mantequilla de mani'], 'leche deslactosada revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de una banana.').
+platos(['leche deslactosada', 'arroz inflado', 'semillas de chia'], 'leche deslactosada revuelto servido con arroz inflado y acompañado de semillas de chia, además de una naranja.').
+platos(['leche deslactosada', 'arroz inflado', 'almendras'], 'leche deslactosada revuelto servido con arroz inflado y acompañado de almendras, además de una naranja.').
+platos(['leche deslactosada', 'arroz inflado', 'nueces'], 'leche deslactosada revuelto servido con arroz inflado y acompañado de nueces, además de una banana.').
+platos(['leche deslactosada', 'arroz inflado', 'aceitunas'], 'leche deslactosada revuelto servido con arroz inflado y acompañado de aceitunas, además de un mango.').
+platos(['leche deslactosada', 'granola', 'palta'], 'leche deslactosada revuelto servido con granola y acompañado de palta, además de un mango.').
+platos(['leche deslactosada', 'granola', 'mantequilla de mani'], 'leche deslactosada revuelto servido con granola y acompañado de mantequilla de mani, además de una pera.').
+platos(['leche deslactosada', 'granola', 'semillas de chia'], 'leche deslactosada revuelto servido con granola y acompañado de semillas de chia, además de un mango.').
+platos(['leche deslactosada', 'granola', 'almendras'], 'leche deslactosada revuelto servido con granola y acompañado de almendras, además de una naranja.').
+platos(['leche deslactosada', 'granola', 'nueces'], 'leche deslactosada revuelto servido con granola y acompañado de nueces, además de una manzana.').
+platos(['leche deslactosada', 'granola', 'aceitunas'], 'leche deslactosada revuelto servido con granola y acompañado de aceitunas, además de uvas.').
+platos(['leche deslactosada', 'tortitas de arroz', 'palta'], 'leche deslactosada revuelto servido con tortitas de arroz y acompañado de palta, además de frutillas.').
+platos(['leche deslactosada', 'tortitas de arroz', 'mantequilla de mani'], 'leche deslactosada revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de un mango.').
+platos(['leche deslactosada', 'tortitas de arroz', 'semillas de chia'], 'leche deslactosada revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de un mango.').
+platos(['leche deslactosada', 'tortitas de arroz', 'almendras'], 'leche deslactosada revuelto servido con tortitas de arroz y acompañado de almendras, además de un mango.').
+platos(['leche deslactosada', 'tortitas de arroz', 'nueces'], 'leche deslactosada revuelto servido con tortitas de arroz y acompañado de nueces, además de uvas.').
+platos(['leche deslactosada', 'tortitas de arroz', 'aceitunas'], 'leche deslactosada revuelto servido con tortitas de arroz y acompañado de aceitunas, además de un durazno.').
+platos(['leche deslactosada', 'cereal de trigo', 'palta'], 'leche deslactosada revuelto servido con cereal de trigo y acompañado de palta, además de un mango.').
+platos(['leche deslactosada', 'cereal de trigo', 'mantequilla de mani'], 'leche deslactosada revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de una naranja.').
+platos(['leche deslactosada', 'cereal de trigo', 'semillas de chia'], 'leche deslactosada revuelto servido con cereal de trigo y acompañado de semillas de chia, además de una manzana.').
+platos(['leche deslactosada', 'cereal de trigo', 'almendras'], 'leche deslactosada revuelto servido con cereal de trigo y acompañado de almendras, además de uvas.').
+platos(['leche deslactosada', 'cereal de trigo', 'nueces'], 'leche deslactosada revuelto servido con cereal de trigo y acompañado de nueces, además de una naranja.').
+platos(['leche deslactosada', 'cereal de trigo', 'aceitunas'], 'leche deslactosada revuelto servido con cereal de trigo y acompañado de aceitunas, además de uvas.').
+platos(['yogur griego', 'avena', 'palta'], 'yogur griego revuelto servido con avena y acompañado de palta, además de uvas.').
+platos(['yogur griego', 'avena', 'mantequilla de mani'], 'yogur griego revuelto servido con avena y acompañado de mantequilla de mani, además de una pera.').
+platos(['yogur griego', 'avena', 'semillas de chia'], 'yogur griego revuelto servido con avena y acompañado de semillas de chia, además de un mango.').
+platos(['yogur griego', 'avena', 'almendras'], 'yogur griego revuelto servido con avena y acompañado de almendras, además de un kiwi.').
+platos(['yogur griego', 'avena', 'nueces'], 'yogur griego revuelto servido con avena y acompañado de nueces, además de una banana.').
+platos(['yogur griego', 'avena', 'aceitunas'], 'yogur griego revuelto servido con avena y acompañado de aceitunas, además de una manzana.').
+platos(['yogur griego', 'quinoa pop', 'palta'], 'yogur griego revuelto servido con quinoa pop y acompañado de palta, además de un mango.').
+platos(['yogur griego', 'quinoa pop', 'mantequilla de mani'], 'yogur griego revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de un mango.').
+platos(['yogur griego', 'quinoa pop', 'semillas de chia'], 'yogur griego revuelto servido con quinoa pop y acompañado de semillas de chia, además de una banana.').
+platos(['yogur griego', 'quinoa pop', 'almendras'], 'yogur griego revuelto servido con quinoa pop y acompañado de almendras, además de frutillas.').
+platos(['yogur griego', 'quinoa pop', 'nueces'], 'yogur griego revuelto servido con quinoa pop y acompañado de nueces, además de una manzana.').
+platos(['yogur griego', 'quinoa pop', 'aceitunas'], 'yogur griego revuelto servido con quinoa pop y acompañado de aceitunas, además de una pera.').
+platos(['yogur griego', 'pan', 'palta'], 'yogur griego revuelto servido con pan y acompañado de palta, además de un mango.').
+platos(['yogur griego', 'pan', 'mantequilla de mani'], 'yogur griego revuelto servido con pan y acompañado de mantequilla de mani, además de una naranja.').
+platos(['yogur griego', 'pan', 'semillas de chia'], 'yogur griego revuelto servido con pan y acompañado de semillas de chia, además de una pera.').
+platos(['yogur griego', 'pan', 'almendras'], 'yogur griego revuelto servido con pan y acompañado de almendras, además de una banana.').
+platos(['yogur griego', 'pan', 'nueces'], 'yogur griego revuelto servido con pan y acompañado de nueces, además de un durazno.').
+platos(['yogur griego', 'pan', 'aceitunas'], 'yogur griego revuelto servido con pan y acompañado de aceitunas, además de un durazno.').
+platos(['yogur griego', 'pan integral', 'palta'], 'yogur griego revuelto servido con pan integral y acompañado de palta, además de una pera.').
+platos(['yogur griego', 'pan integral', 'mantequilla de mani'], 'yogur griego revuelto servido con pan integral y acompañado de mantequilla de mani, además de uvas.').
+platos(['yogur griego', 'pan integral', 'semillas de chia'], 'yogur griego revuelto servido con pan integral y acompañado de semillas de chia, además de una pera.').
+platos(['yogur griego', 'pan integral', 'almendras'], 'yogur griego revuelto servido con pan integral y acompañado de almendras, además de una banana.').
+platos(['yogur griego', 'pan integral', 'nueces'], 'yogur griego revuelto servido con pan integral y acompañado de nueces, además de un kiwi.').
+platos(['yogur griego', 'pan integral', 'aceitunas'], 'yogur griego revuelto servido con pan integral y acompañado de aceitunas, además de frutillas.').
+platos(['yogur griego', 'arroz inflado', 'palta'], 'yogur griego revuelto servido con arroz inflado y acompañado de palta, además de un durazno.').
+platos(['yogur griego', 'arroz inflado', 'mantequilla de mani'], 'yogur griego revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de un durazno.').
+platos(['yogur griego', 'arroz inflado', 'semillas de chia'], 'yogur griego revuelto servido con arroz inflado y acompañado de semillas de chia, además de un kiwi.').
+platos(['yogur griego', 'arroz inflado', 'almendras'], 'yogur griego revuelto servido con arroz inflado y acompañado de almendras, además de una naranja.').
+platos(['yogur griego', 'arroz inflado', 'nueces'], 'yogur griego revuelto servido con arroz inflado y acompañado de nueces, además de un mango.').
+platos(['yogur griego', 'arroz inflado', 'aceitunas'], 'yogur griego revuelto servido con arroz inflado y acompañado de aceitunas, además de una pera.').
+platos(['yogur griego', 'granola', 'palta'], 'yogur griego revuelto servido con granola y acompañado de palta, además de una pera.').
+platos(['yogur griego', 'granola', 'mantequilla de mani'], 'yogur griego revuelto servido con granola y acompañado de mantequilla de mani, además de una banana.').
+platos(['yogur griego', 'granola', 'semillas de chia'], 'yogur griego revuelto servido con granola y acompañado de semillas de chia, además de frutillas.').
+platos(['yogur griego', 'granola', 'almendras'], 'yogur griego revuelto servido con granola y acompañado de almendras, además de una manzana.').
+platos(['yogur griego', 'granola', 'nueces'], 'yogur griego revuelto servido con granola y acompañado de nueces, además de un mango.').
+platos(['yogur griego', 'granola', 'aceitunas'], 'yogur griego revuelto servido con granola y acompañado de aceitunas, además de una banana.').
+platos(['yogur griego', 'tortitas de arroz', 'palta'], 'yogur griego revuelto servido con tortitas de arroz y acompañado de palta, además de frutillas.').
+platos(['yogur griego', 'tortitas de arroz', 'mantequilla de mani'], 'yogur griego revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de una manzana.').
+platos(['yogur griego', 'tortitas de arroz', 'semillas de chia'], 'yogur griego revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de frutillas.').
+platos(['yogur griego', 'tortitas de arroz', 'almendras'], 'yogur griego revuelto servido con tortitas de arroz y acompañado de almendras, además de frutillas.').
+platos(['yogur griego', 'tortitas de arroz', 'nueces'], 'yogur griego revuelto servido con tortitas de arroz y acompañado de nueces, además de frutillas.').
+platos(['yogur griego', 'tortitas de arroz', 'aceitunas'], 'yogur griego revuelto servido con tortitas de arroz y acompañado de aceitunas, además de una pera.').
+platos(['yogur griego', 'cereal de trigo', 'palta'], 'yogur griego revuelto servido con cereal de trigo y acompañado de palta, además de un durazno.').
+platos(['yogur griego', 'cereal de trigo', 'mantequilla de mani'], 'yogur griego revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de uvas.').
+platos(['yogur griego', 'cereal de trigo', 'semillas de chia'], 'yogur griego revuelto servido con cereal de trigo y acompañado de semillas de chia, además de una pera.').
+platos(['yogur griego', 'cereal de trigo', 'almendras'], 'yogur griego revuelto servido con cereal de trigo y acompañado de almendras, además de una naranja.').
+platos(['yogur griego', 'cereal de trigo', 'nueces'], 'yogur griego revuelto servido con cereal de trigo y acompañado de nueces, además de una pera.').
+platos(['yogur griego', 'cereal de trigo', 'aceitunas'], 'yogur griego revuelto servido con cereal de trigo y acompañado de aceitunas, además de una manzana.').
+platos(['batido de proteinas', 'avena', 'palta'], 'batido de proteinas revuelto servido con avena y acompañado de palta, además de un kiwi.').
+platos(['batido de proteinas', 'avena', 'mantequilla de mani'], 'batido de proteinas revuelto servido con avena y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['batido de proteinas', 'avena', 'semillas de chia'], 'batido de proteinas revuelto servido con avena y acompañado de semillas de chia, además de una manzana.').
+platos(['batido de proteinas', 'avena', 'almendras'], 'batido de proteinas revuelto servido con avena y acompañado de almendras, además de una banana.').
+platos(['batido de proteinas', 'avena', 'nueces'], 'batido de proteinas revuelto servido con avena y acompañado de nueces, además de un durazno.').
+platos(['batido de proteinas', 'avena', 'aceitunas'], 'batido de proteinas revuelto servido con avena y acompañado de aceitunas, además de una banana.').
+platos(['batido de proteinas', 'quinoa pop', 'palta'], 'batido de proteinas revuelto servido con quinoa pop y acompañado de palta, además de una pera.').
+platos(['batido de proteinas', 'quinoa pop', 'mantequilla de mani'], 'batido de proteinas revuelto servido con quinoa pop y acompañado de mantequilla de mani, además de un mango.').
+platos(['batido de proteinas', 'quinoa pop', 'semillas de chia'], 'batido de proteinas revuelto servido con quinoa pop y acompañado de semillas de chia, además de una manzana.').
+platos(['batido de proteinas', 'quinoa pop', 'almendras'], 'batido de proteinas revuelto servido con quinoa pop y acompañado de almendras, además de una manzana.').
+platos(['batido de proteinas', 'quinoa pop', 'nueces'], 'batido de proteinas revuelto servido con quinoa pop y acompañado de nueces, además de frutillas.').
+platos(['batido de proteinas', 'quinoa pop', 'aceitunas'], 'batido de proteinas revuelto servido con quinoa pop y acompañado de aceitunas, además de frutillas.').
+platos(['batido de proteinas', 'pan', 'palta'], 'batido de proteinas revuelto servido con pan y acompañado de palta, además de una pera.').
+platos(['batido de proteinas', 'pan', 'mantequilla de mani'], 'batido de proteinas revuelto servido con pan y acompañado de mantequilla de mani, además de un durazno.').
+platos(['batido de proteinas', 'pan', 'semillas de chia'], 'batido de proteinas revuelto servido con pan y acompañado de semillas de chia, además de una naranja.').
+platos(['batido de proteinas', 'pan', 'almendras'], 'batido de proteinas revuelto servido con pan y acompañado de almendras, además de frutillas.').
+platos(['batido de proteinas', 'pan', 'nueces'], 'batido de proteinas revuelto servido con pan y acompañado de nueces, además de una banana.').
+platos(['batido de proteinas', 'pan', 'aceitunas'], 'batido de proteinas revuelto servido con pan y acompañado de aceitunas, además de una manzana.').
+platos(['batido de proteinas', 'pan integral', 'palta'], 'batido de proteinas revuelto servido con pan integral y acompañado de palta, además de una manzana.').
+platos(['batido de proteinas', 'pan integral', 'mantequilla de mani'], 'batido de proteinas revuelto servido con pan integral y acompañado de mantequilla de mani, además de un mango.').
+platos(['batido de proteinas', 'pan integral', 'semillas de chia'], 'batido de proteinas revuelto servido con pan integral y acompañado de semillas de chia, además de una manzana.').
+platos(['batido de proteinas', 'pan integral', 'almendras'], 'batido de proteinas revuelto servido con pan integral y acompañado de almendras, además de frutillas.').
+platos(['batido de proteinas', 'pan integral', 'nueces'], 'batido de proteinas revuelto servido con pan integral y acompañado de nueces, además de una manzana.').
+platos(['batido de proteinas', 'pan integral', 'aceitunas'], 'batido de proteinas revuelto servido con pan integral y acompañado de aceitunas, además de un kiwi.').
+platos(['batido de proteinas', 'arroz inflado', 'palta'], 'batido de proteinas revuelto servido con arroz inflado y acompañado de palta, además de un durazno.').
+platos(['batido de proteinas', 'arroz inflado', 'mantequilla de mani'], 'batido de proteinas revuelto servido con arroz inflado y acompañado de mantequilla de mani, además de un kiwi.').
+platos(['batido de proteinas', 'arroz inflado', 'semillas de chia'], 'batido de proteinas revuelto servido con arroz inflado y acompañado de semillas de chia, además de una naranja.').
+platos(['batido de proteinas', 'arroz inflado', 'almendras'], 'batido de proteinas revuelto servido con arroz inflado y acompañado de almendras, además de frutillas.').
+platos(['batido de proteinas', 'arroz inflado', 'nueces'], 'batido de proteinas revuelto servido con arroz inflado y acompañado de nueces, además de una naranja.').
+platos(['batido de proteinas', 'arroz inflado', 'aceitunas'], 'batido de proteinas revuelto servido con arroz inflado y acompañado de aceitunas, además de un kiwi.').
+platos(['batido de proteinas', 'granola', 'palta'], 'batido de proteinas revuelto servido con granola y acompañado de palta, además de una pera.').
+platos(['batido de proteinas', 'granola', 'mantequilla de mani'], 'batido de proteinas revuelto servido con granola y acompañado de mantequilla de mani, además de un mango.').
+platos(['batido de proteinas', 'granola', 'semillas de chia'], 'batido de proteinas revuelto servido con granola y acompañado de semillas de chia, además de un durazno.').
+platos(['batido de proteinas', 'granola', 'almendras'], 'batido de proteinas revuelto servido con granola y acompañado de almendras, además de un mango.').
+platos(['batido de proteinas', 'granola', 'nueces'], 'batido de proteinas revuelto servido con granola y acompañado de nueces, además de uvas.').
+platos(['batido de proteinas', 'granola', 'aceitunas'], 'batido de proteinas revuelto servido con granola y acompañado de aceitunas, además de uvas.').
+platos(['batido de proteinas', 'tortitas de arroz', 'palta'], 'batido de proteinas revuelto servido con tortitas de arroz y acompañado de palta, además de frutillas.').
+platos(['batido de proteinas', 'tortitas de arroz', 'mantequilla de mani'], 'batido de proteinas revuelto servido con tortitas de arroz y acompañado de mantequilla de mani, además de una naranja.').
+platos(['batido de proteinas', 'tortitas de arroz', 'semillas de chia'], 'batido de proteinas revuelto servido con tortitas de arroz y acompañado de semillas de chia, además de un mango.').
+platos(['batido de proteinas', 'tortitas de arroz', 'almendras'], 'batido de proteinas revuelto servido con tortitas de arroz y acompañado de almendras, además de un kiwi.').
+platos(['batido de proteinas', 'tortitas de arroz', 'nueces'], 'batido de proteinas revuelto servido con tortitas de arroz y acompañado de nueces, además de una naranja.').
+platos(['batido de proteinas', 'tortitas de arroz', 'aceitunas'], 'batido de proteinas revuelto servido con tortitas de arroz y acompañado de aceitunas, además de un kiwi.').
+platos(['batido de proteinas', 'cereal de trigo', 'palta'], 'batido de proteinas revuelto servido con cereal de trigo y acompañado de palta, además de un durazno.').
+platos(['batido de proteinas', 'cereal de trigo', 'mantequilla de mani'], 'batido de proteinas revuelto servido con cereal de trigo y acompañado de mantequilla de mani, además de una manzana.').
+platos(['batido de proteinas', 'cereal de trigo', 'semillas de chia'], 'batido de proteinas revuelto servido con cereal de trigo y acompañado de semillas de chia, además de una manzana.').
+platos(['batido de proteinas', 'cereal de trigo', 'almendras'], 'batido de proteinas revuelto servido con cereal de trigo y acompañado de almendras, además de una naranja.').
+platos(['batido de proteinas', 'cereal de trigo', 'nueces'], 'batido de proteinas revuelto servido con cereal de trigo y acompañado de nueces, además de un durazno.').
+platos(['batido de proteinas', 'cereal de trigo', 'aceitunas'], 'batido de proteinas revuelto servido con cereal de trigo y acompañado de aceitunas, además de una naranja.').
+platos(['pollo', 'arroz', 'aceite de oliva'], 'pollo a la plancha con arroz y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'arroz', 'aceite de coco'], 'pollo a la plancha con arroz y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'arroz', 'mantequilla'], 'pollo a la plancha con arroz y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'arroz', 'palta'], 'pollo a la plancha con arroz y palta, acompañado de ensalada de col y manzana.').
+platos(['pollo', 'arroz', 'nueces'], 'pollo a la plancha con arroz y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'arroz', 'almendras'], 'pollo a la plancha con arroz y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'arroz', 'queso'], 'pollo a la plancha con arroz y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'arroz', 'crema de leche'], 'pollo a la plancha con arroz y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['pollo', 'pasta', 'aceite de oliva'], 'pollo a la plancha con pasta y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'pasta', 'aceite de coco'], 'pollo a la plancha con pasta y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['pollo', 'pasta', 'mantequilla'], 'pollo a la plancha con pasta y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'pasta', 'palta'], 'pollo a la plancha con pasta y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'pasta', 'nueces'], 'pollo a la plancha con pasta y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'pasta', 'almendras'], 'pollo a la plancha con pasta y almendras, acompañado de ensalada de pepinos y pimientos.').
+platos(['pollo', 'pasta', 'queso'], 'pollo a la plancha con pasta y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['pollo', 'pasta', 'crema de leche'], 'pollo a la plancha con pasta y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'fideos de arroz', 'aceite de oliva'], 'pollo a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['pollo', 'fideos de arroz', 'aceite de coco'], 'pollo a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'fideos de arroz', 'mantequilla'], 'pollo a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['pollo', 'fideos de arroz', 'palta'], 'pollo a la plancha con fideos de arroz y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'fideos de arroz', 'nueces'], 'pollo a la plancha con fideos de arroz y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'fideos de arroz', 'almendras'], 'pollo a la plancha con fideos de arroz y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'fideos de arroz', 'queso'], 'pollo a la plancha con fideos de arroz y queso, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'fideos de arroz', 'crema de leche'], 'pollo a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'fideos de legumbres', 'aceite de oliva'], 'pollo a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'fideos de legumbres', 'aceite de coco'], 'pollo a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'fideos de legumbres', 'mantequilla'], 'pollo a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'fideos de legumbres', 'palta'], 'pollo a la plancha con fideos de legumbres y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'fideos de legumbres', 'nueces'], 'pollo a la plancha con fideos de legumbres y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'fideos de legumbres', 'almendras'], 'pollo a la plancha con fideos de legumbres y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'fideos de legumbres', 'queso'], 'pollo a la plancha con fideos de legumbres y queso, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'fideos de legumbres', 'crema de leche'], 'pollo a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'papas', 'aceite de oliva'], 'pollo a la plancha con papas y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'papas', 'aceite de coco'], 'pollo a la plancha con papas y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'papas', 'mantequilla'], 'pollo a la plancha con papas y mantequilla, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'papas', 'palta'], 'pollo a la plancha con papas y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'papas', 'nueces'], 'pollo a la plancha con papas y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'papas', 'almendras'], 'pollo a la plancha con papas y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'papas', 'queso'], 'pollo a la plancha con papas y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'papas', 'crema de leche'], 'pollo a la plancha con papas y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'quinoa', 'aceite de oliva'], 'pollo a la plancha con quinoa y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'quinoa', 'aceite de coco'], 'pollo a la plancha con quinoa y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'quinoa', 'mantequilla'], 'pollo a la plancha con quinoa y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['pollo', 'quinoa', 'palta'], 'pollo a la plancha con quinoa y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'quinoa', 'nueces'], 'pollo a la plancha con quinoa y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'quinoa', 'almendras'], 'pollo a la plancha con quinoa y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'quinoa', 'queso'], 'pollo a la plancha con quinoa y queso, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'quinoa', 'crema de leche'], 'pollo a la plancha con quinoa y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'batata', 'aceite de oliva'], 'pollo a la plancha con batata y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'batata', 'aceite de coco'], 'pollo a la plancha con batata y aceite de coco, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'batata', 'mantequilla'], 'pollo a la plancha con batata y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'batata', 'palta'], 'pollo a la plancha con batata y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'batata', 'nueces'], 'pollo a la plancha con batata y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'batata', 'almendras'], 'pollo a la plancha con batata y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'batata', 'queso'], 'pollo a la plancha con batata y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pollo', 'batata', 'crema de leche'], 'pollo a la plancha con batata y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'lentejas', 'aceite de oliva'], 'pollo a la plancha con lentejas y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'lentejas', 'aceite de coco'], 'pollo a la plancha con lentejas y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'lentejas', 'mantequilla'], 'pollo a la plancha con lentejas y mantequilla, acompañado de ensalada de col y manzana.').
+platos(['pollo', 'lentejas', 'palta'], 'pollo a la plancha con lentejas y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['pollo', 'lentejas', 'nueces'], 'pollo a la plancha con lentejas y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'lentejas', 'almendras'], 'pollo a la plancha con lentejas y almendras, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'lentejas', 'queso'], 'pollo a la plancha con lentejas y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'lentejas', 'crema de leche'], 'pollo a la plancha con lentejas y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'porotos negros', 'aceite de oliva'], 'pollo a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'porotos negros', 'aceite de coco'], 'pollo a la plancha con porotos negros y aceite de coco, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'porotos negros', 'mantequilla'], 'pollo a la plancha con porotos negros y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'porotos negros', 'palta'], 'pollo a la plancha con porotos negros y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'porotos negros', 'nueces'], 'pollo a la plancha con porotos negros y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'porotos negros', 'almendras'], 'pollo a la plancha con porotos negros y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'porotos negros', 'queso'], 'pollo a la plancha con porotos negros y queso, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'porotos negros', 'crema de leche'], 'pollo a la plancha con porotos negros y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['pollo', 'garbanzos', 'aceite de oliva'], 'pollo a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'garbanzos', 'aceite de coco'], 'pollo a la plancha con garbanzos y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['pollo', 'garbanzos', 'mantequilla'], 'pollo a la plancha con garbanzos y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['pollo', 'garbanzos', 'palta'], 'pollo a la plancha con garbanzos y palta, acompañado de ensalada de col y manzana.').
+platos(['pollo', 'garbanzos', 'nueces'], 'pollo a la plancha con garbanzos y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pollo', 'garbanzos', 'almendras'], 'pollo a la plancha con garbanzos y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pollo', 'garbanzos', 'queso'], 'pollo a la plancha con garbanzos y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['pollo', 'garbanzos', 'crema de leche'], 'pollo a la plancha con garbanzos y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'arroz', 'aceite de oliva'], 'carne a la plancha con arroz y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['carne', 'arroz', 'aceite de coco'], 'carne a la plancha con arroz y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['carne', 'arroz', 'mantequilla'], 'carne a la plancha con arroz y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['carne', 'arroz', 'palta'], 'carne a la plancha con arroz y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'arroz', 'nueces'], 'carne a la plancha con arroz y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'arroz', 'almendras'], 'carne a la plancha con arroz y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'arroz', 'queso'], 'carne a la plancha con arroz y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['carne', 'arroz', 'crema de leche'], 'carne a la plancha con arroz y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'pasta', 'aceite de oliva'], 'carne a la plancha con pasta y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'pasta', 'aceite de coco'], 'carne a la plancha con pasta y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'pasta', 'mantequilla'], 'carne a la plancha con pasta y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'pasta', 'palta'], 'carne a la plancha con pasta y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['carne', 'pasta', 'nueces'], 'carne a la plancha con pasta y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'pasta', 'almendras'], 'carne a la plancha con pasta y almendras, acompañado de ensalada de pepinos y pimientos.').
+platos(['carne', 'pasta', 'queso'], 'carne a la plancha con pasta y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'pasta', 'crema de leche'], 'carne a la plancha con pasta y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['carne', 'fideos de arroz', 'aceite de oliva'], 'carne a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'fideos de arroz', 'aceite de coco'], 'carne a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'fideos de arroz', 'mantequilla'], 'carne a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'fideos de arroz', 'palta'], 'carne a la plancha con fideos de arroz y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'fideos de arroz', 'nueces'], 'carne a la plancha con fideos de arroz y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'fideos de arroz', 'almendras'], 'carne a la plancha con fideos de arroz y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'fideos de arroz', 'queso'], 'carne a la plancha con fideos de arroz y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'fideos de arroz', 'crema de leche'], 'carne a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'fideos de legumbres', 'aceite de oliva'], 'carne a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'fideos de legumbres', 'aceite de coco'], 'carne a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'fideos de legumbres', 'mantequilla'], 'carne a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'fideos de legumbres', 'palta'], 'carne a la plancha con fideos de legumbres y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'fideos de legumbres', 'nueces'], 'carne a la plancha con fideos de legumbres y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'fideos de legumbres', 'almendras'], 'carne a la plancha con fideos de legumbres y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'fideos de legumbres', 'queso'], 'carne a la plancha con fideos de legumbres y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'fideos de legumbres', 'crema de leche'], 'carne a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'papas', 'aceite de oliva'], 'carne a la plancha con papas y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'papas', 'aceite de coco'], 'carne a la plancha con papas y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'papas', 'mantequilla'], 'carne a la plancha con papas y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'papas', 'palta'], 'carne a la plancha con papas y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'papas', 'nueces'], 'carne a la plancha con papas y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'papas', 'almendras'], 'carne a la plancha con papas y almendras, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'papas', 'queso'], 'carne a la plancha con papas y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'papas', 'crema de leche'], 'carne a la plancha con papas y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['carne', 'quinoa', 'aceite de oliva'], 'carne a la plancha con quinoa y aceite de oliva, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'quinoa', 'aceite de coco'], 'carne a la plancha con quinoa y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'quinoa', 'mantequilla'], 'carne a la plancha con quinoa y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['carne', 'quinoa', 'palta'], 'carne a la plancha con quinoa y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'quinoa', 'nueces'], 'carne a la plancha con quinoa y nueces, acompañado de ensalada de zanahorias y apio.').
+platos(['carne', 'quinoa', 'almendras'], 'carne a la plancha con quinoa y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'quinoa', 'queso'], 'carne a la plancha con quinoa y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'quinoa', 'crema de leche'], 'carne a la plancha con quinoa y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'batata', 'aceite de oliva'], 'carne a la plancha con batata y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['carne', 'batata', 'aceite de coco'], 'carne a la plancha con batata y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'batata', 'mantequilla'], 'carne a la plancha con batata y mantequilla, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'batata', 'palta'], 'carne a la plancha con batata y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'batata', 'nueces'], 'carne a la plancha con batata y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'batata', 'almendras'], 'carne a la plancha con batata y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'batata', 'queso'], 'carne a la plancha con batata y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'batata', 'crema de leche'], 'carne a la plancha con batata y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['carne', 'lentejas', 'aceite de oliva'], 'carne a la plancha con lentejas y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'lentejas', 'aceite de coco'], 'carne a la plancha con lentejas y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['carne', 'lentejas', 'mantequilla'], 'carne a la plancha con lentejas y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'lentejas', 'palta'], 'carne a la plancha con lentejas y palta, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'lentejas', 'nueces'], 'carne a la plancha con lentejas y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'lentejas', 'almendras'], 'carne a la plancha con lentejas y almendras, acompañado de ensalada de col y manzana.').
+platos(['carne', 'lentejas', 'queso'], 'carne a la plancha con lentejas y queso, acompañado de ensalada de col y manzana.').
+platos(['carne', 'lentejas', 'crema de leche'], 'carne a la plancha con lentejas y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['carne', 'porotos negros', 'aceite de oliva'], 'carne a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'porotos negros', 'aceite de coco'], 'carne a la plancha con porotos negros y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'porotos negros', 'mantequilla'], 'carne a la plancha con porotos negros y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'porotos negros', 'palta'], 'carne a la plancha con porotos negros y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['carne', 'porotos negros', 'nueces'], 'carne a la plancha con porotos negros y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['carne', 'porotos negros', 'almendras'], 'carne a la plancha con porotos negros y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'porotos negros', 'queso'], 'carne a la plancha con porotos negros y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'porotos negros', 'crema de leche'], 'carne a la plancha con porotos negros y crema de leche, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'garbanzos', 'aceite de oliva'], 'carne a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de zanahorias y apio.').
+platos(['carne', 'garbanzos', 'aceite de coco'], 'carne a la plancha con garbanzos y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['carne', 'garbanzos', 'mantequilla'], 'carne a la plancha con garbanzos y mantequilla, acompañado de ensalada de col y manzana.').
+platos(['carne', 'garbanzos', 'palta'], 'carne a la plancha con garbanzos y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'garbanzos', 'nueces'], 'carne a la plancha con garbanzos y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['carne', 'garbanzos', 'almendras'], 'carne a la plancha con garbanzos y almendras, acompañado de ensalada de lechuga y remolacha.').
+platos(['carne', 'garbanzos', 'queso'], 'carne a la plancha con garbanzos y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['carne', 'garbanzos', 'crema de leche'], 'carne a la plancha con garbanzos y crema de leche, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'arroz', 'aceite de oliva'], 'pescado a la plancha con arroz y aceite de oliva, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'arroz', 'aceite de coco'], 'pescado a la plancha con arroz y aceite de coco, acompañado de ensalada de pepinos y pimientos.').
+platos(['pescado', 'arroz', 'mantequilla'], 'pescado a la plancha con arroz y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'arroz', 'palta'], 'pescado a la plancha con arroz y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['pescado', 'arroz', 'nueces'], 'pescado a la plancha con arroz y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'arroz', 'almendras'], 'pescado a la plancha con arroz y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'arroz', 'queso'], 'pescado a la plancha con arroz y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'arroz', 'crema de leche'], 'pescado a la plancha con arroz y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'pasta', 'aceite de oliva'], 'pescado a la plancha con pasta y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'pasta', 'aceite de coco'], 'pescado a la plancha con pasta y aceite de coco, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'pasta', 'mantequilla'], 'pescado a la plancha con pasta y mantequilla, acompañado de ensalada de lechuga y remolacha.').
+platos(['pescado', 'pasta', 'palta'], 'pescado a la plancha con pasta y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'pasta', 'nueces'], 'pescado a la plancha con pasta y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['pescado', 'pasta', 'almendras'], 'pescado a la plancha con pasta y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'pasta', 'queso'], 'pescado a la plancha con pasta y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'pasta', 'crema de leche'], 'pescado a la plancha con pasta y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'fideos de arroz', 'aceite de oliva'], 'pescado a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'fideos de arroz', 'aceite de coco'], 'pescado a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'fideos de arroz', 'mantequilla'], 'pescado a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'fideos de arroz', 'palta'], 'pescado a la plancha con fideos de arroz y palta, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'fideos de arroz', 'nueces'], 'pescado a la plancha con fideos de arroz y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'fideos de arroz', 'almendras'], 'pescado a la plancha con fideos de arroz y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'fideos de arroz', 'queso'], 'pescado a la plancha con fideos de arroz y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'fideos de arroz', 'crema de leche'], 'pescado a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['pescado', 'fideos de legumbres', 'aceite de oliva'], 'pescado a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'fideos de legumbres', 'aceite de coco'], 'pescado a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'fideos de legumbres', 'mantequilla'], 'pescado a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'fideos de legumbres', 'palta'], 'pescado a la plancha con fideos de legumbres y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'fideos de legumbres', 'nueces'], 'pescado a la plancha con fideos de legumbres y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'fideos de legumbres', 'almendras'], 'pescado a la plancha con fideos de legumbres y almendras, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'fideos de legumbres', 'queso'], 'pescado a la plancha con fideos de legumbres y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'fideos de legumbres', 'crema de leche'], 'pescado a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'papas', 'aceite de oliva'], 'pescado a la plancha con papas y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['pescado', 'papas', 'aceite de coco'], 'pescado a la plancha con papas y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'papas', 'mantequilla'], 'pescado a la plancha con papas y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'papas', 'palta'], 'pescado a la plancha con papas y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'papas', 'nueces'], 'pescado a la plancha con papas y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'papas', 'almendras'], 'pescado a la plancha con papas y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'papas', 'queso'], 'pescado a la plancha con papas y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'papas', 'crema de leche'], 'pescado a la plancha con papas y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'quinoa', 'aceite de oliva'], 'pescado a la plancha con quinoa y aceite de oliva, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'quinoa', 'aceite de coco'], 'pescado a la plancha con quinoa y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'quinoa', 'mantequilla'], 'pescado a la plancha con quinoa y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'quinoa', 'palta'], 'pescado a la plancha con quinoa y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'quinoa', 'nueces'], 'pescado a la plancha con quinoa y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['pescado', 'quinoa', 'almendras'], 'pescado a la plancha con quinoa y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'quinoa', 'queso'], 'pescado a la plancha con quinoa y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['pescado', 'quinoa', 'crema de leche'], 'pescado a la plancha con quinoa y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'batata', 'aceite de oliva'], 'pescado a la plancha con batata y aceite de oliva, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'batata', 'aceite de coco'], 'pescado a la plancha con batata y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'batata', 'mantequilla'], 'pescado a la plancha con batata y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'batata', 'palta'], 'pescado a la plancha con batata y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'batata', 'nueces'], 'pescado a la plancha con batata y nueces, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'batata', 'almendras'], 'pescado a la plancha con batata y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'batata', 'queso'], 'pescado a la plancha con batata y queso, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'batata', 'crema de leche'], 'pescado a la plancha con batata y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'lentejas', 'aceite de oliva'], 'pescado a la plancha con lentejas y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['pescado', 'lentejas', 'aceite de coco'], 'pescado a la plancha con lentejas y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['pescado', 'lentejas', 'mantequilla'], 'pescado a la plancha con lentejas y mantequilla, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'lentejas', 'palta'], 'pescado a la plancha con lentejas y palta, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'lentejas', 'nueces'], 'pescado a la plancha con lentejas y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'lentejas', 'almendras'], 'pescado a la plancha con lentejas y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'lentejas', 'queso'], 'pescado a la plancha con lentejas y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'lentejas', 'crema de leche'], 'pescado a la plancha con lentejas y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'porotos negros', 'aceite de oliva'], 'pescado a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'porotos negros', 'aceite de coco'], 'pescado a la plancha con porotos negros y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'porotos negros', 'mantequilla'], 'pescado a la plancha con porotos negros y mantequilla, acompañado de ensalada de lechuga y remolacha.').
+platos(['pescado', 'porotos negros', 'palta'], 'pescado a la plancha con porotos negros y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['pescado', 'porotos negros', 'nueces'], 'pescado a la plancha con porotos negros y nueces, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'porotos negros', 'almendras'], 'pescado a la plancha con porotos negros y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['pescado', 'porotos negros', 'queso'], 'pescado a la plancha con porotos negros y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['pescado', 'porotos negros', 'crema de leche'], 'pescado a la plancha con porotos negros y crema de leche, acompañado de ensalada de lechuga y remolacha.').
+platos(['pescado', 'garbanzos', 'aceite de oliva'], 'pescado a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'garbanzos', 'aceite de coco'], 'pescado a la plancha con garbanzos y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['pescado', 'garbanzos', 'mantequilla'], 'pescado a la plancha con garbanzos y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['pescado', 'garbanzos', 'palta'], 'pescado a la plancha con garbanzos y palta, acompañado de ensalada de pepinos y pimientos.').
+platos(['pescado', 'garbanzos', 'nueces'], 'pescado a la plancha con garbanzos y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['pescado', 'garbanzos', 'almendras'], 'pescado a la plancha con garbanzos y almendras, acompañado de ensalada de col y manzana.').
+platos(['pescado', 'garbanzos', 'queso'], 'pescado a la plancha con garbanzos y queso, acompañado de ensalada de espinacas y champiñones.').
+platos(['pescado', 'garbanzos', 'crema de leche'], 'pescado a la plancha con garbanzos y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'arroz', 'aceite de oliva'], 'cerdo a la plancha con arroz y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'arroz', 'aceite de coco'], 'cerdo a la plancha con arroz y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'arroz', 'mantequilla'], 'cerdo a la plancha con arroz y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'arroz', 'palta'], 'cerdo a la plancha con arroz y palta, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['cerdo', 'arroz', 'nueces'], 'cerdo a la plancha con arroz y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'arroz', 'almendras'], 'cerdo a la plancha con arroz y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['cerdo', 'arroz', 'queso'], 'cerdo a la plancha con arroz y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'arroz', 'crema de leche'], 'cerdo a la plancha con arroz y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'pasta', 'aceite de oliva'], 'cerdo a la plancha con pasta y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'pasta', 'aceite de coco'], 'cerdo a la plancha con pasta y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'pasta', 'mantequilla'], 'cerdo a la plancha con pasta y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'pasta', 'palta'], 'cerdo a la plancha con pasta y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'pasta', 'nueces'], 'cerdo a la plancha con pasta y nueces, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'pasta', 'almendras'], 'cerdo a la plancha con pasta y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'pasta', 'queso'], 'cerdo a la plancha con pasta y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'pasta', 'crema de leche'], 'cerdo a la plancha con pasta y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'fideos de arroz', 'aceite de oliva'], 'cerdo a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'fideos de arroz', 'aceite de coco'], 'cerdo a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'fideos de arroz', 'mantequilla'], 'cerdo a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'fideos de arroz', 'palta'], 'cerdo a la plancha con fideos de arroz y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'fideos de arroz', 'nueces'], 'cerdo a la plancha con fideos de arroz y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'fideos de arroz', 'almendras'], 'cerdo a la plancha con fideos de arroz y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'fideos de arroz', 'queso'], 'cerdo a la plancha con fideos de arroz y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'fideos de arroz', 'crema de leche'], 'cerdo a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'fideos de legumbres', 'aceite de oliva'], 'cerdo a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'fideos de legumbres', 'aceite de coco'], 'cerdo a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'fideos de legumbres', 'mantequilla'], 'cerdo a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'fideos de legumbres', 'palta'], 'cerdo a la plancha con fideos de legumbres y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'fideos de legumbres', 'nueces'], 'cerdo a la plancha con fideos de legumbres y nueces, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['cerdo', 'fideos de legumbres', 'almendras'], 'cerdo a la plancha con fideos de legumbres y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['cerdo', 'fideos de legumbres', 'queso'], 'cerdo a la plancha con fideos de legumbres y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'fideos de legumbres', 'crema de leche'], 'cerdo a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'papas', 'aceite de oliva'], 'cerdo a la plancha con papas y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'papas', 'aceite de coco'], 'cerdo a la plancha con papas y aceite de coco, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'papas', 'mantequilla'], 'cerdo a la plancha con papas y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'papas', 'palta'], 'cerdo a la plancha con papas y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'papas', 'nueces'], 'cerdo a la plancha con papas y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'papas', 'almendras'], 'cerdo a la plancha con papas y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['cerdo', 'papas', 'queso'], 'cerdo a la plancha con papas y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'papas', 'crema de leche'], 'cerdo a la plancha con papas y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'quinoa', 'aceite de oliva'], 'cerdo a la plancha con quinoa y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'quinoa', 'aceite de coco'], 'cerdo a la plancha con quinoa y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'quinoa', 'mantequilla'], 'cerdo a la plancha con quinoa y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'quinoa', 'palta'], 'cerdo a la plancha con quinoa y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'quinoa', 'nueces'], 'cerdo a la plancha con quinoa y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'quinoa', 'almendras'], 'cerdo a la plancha con quinoa y almendras, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'quinoa', 'queso'], 'cerdo a la plancha con quinoa y queso, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'quinoa', 'crema de leche'], 'cerdo a la plancha con quinoa y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'batata', 'aceite de oliva'], 'cerdo a la plancha con batata y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'batata', 'aceite de coco'], 'cerdo a la plancha con batata y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'batata', 'mantequilla'], 'cerdo a la plancha con batata y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['cerdo', 'batata', 'palta'], 'cerdo a la plancha con batata y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'batata', 'nueces'], 'cerdo a la plancha con batata y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'batata', 'almendras'], 'cerdo a la plancha con batata y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'batata', 'queso'], 'cerdo a la plancha con batata y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'batata', 'crema de leche'], 'cerdo a la plancha con batata y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'lentejas', 'aceite de oliva'], 'cerdo a la plancha con lentejas y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'lentejas', 'aceite de coco'], 'cerdo a la plancha con lentejas y aceite de coco, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'lentejas', 'mantequilla'], 'cerdo a la plancha con lentejas y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['cerdo', 'lentejas', 'palta'], 'cerdo a la plancha con lentejas y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'lentejas', 'nueces'], 'cerdo a la plancha con lentejas y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'lentejas', 'almendras'], 'cerdo a la plancha con lentejas y almendras, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'lentejas', 'queso'], 'cerdo a la plancha con lentejas y queso, acompañado de ensalada de zanahorias y apio.').
+platos(['cerdo', 'lentejas', 'crema de leche'], 'cerdo a la plancha con lentejas y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'porotos negros', 'aceite de oliva'], 'cerdo a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'porotos negros', 'aceite de coco'], 'cerdo a la plancha con porotos negros y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['cerdo', 'porotos negros', 'mantequilla'], 'cerdo a la plancha con porotos negros y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'porotos negros', 'palta'], 'cerdo a la plancha con porotos negros y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['cerdo', 'porotos negros', 'nueces'], 'cerdo a la plancha con porotos negros y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['cerdo', 'porotos negros', 'almendras'], 'cerdo a la plancha con porotos negros y almendras, acompañado de ensalada de col y manzana.').
+platos(['cerdo', 'porotos negros', 'queso'], 'cerdo a la plancha con porotos negros y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'porotos negros', 'crema de leche'], 'cerdo a la plancha con porotos negros y crema de leche, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'garbanzos', 'aceite de oliva'], 'cerdo a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['cerdo', 'garbanzos', 'aceite de coco'], 'cerdo a la plancha con garbanzos y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['cerdo', 'garbanzos', 'mantequilla'], 'cerdo a la plancha con garbanzos y mantequilla, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['cerdo', 'garbanzos', 'palta'], 'cerdo a la plancha con garbanzos y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'garbanzos', 'nueces'], 'cerdo a la plancha con garbanzos y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['cerdo', 'garbanzos', 'almendras'], 'cerdo a la plancha con garbanzos y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'garbanzos', 'queso'], 'cerdo a la plancha con garbanzos y queso, acompañado de ensalada de espinacas y champiñones.').
+platos(['cerdo', 'garbanzos', 'crema de leche'], 'cerdo a la plancha con garbanzos y crema de leche, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'arroz', 'aceite de oliva'], 'tofu a la plancha con arroz y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'arroz', 'aceite de coco'], 'tofu a la plancha con arroz y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'arroz', 'mantequilla'], 'tofu a la plancha con arroz y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'arroz', 'palta'], 'tofu a la plancha con arroz y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'arroz', 'nueces'], 'tofu a la plancha con arroz y nueces, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'arroz', 'almendras'], 'tofu a la plancha con arroz y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'arroz', 'queso'], 'tofu a la plancha con arroz y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'arroz', 'crema de leche'], 'tofu a la plancha con arroz y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'pasta', 'aceite de oliva'], 'tofu a la plancha con pasta y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'pasta', 'aceite de coco'], 'tofu a la plancha con pasta y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'pasta', 'mantequilla'], 'tofu a la plancha con pasta y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'pasta', 'palta'], 'tofu a la plancha con pasta y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'pasta', 'nueces'], 'tofu a la plancha con pasta y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'pasta', 'almendras'], 'tofu a la plancha con pasta y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'pasta', 'queso'], 'tofu a la plancha con pasta y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'pasta', 'crema de leche'], 'tofu a la plancha con pasta y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'fideos de arroz', 'aceite de oliva'], 'tofu a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'fideos de arroz', 'aceite de coco'], 'tofu a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'fideos de arroz', 'mantequilla'], 'tofu a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'fideos de arroz', 'palta'], 'tofu a la plancha con fideos de arroz y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'fideos de arroz', 'nueces'], 'tofu a la plancha con fideos de arroz y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'fideos de arroz', 'almendras'], 'tofu a la plancha con fideos de arroz y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'fideos de arroz', 'queso'], 'tofu a la plancha con fideos de arroz y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'fideos de arroz', 'crema de leche'], 'tofu a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'fideos de legumbres', 'aceite de oliva'], 'tofu a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'fideos de legumbres', 'aceite de coco'], 'tofu a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'fideos de legumbres', 'mantequilla'], 'tofu a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'fideos de legumbres', 'palta'], 'tofu a la plancha con fideos de legumbres y palta, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'fideos de legumbres', 'nueces'], 'tofu a la plancha con fideos de legumbres y nueces, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'fideos de legumbres', 'almendras'], 'tofu a la plancha con fideos de legumbres y almendras, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'fideos de legumbres', 'queso'], 'tofu a la plancha con fideos de legumbres y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'fideos de legumbres', 'crema de leche'], 'tofu a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['tofu', 'papas', 'aceite de oliva'], 'tofu a la plancha con papas y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'papas', 'aceite de coco'], 'tofu a la plancha con papas y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'papas', 'mantequilla'], 'tofu a la plancha con papas y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'papas', 'palta'], 'tofu a la plancha con papas y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'papas', 'nueces'], 'tofu a la plancha con papas y nueces, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'papas', 'almendras'], 'tofu a la plancha con papas y almendras, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'papas', 'queso'], 'tofu a la plancha con papas y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'papas', 'crema de leche'], 'tofu a la plancha con papas y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'quinoa', 'aceite de oliva'], 'tofu a la plancha con quinoa y aceite de oliva, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'quinoa', 'aceite de coco'], 'tofu a la plancha con quinoa y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'quinoa', 'mantequilla'], 'tofu a la plancha con quinoa y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'quinoa', 'palta'], 'tofu a la plancha con quinoa y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'quinoa', 'nueces'], 'tofu a la plancha con quinoa y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'quinoa', 'almendras'], 'tofu a la plancha con quinoa y almendras, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'quinoa', 'queso'], 'tofu a la plancha con quinoa y queso, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'quinoa', 'crema de leche'], 'tofu a la plancha con quinoa y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'batata', 'aceite de oliva'], 'tofu a la plancha con batata y aceite de oliva, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'batata', 'aceite de coco'], 'tofu a la plancha con batata y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'batata', 'mantequilla'], 'tofu a la plancha con batata y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'batata', 'palta'], 'tofu a la plancha con batata y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'batata', 'nueces'], 'tofu a la plancha con batata y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'batata', 'almendras'], 'tofu a la plancha con batata y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'batata', 'queso'], 'tofu a la plancha con batata y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'batata', 'crema de leche'], 'tofu a la plancha con batata y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'lentejas', 'aceite de oliva'], 'tofu a la plancha con lentejas y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'lentejas', 'aceite de coco'], 'tofu a la plancha con lentejas y aceite de coco, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'lentejas', 'mantequilla'], 'tofu a la plancha con lentejas y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'lentejas', 'palta'], 'tofu a la plancha con lentejas y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'lentejas', 'nueces'], 'tofu a la plancha con lentejas y nueces, acompañado de ensalada de rucula con cebolla morada.').
+platos(['tofu', 'lentejas', 'almendras'], 'tofu a la plancha con lentejas y almendras, acompañado de ensalada de pepinos y pimientos.').
+platos(['tofu', 'lentejas', 'queso'], 'tofu a la plancha con lentejas y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'lentejas', 'crema de leche'], 'tofu a la plancha con lentejas y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'porotos negros', 'aceite de oliva'], 'tofu a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'porotos negros', 'aceite de coco'], 'tofu a la plancha con porotos negros y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'porotos negros', 'mantequilla'], 'tofu a la plancha con porotos negros y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'porotos negros', 'palta'], 'tofu a la plancha con porotos negros y palta, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'porotos negros', 'nueces'], 'tofu a la plancha con porotos negros y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'porotos negros', 'almendras'], 'tofu a la plancha con porotos negros y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['tofu', 'porotos negros', 'queso'], 'tofu a la plancha con porotos negros y queso, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'porotos negros', 'crema de leche'], 'tofu a la plancha con porotos negros y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['tofu', 'garbanzos', 'aceite de oliva'], 'tofu a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['tofu', 'garbanzos', 'aceite de coco'], 'tofu a la plancha con garbanzos y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['tofu', 'garbanzos', 'mantequilla'], 'tofu a la plancha con garbanzos y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['tofu', 'garbanzos', 'palta'], 'tofu a la plancha con garbanzos y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['tofu', 'garbanzos', 'nueces'], 'tofu a la plancha con garbanzos y nueces, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'garbanzos', 'almendras'], 'tofu a la plancha con garbanzos y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['tofu', 'garbanzos', 'queso'], 'tofu a la plancha con garbanzos y queso, acompañado de ensalada de col y manzana.').
+platos(['tofu', 'garbanzos', 'crema de leche'], 'tofu a la plancha con garbanzos y crema de leche, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'arroz', 'aceite de oliva'], 'huevo a la plancha con arroz y aceite de oliva, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'arroz', 'aceite de coco'], 'huevo a la plancha con arroz y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'arroz', 'mantequilla'], 'huevo a la plancha con arroz y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'arroz', 'palta'], 'huevo a la plancha con arroz y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'arroz', 'nueces'], 'huevo a la plancha con arroz y nueces, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'arroz', 'almendras'], 'huevo a la plancha con arroz y almendras, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'arroz', 'queso'], 'huevo a la plancha con arroz y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'arroz', 'crema de leche'], 'huevo a la plancha con arroz y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'pasta', 'aceite de oliva'], 'huevo a la plancha con pasta y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'pasta', 'aceite de coco'], 'huevo a la plancha con pasta y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'pasta', 'mantequilla'], 'huevo a la plancha con pasta y mantequilla, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'pasta', 'palta'], 'huevo a la plancha con pasta y palta, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'pasta', 'nueces'], 'huevo a la plancha con pasta y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'pasta', 'almendras'], 'huevo a la plancha con pasta y almendras, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'pasta', 'queso'], 'huevo a la plancha con pasta y queso, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'pasta', 'crema de leche'], 'huevo a la plancha con pasta y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'fideos de arroz', 'aceite de oliva'], 'huevo a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'fideos de arroz', 'aceite de coco'], 'huevo a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'fideos de arroz', 'mantequilla'], 'huevo a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'fideos de arroz', 'palta'], 'huevo a la plancha con fideos de arroz y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'fideos de arroz', 'nueces'], 'huevo a la plancha con fideos de arroz y nueces, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'fideos de arroz', 'almendras'], 'huevo a la plancha con fideos de arroz y almendras, acompañado de ensalada de hojas verdes y tomate.').
+platos(['huevo', 'fideos de arroz', 'queso'], 'huevo a la plancha con fideos de arroz y queso, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'fideos de arroz', 'crema de leche'], 'huevo a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'fideos de legumbres', 'aceite de oliva'], 'huevo a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'fideos de legumbres', 'aceite de coco'], 'huevo a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['huevo', 'fideos de legumbres', 'mantequilla'], 'huevo a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'fideos de legumbres', 'palta'], 'huevo a la plancha con fideos de legumbres y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'fideos de legumbres', 'nueces'], 'huevo a la plancha con fideos de legumbres y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'fideos de legumbres', 'almendras'], 'huevo a la plancha con fideos de legumbres y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'fideos de legumbres', 'queso'], 'huevo a la plancha con fideos de legumbres y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'fideos de legumbres', 'crema de leche'], 'huevo a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'papas', 'aceite de oliva'], 'huevo a la plancha con papas y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'papas', 'aceite de coco'], 'huevo a la plancha con papas y aceite de coco, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'papas', 'mantequilla'], 'huevo a la plancha con papas y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'papas', 'palta'], 'huevo a la plancha con papas y palta, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'papas', 'nueces'], 'huevo a la plancha con papas y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'papas', 'almendras'], 'huevo a la plancha con papas y almendras, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['huevo', 'papas', 'queso'], 'huevo a la plancha con papas y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['huevo', 'papas', 'crema de leche'], 'huevo a la plancha con papas y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'quinoa', 'aceite de oliva'], 'huevo a la plancha con quinoa y aceite de oliva, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'quinoa', 'aceite de coco'], 'huevo a la plancha con quinoa y aceite de coco, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'quinoa', 'mantequilla'], 'huevo a la plancha con quinoa y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'quinoa', 'palta'], 'huevo a la plancha con quinoa y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['huevo', 'quinoa', 'nueces'], 'huevo a la plancha con quinoa y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'quinoa', 'almendras'], 'huevo a la plancha con quinoa y almendras, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'quinoa', 'queso'], 'huevo a la plancha con quinoa y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['huevo', 'quinoa', 'crema de leche'], 'huevo a la plancha con quinoa y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'batata', 'aceite de oliva'], 'huevo a la plancha con batata y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'batata', 'aceite de coco'], 'huevo a la plancha con batata y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'batata', 'mantequilla'], 'huevo a la plancha con batata y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'batata', 'palta'], 'huevo a la plancha con batata y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'batata', 'nueces'], 'huevo a la plancha con batata y nueces, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'batata', 'almendras'], 'huevo a la plancha con batata y almendras, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'batata', 'queso'], 'huevo a la plancha con batata y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'batata', 'crema de leche'], 'huevo a la plancha con batata y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'lentejas', 'aceite de oliva'], 'huevo a la plancha con lentejas y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'lentejas', 'aceite de coco'], 'huevo a la plancha con lentejas y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'lentejas', 'mantequilla'], 'huevo a la plancha con lentejas y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'lentejas', 'palta'], 'huevo a la plancha con lentejas y palta, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'lentejas', 'nueces'], 'huevo a la plancha con lentejas y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['huevo', 'lentejas', 'almendras'], 'huevo a la plancha con lentejas y almendras, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'lentejas', 'queso'], 'huevo a la plancha con lentejas y queso, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['huevo', 'lentejas', 'crema de leche'], 'huevo a la plancha con lentejas y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'porotos negros', 'aceite de oliva'], 'huevo a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'porotos negros', 'aceite de coco'], 'huevo a la plancha con porotos negros y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['huevo', 'porotos negros', 'mantequilla'], 'huevo a la plancha con porotos negros y mantequilla, acompañado de ensalada de col y manzana.').
+platos(['huevo', 'porotos negros', 'palta'], 'huevo a la plancha con porotos negros y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['huevo', 'porotos negros', 'nueces'], 'huevo a la plancha con porotos negros y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'porotos negros', 'almendras'], 'huevo a la plancha con porotos negros y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'porotos negros', 'queso'], 'huevo a la plancha con porotos negros y queso, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'porotos negros', 'crema de leche'], 'huevo a la plancha con porotos negros y crema de leche, acompañado de ensalada de hojas verdes y tomate.').
+platos(['huevo', 'garbanzos', 'aceite de oliva'], 'huevo a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'garbanzos', 'aceite de coco'], 'huevo a la plancha con garbanzos y aceite de coco, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'garbanzos', 'mantequilla'], 'huevo a la plancha con garbanzos y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['huevo', 'garbanzos', 'palta'], 'huevo a la plancha con garbanzos y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['huevo', 'garbanzos', 'nueces'], 'huevo a la plancha con garbanzos y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['huevo', 'garbanzos', 'almendras'], 'huevo a la plancha con garbanzos y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'garbanzos', 'queso'], 'huevo a la plancha con garbanzos y queso, acompañado de ensalada de zanahorias y apio.').
+platos(['huevo', 'garbanzos', 'crema de leche'], 'huevo a la plancha con garbanzos y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'arroz', 'aceite de oliva'], 'soja a la plancha con arroz y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'arroz', 'aceite de coco'], 'soja a la plancha con arroz y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'arroz', 'mantequilla'], 'soja a la plancha con arroz y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['soja', 'arroz', 'palta'], 'soja a la plancha con arroz y palta, acompañado de ensalada de col y manzana.').
+platos(['soja', 'arroz', 'nueces'], 'soja a la plancha con arroz y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'arroz', 'almendras'], 'soja a la plancha con arroz y almendras, acompañado de ensalada de col y manzana.').
+platos(['soja', 'arroz', 'queso'], 'soja a la plancha con arroz y queso, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'arroz', 'crema de leche'], 'soja a la plancha con arroz y crema de leche, acompañado de ensalada de espinacas y champiñones.').
+platos(['soja', 'pasta', 'aceite de oliva'], 'soja a la plancha con pasta y aceite de oliva, acompañado de ensalada de col y manzana.').
+platos(['soja', 'pasta', 'aceite de coco'], 'soja a la plancha con pasta y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['soja', 'pasta', 'mantequilla'], 'soja a la plancha con pasta y mantequilla, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'pasta', 'palta'], 'soja a la plancha con pasta y palta, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'pasta', 'nueces'], 'soja a la plancha con pasta y nueces, acompañado de ensalada de espinacas y champiñones.').
+platos(['soja', 'pasta', 'almendras'], 'soja a la plancha con pasta y almendras, acompañado de ensalada de col y manzana.').
+platos(['soja', 'pasta', 'queso'], 'soja a la plancha con pasta y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'pasta', 'crema de leche'], 'soja a la plancha con pasta y crema de leche, acompañado de ensalada de lechuga y remolacha.').
+platos(['soja', 'fideos de arroz', 'aceite de oliva'], 'soja a la plancha con fideos de arroz y aceite de oliva, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'fideos de arroz', 'aceite de coco'], 'soja a la plancha con fideos de arroz y aceite de coco, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'fideos de arroz', 'mantequilla'], 'soja a la plancha con fideos de arroz y mantequilla, acompañado de ensalada de espinacas y champiñones.').
+platos(['soja', 'fideos de arroz', 'palta'], 'soja a la plancha con fideos de arroz y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'fideos de arroz', 'nueces'], 'soja a la plancha con fideos de arroz y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'fideos de arroz', 'almendras'], 'soja a la plancha con fideos de arroz y almendras, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'fideos de arroz', 'queso'], 'soja a la plancha con fideos de arroz y queso, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'fideos de arroz', 'crema de leche'], 'soja a la plancha con fideos de arroz y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'fideos de legumbres', 'aceite de oliva'], 'soja a la plancha con fideos de legumbres y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'fideos de legumbres', 'aceite de coco'], 'soja a la plancha con fideos de legumbres y aceite de coco, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'fideos de legumbres', 'mantequilla'], 'soja a la plancha con fideos de legumbres y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'fideos de legumbres', 'palta'], 'soja a la plancha con fideos de legumbres y palta, acompañado de ensalada de lechuga y remolacha.').
+platos(['soja', 'fideos de legumbres', 'nueces'], 'soja a la plancha con fideos de legumbres y nueces, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'fideos de legumbres', 'almendras'], 'soja a la plancha con fideos de legumbres y almendras, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'fideos de legumbres', 'queso'], 'soja a la plancha con fideos de legumbres y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'fideos de legumbres', 'crema de leche'], 'soja a la plancha con fideos de legumbres y crema de leche, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'papas', 'aceite de oliva'], 'soja a la plancha con papas y aceite de oliva, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'papas', 'aceite de coco'], 'soja a la plancha con papas y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['soja', 'papas', 'mantequilla'], 'soja a la plancha con papas y mantequilla, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'papas', 'palta'], 'soja a la plancha con papas y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'papas', 'nueces'], 'soja a la plancha con papas y nueces, acompañado de ensalada de lechuga y remolacha.').
+platos(['soja', 'papas', 'almendras'], 'soja a la plancha con papas y almendras, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'papas', 'queso'], 'soja a la plancha con papas y queso, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'papas', 'crema de leche'], 'soja a la plancha con papas y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'quinoa', 'aceite de oliva'], 'soja a la plancha con quinoa y aceite de oliva, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'quinoa', 'aceite de coco'], 'soja a la plancha con quinoa y aceite de coco, acompañado de ensalada de col y manzana.').
+platos(['soja', 'quinoa', 'mantequilla'], 'soja a la plancha con quinoa y mantequilla, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'quinoa', 'palta'], 'soja a la plancha con quinoa y palta, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'quinoa', 'nueces'], 'soja a la plancha con quinoa y nueces, acompañado de ensalada de col y manzana.').
+platos(['soja', 'quinoa', 'almendras'], 'soja a la plancha con quinoa y almendras, acompañado de ensalada de col y manzana.').
+platos(['soja', 'quinoa', 'queso'], 'soja a la plancha con quinoa y queso, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'quinoa', 'crema de leche'], 'soja a la plancha con quinoa y crema de leche, acompañado de ensalada de lechuga y remolacha.').
+platos(['soja', 'batata', 'aceite de oliva'], 'soja a la plancha con batata y aceite de oliva, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'batata', 'aceite de coco'], 'soja a la plancha con batata y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'batata', 'mantequilla'], 'soja a la plancha con batata y mantequilla, acompañado de ensalada de lechuga y remolacha.').
+platos(['soja', 'batata', 'palta'], 'soja a la plancha con batata y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'batata', 'nueces'], 'soja a la plancha con batata y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'batata', 'almendras'], 'soja a la plancha con batata y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'batata', 'queso'], 'soja a la plancha con batata y queso, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'batata', 'crema de leche'], 'soja a la plancha con batata y crema de leche, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'lentejas', 'aceite de oliva'], 'soja a la plancha con lentejas y aceite de oliva, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'lentejas', 'aceite de coco'], 'soja a la plancha con lentejas y aceite de coco, acompañado de ensalada de zanahorias y apio.').
+platos(['soja', 'lentejas', 'mantequilla'], 'soja a la plancha con lentejas y mantequilla, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'lentejas', 'palta'], 'soja a la plancha con lentejas y palta, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'lentejas', 'nueces'], 'soja a la plancha con lentejas y nueces, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'lentejas', 'almendras'], 'soja a la plancha con lentejas y almendras, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'lentejas', 'queso'], 'soja a la plancha con lentejas y queso, acompañado de ensalada de col y manzana.').
+platos(['soja', 'lentejas', 'crema de leche'], 'soja a la plancha con lentejas y crema de leche, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'porotos negros', 'aceite de oliva'], 'soja a la plancha con porotos negros y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'porotos negros', 'aceite de coco'], 'soja a la plancha con porotos negros y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'porotos negros', 'mantequilla'], 'soja a la plancha con porotos negros y mantequilla, acompañado de ensalada de rucula con cebolla morada.').
+platos(['soja', 'porotos negros', 'palta'], 'soja a la plancha con porotos negros y palta, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'porotos negros', 'nueces'], 'soja a la plancha con porotos negros y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'porotos negros', 'almendras'], 'soja a la plancha con porotos negros y almendras, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'porotos negros', 'queso'], 'soja a la plancha con porotos negros y queso, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'porotos negros', 'crema de leche'], 'soja a la plancha con porotos negros y crema de leche, acompañado de ensalada de col y manzana.').
+platos(['soja', 'garbanzos', 'aceite de oliva'], 'soja a la plancha con garbanzos y aceite de oliva, acompañado de ensalada de pepinos y pimientos.').
+platos(['soja', 'garbanzos', 'aceite de coco'], 'soja a la plancha con garbanzos y aceite de coco, acompañado de ensalada de hojas verdes y tomate.').
+platos(['soja', 'garbanzos', 'mantequilla'], 'soja a la plancha con garbanzos y mantequilla, acompañado de ensalada de col y manzana.').
+platos(['soja', 'garbanzos', 'palta'], 'soja a la plancha con garbanzos y palta, acompañado de ensalada de pepino y zanahoria rallada.').
+platos(['soja', 'garbanzos', 'nueces'], 'soja a la plancha con garbanzos y nueces, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'garbanzos', 'almendras'], 'soja a la plancha con garbanzos y almendras, acompañado de ensalada de col y manzana.').
+platos(['soja', 'garbanzos', 'queso'], 'soja a la plancha con garbanzos y queso, acompañado de ensalada de repollo y zanahoria.').
+platos(['soja', 'garbanzos', 'crema de leche'], 'soja a la plancha con garbanzos y crema de leche, acompañado de ensalada de rucula con cebolla morada.').

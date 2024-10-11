@@ -1,0 +1,161 @@
+
+porcentajes_objetivo(Objetivo, CaloriasRecomendadas, Proteinas, Grasas, Carbohidratos) :-
+    (   Objetivo == 1 ->  % Mantenimiento
+        Proteinas is 20 * CaloriasRecomendadas / 100,
+        Grasas is 30 * CaloriasRecomendadas / 100,
+        Carbohidratos is 50 * CaloriasRecomendadas / 100
+    ;   Objetivo == 2 ->  % Perdida de grasa
+        Proteinas is 35 * CaloriasRecomendadas / 100,
+        Grasas is 30 * CaloriasRecomendadas / 100,
+        Carbohidratos is 35 * CaloriasRecomendadas / 100
+    ;   Objetivo == 3 ->  % Aumento muscular
+        Proteinas is 30 * CaloriasRecomendadas / 100,
+        Grasas is 20 * CaloriasRecomendadas / 100,
+        Carbohidratos is 50 * CaloriasRecomendadas / 100
+    ;   Proteinas is 20 * CaloriasRecomendadas / 100,  
+        Grasas is 30 * CaloriasRecomendadas / 100,  
+        Carbohidratos is 50 * CaloriasRecomendadas / 100  % Rendimiento deportivo
+    ).
+
+% Caso sin preferencias (valor 3)
+verificar_preferencias(_, 3).
+% Caso vegetariano (valor 1)
+verificar_preferencias(Comida, Preferencias) :-
+    preferencias(Preferencias, AlimentosPermitidos),
+    member(Comida, AlimentosPermitidos),
+    !. % cambio
+
+% Verificar que una comida este permitida segun las condiciones medicas
+verificar_condiciones(_, []) :- !.
+verificar_condiciones(Comida, CondMedica) :-
+    ( forall(member(Condicion, CondMedica), 
+             (condicion_medica(Condicion, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
+    ).
+
+% Verificar que una comida no este restringida por las alergias
+verificar_alergias(_, []):- !.
+verificar_alergias(Comida, Alergias) :-
+    (forall(member(Alergia, Alergias), 
+             (alergias(Alergia, AlimentosPermitidos), member(Comida, AlimentosPermitidos)))
+    ).
+
+
+calcular_macronutrientes(CaloriasProteinas, CaloriasCarbohidratos, CaloriasGrasas, ProteinasGramos, CarbohidratosGramos, GrasasGramos ) :-
+    ProteinasGramos is CaloriasProteinas / 4,  % 1 gramo de proteina = 4 kcal
+    GrasasGramos is CaloriasGrasas / 9,  % 1 gramo de grasa = 9 kcal
+    CarbohidratosGramos is CaloriasCarbohidratos / 4.  % 1 gramo de carbohidrato = 4 kcal
+
+
+
+
+% Sugerir plan de alimentacion con distribucion 65% en almuerzo/cena y 35% en desayuno/merienda
+sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Alergias, Preferencias ) :-
+    % Dividimos los macronutrientes en las proporciones adecuadas
+    ProteinasAlmuerzoCena is 0.60 * ProteinasGramos,
+    CarbohidratosAlmuerzoCena is 0.60 * CarbohidratosGramos,
+    GrasasAlmuerzoCena is 0.60 * GrasasGramos,
+
+    ProteinasDesayunoMerienda is (0.40 * ProteinasGramos),
+    CarbohidratosDesayunoMerienda is (0.40 * CarbohidratosGramos),
+    GrasasDesayunoMerienda is (0.40 * GrasasGramos),
+    nl,nl,
+    % Desayuno merienda
+    write('Desayuno y Merienda:'), 
+    nl,
+    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias,ListaFiltradaDesayuno),
+    nl,
+    % Almuerzo cena
+    write('Almuerzo y Cena:'), 
+    nl,
+    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias,ListaFiltradaCena),
+    nl,
+    write('Platos sugerido para el desayuno o merienda: '), nl,
+    sugerir_plato(ListaFiltradaDesayuno), nl,
+    write('Platos sugerido para el almuerzo o cena: '), nl,
+    sugerir_plato(ListaFiltradaCena).
+    
+
+    
+% Sugerir una comida especifica
+sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo,CondMedica,Alergias,Preferencias,ListaFiltradaTotal) :-
+    % Luego, sugerimos las proteinas, carbohidratos y grasas
+    write('Proteinas: '), nl,
+    sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida, Preferencias, CondMedica, Alergias,ListaFiltradaProteinas),
+
+    write('Carbohidratos: '), nl,
+     % Primero, agregar frutas o verduras segun el tipo de comida
+    sugerir_comida_fija(TipoFijo, FijoGramos),
+    comida(TipoComida, 2, TipoFijo, GramosARestar ), 
+    NuevaCarbohidratosRequeridos is CarbohidratosRequeridos - (GramosARestar*FijoGramos/100), % 10g de carbos en 100g de fruta/verdura
+    sugerir_comidas_por_macronutriente(2, NuevaCarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaCarbohidratos),
+    
+    write('Grasas: '), nl,
+    sugerir_comidas_por_macronutriente(3, GrasasRequeridas, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaGrasas),
+    
+    append(ListaFiltradaProteinas, ListaFiltradaCarbohidratos, ListaFiltradaIntermedia),
+    append(ListaFiltradaIntermedia, ListaFiltradaGrasas, ListaFiltradaTotal).
+
+% Sugerir comidas para un macronutriente especifico
+sugerir_comidas_por_macronutriente(TipoMacronutriente, GramosRequeridos, TipoComida, Preferencias, CondMedica, Alergias,ListaFiltrada) :-
+    findall([TipoComida, TipoMacronutriente, Comida, Cantidad], comida(TipoComida, TipoMacronutriente, Comida, Cantidad), ListaComidas), 
+    filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada),
+    elegir_comidas(ListaFiltrada, GramosRequeridos).
+ 
+
+% Regla principal, inicializa el contador en 0 y define que el ciclo se ejecute 5 veces.
+sugerir_plato(ListaFiltrada) :- 
+    sugerir_plato_aux(ListaFiltrada, 5).
+
+% Regla auxiliar que ejecuta el ciclo recursivo.
+sugerir_plato_aux(_, 0) :- !.  % Caso base, cuando el contador llegue a 0, termina el bucle.
+
+sugerir_plato_aux(ListaFiltrada, N) :-
+    N > 0,
+    encontrar_comida(ListaFiltrada, 1, Proteina),
+    encontrar_comida(ListaFiltrada, 2, Carbohidrato),
+    encontrar_comida(ListaFiltrada, 3, Grasa),
+    Plato = [Proteina,Carbohidrato,Grasa],    % Aqui se unifica el plato con la proteina actual
+    (platos(Plato, PlatoTexto)
+     -> (true, write(PlatoTexto), nl)
+    ; (PlatoTexto = '', write(PlatoTexto))),
+    % Decrementamos el contador N y volvemos a llamar recursivamente.
+    N1 is N - 1,
+    sugerir_plato_aux(ListaFiltrada, N1).
+
+
+encontrar_comida(ListaFiltrada, TipoMacronutriente, Alimento) :-
+    findall(Alimento, (member([_, TipoMacronutriente, Alimento, _], ListaFiltrada)), Alimentos),
+    (Alimentos == [] ->
+    Alimento = ''
+    ;
+    random_member(Alimento, Alimentos)).
+
+% Sugerir comida fija (fruta o verduras)
+sugerir_comida_fija('fruta', 150) :-
+    write('150g de fruta'), nl.
+
+sugerir_comida_fija('verdura', 200) :-
+    write('200g de verduras'), nl.
+
+% Elegir comidas para cubrir la cantidad requerida
+elegir_comidas([], _) :- !.
+elegir_comidas([[_, _, Comida, Cantidad]|Restantes], GramosRequeridos) :-
+    GramosRequeridos > 0,
+    GramosParaComer is (GramosRequeridos / Cantidad)*100,
+    floor(GramosParaComer, GramosParaComerEntero),
+    write(GramosParaComerEntero), write('grs de '), write(Comida), nl,
+    elegir_comidas(Restantes, GramosRequeridos).
+
+% Filtrar comidas segun preferencias, condiciones medicas y alergias
+filtrar_comidas(ListaComidas, Preferencias, CondMedica, Alergias, ListaFiltrada) :-
+    findall([TipoComida, TipoMacronutriente, Comida, Cantidad],   
+        (
+            member([TipoComida, TipoMacronutriente, Comida, Cantidad], ListaComidas),
+            verificar_preferencias(Comida, Preferencias),
+            verificar_condiciones(Comida, CondMedica),
+            verificar_alergias(Comida, Alergias)
+        ),
+        ListaFiltrada).
+    
+
+

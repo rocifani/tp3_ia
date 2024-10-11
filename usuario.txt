@@ -1,0 +1,168 @@
+% Calculo del IMC
+calcular_imc(Peso, Altura, IMC) :-
+    IMC is Peso / (Altura * Altura).
+
+% Pregunta el nombre al usuario y lo convierte en un atomo
+preguntar_nombre(Nombre) :-
+    write('Cual es tu nombre? '),
+    read_line_to_string(user_input, Nombre).
+
+% Pregunta el peso al usuario
+preguntar_peso(Peso) :-
+    write('Cual es tu peso en kg? '),
+    read(Peso).
+
+% Pregunta la altura al usuario
+preguntar_altura(Altura) :-
+    write('Cual es tu altura en centimetros? '),
+    read(AlturaCM),
+    Altura is AlturaCM / 100.
+
+% Pregunta el genero al usuario
+preguntar_genero(Genero) :-
+    write('Cual es tu genero?'), nl,
+    write('1. Masculino'), nl,
+    write('2. Femenino'), nl,
+    write('Ingresa el numero correspondiente: '),
+    read(Genero).
+
+% Preguntar la edad del usuario
+preguntar_edad(Edad) :-
+    write('Cual es tu edad? '),
+    read(Edad).
+
+% Pregunta el nivel de actividad fisica al usuario
+preguntar_actividad_fisica(Actividad) :-
+    write('Que nivel de actividad fisica realizas?'), nl,
+    write('1. Sedentario (poco o nada de ejercicio)'), nl,
+    write('2. Ligero (ejercicio ligero 1-2 veces por semana)'), nl,
+    write('3. Moderado (ejercicio moderado 3-5 veces por semana)'), nl,
+    write('4. Activo (ejercicio intenso 6-7 veces por semana)'), nl,
+    write('5. Muy activo (ejercicio muy intenso, trabajo fisico duro)'), nl,
+    write('Ingresa el numero correspondiente: '),
+    read(Actividad).
+
+% Pregunta el objetivo del usuario
+preguntar_objetivo(Objetivo) :-
+    write('Cual es tu objetivo?'), nl,
+    write('1. Mantenimiento'), nl,
+    write('2. Perdida de grasa'), nl,
+    write('3. Aumento muscular'), nl,
+    write('4. Rendimiento deportivo'), nl,
+    write('Ingresa el numero correspondiente: '),
+    read(Objetivo).
+
+
+
+% preguntar_condicion_medica del usuario y almacenarlas en una lista
+preguntar_condicion_medica(CondMedica) :-
+    write('Tienes alguna condicion medica que debamos saber? (elige mas de una si es necesario, o "0" para terminar)'), nl,
+    mostrar_opciones_cond_medica,
+    leer_array([], CondMedica).
+    
+
+% Mostrar las opciones disponibles de preferencias alimenticias
+mostrar_opciones_cond_medica :-
+    write('1. Celiaquia'), nl,
+    write('2. Intolerante a la lactosa'), nl,
+    write('3. Diabetes'), nl.
+
+% preguntar_alergias del usuario y almacenarlas en una lista
+preguntar_alergias(Alergias) :-
+    write('Tienes alguna alergia que debamos saber? (elige mas de una si es necesario, o "0" para terminar)'), nl,
+    mostrar_opciones_alergias,
+    leer_array([], Alergias).
+
+% Mostrar las opciones disponibles de alergias
+mostrar_opciones_alergias :-
+    write('1. Alergia a los frutos secos'), nl,
+    write('2. Alergia al huevo'), nl,
+    write('3. Alergia a la soja'), nl.
+
+% Leer las alergias seleccionadas y almacenarlas en una lista
+leer_array(ArrayAcumulado, ArrayFinal) :-
+    write('Seleccione una opcion (o "0" para terminar): '),
+    read(Opcion),
+    (   Opcion == 0  % Caso base: Si el usuario selecciona 0, terminamos y devolvemos la lista final
+    ->  ArrayFinal = ArrayAcumulado
+    ;   member(Opcion, ArrayAcumulado)  % Si la opcion ya esta en la lista, mostrar un mensaje y pedir otra
+    ->  write('Esta opcion ya ha sido seleccionada. Elige otra.'), nl,
+        leer_array(ArrayAcumulado, ArrayFinal)
+    ;   append(ArrayAcumulado, [Opcion], Nuevas),  % Agregar la opcion si no esta duplicada
+        leer_array(Nuevas, ArrayFinal)  % Llamada recursiva para seguir seleccionando
+    ).
+
+
+% Pregunta el objetivo del usuario
+preguntar_preferencias(Preferencias) :-
+    write('Tienes alguna preferencia alimenticia?'), nl,
+    write('1. Vegetariano'), 
+    nl,
+    write('2. Vegano'), 
+    nl,
+    write('3. Sin preferencias'), 
+    nl,
+    write('Ingresa el numero correspondiente: '),
+    read(Preferencias).
+ 
+
+
+% Calcular la TMB
+calcular_tmb(Peso, Altura, Edad, Genero, TMB) :-
+    (   Genero == 1 ->  % Masculino
+        TMB is 88.362 + (13.397 * Peso) + (4.799 * (Altura * 100)) - (5.677 * Edad)
+    ;   Genero == 2 ->  % Femenino
+        TMB is 447.593 + (9.247 * Peso) + (3.098 * (Altura * 100)) - (4.330 * Edad)
+    ).
+
+% Calcular el TDEE
+calcular_tdee(TMB, Actividad, TDEE) :-
+    (   Actividad == 1 -> TDEE is TMB * 1.2  % Sedentario
+    ;   Actividad == 2 -> TDEE is TMB * 1.375  % Actividad ligera
+    ;   Actividad == 3 -> TDEE is TMB * 1.55  % Actividad moderada
+    ;   Actividad == 4 -> TDEE is TMB * 1.725  % Activo
+    ;   TDEE is TMB * 1.9  % Muy activo
+    ).
+
+% Ajustar las calorias recomendadas segun el IMC
+ajustar_por_imc(TDEE, CaloriasAjustar , CaloriasRecomendadas) :-
+    CaloriasRecomendadas is TDEE + CaloriasAjustar.
+
+
+% Predicado para obtener la recomendacion basada en el IMC
+obtener_recomendacion(IMC, Objetivo, Ajuste,Mensaje) :-
+    recomendaciones(Min, Max, Objetivo, Ajuste, Mensaje),  % Compara con los rangos de IMC
+    IMC >= Min,
+    IMC < Max.
+
+
+%Recuperar datos usuario
+
+obtener_datos_usuario(Nombre, Peso, Altura, Genero, Edad, IMC, Actividad, Objetivo, CondMedica, Preferencias, Alergias, CaloriasRecomendadas):-
+    preguntar_nombre(Nombre),
+    write('Hola, '), write(Nombre), write('. Te voy a hacer una serie de preguntas para conocerte un poco mas y determinar que cantidad de calorias diarias es recomendable que consumas, ademas de sugerencias de platos y/o alimentos. Consulta siempre con tu medico!'),
+    nl,
+    preguntar_peso(Peso),
+    preguntar_altura(Altura),
+    calcular_imc(Peso, Altura, IMC),
+    preguntar_genero(Genero),
+    preguntar_edad(Edad),
+    preguntar_actividad_fisica(Actividad),
+    nl,
+    calcular_tmb(Peso, Altura, Edad, Genero, TMB),
+    calcular_tdee(TMB, Actividad, TDEE),
+    nl,
+    write('La cantidad de calorias recomendadas a consumir segun la informacion que me diste son: '), write(TDEE), write('.'),
+    nl,
+    nl,
+    preguntar_objetivo(Objetivo),
+    nl,
+    preguntar_condicion_medica(CondMedica),
+    nl,
+    preguntar_alergias(Alergias),
+    nl,
+    preguntar_preferencias(Preferencias),
+    nl,
+    obtener_recomendacion(IMC, Objetivo, Ajuste,Mensaje),
+    ajustar_por_imc(TDEE, Ajuste, CaloriasRecomendadas),
+    write(Mensaje).

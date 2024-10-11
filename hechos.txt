@@ -1,0 +1,146 @@
+% HECHOS
+% MANTENIMIENTO
+recomendaciones(0, 18.5, 1, +300,'Dado tu IMC deberias aumentar tu ingesta calorica por eso te aumento 300kcal diarias').
+recomendaciones(18.5, 24.9, 1, 0,'Dado tu IMC tu ingesta calorica es la adecuada').
+recomendaciones(25, 29.9, 1, -300,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 300kcal diarias').
+recomendaciones(30, 100, 1, -500,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 500kcal diarias').
+
+% PERDIDA DE GRASA
+recomendaciones(0, 18.5, 2, +300,'Dado tu IMC deberias aumentar tu ingesta calorica por eso te aumento 300kcal diarias' ).
+recomendaciones(18.5, 24.9, 2, -150,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 150kcal diarias').
+recomendaciones(25, 29.9, 2, -500,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 500kcal diarias').
+recomendaciones(30, 100, 2, -700,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 700kcal diarias').
+
+% AUMENTO MUSCULAR
+recomendaciones(0, 18.5, 3, +1000,'Dado tu IMC deberias aumentar tu ingesta calorica por eso te aumento 1000kcal diarias').
+recomendaciones(18.5, 24.9, 3, +500,'Dado tu IMC deberias aumentar tu ingesta calorica por eso te aumento 500kcal diarias').
+recomendaciones(25, 29.9, 3, 0,'Dado tu IMC tu ingesta calorica es la adecuada').
+recomendaciones(30, 100, 3, -200,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 200kcal diarias').
+
+% RENDIMIENTO DEPORTIVO
+recomendaciones(0, 18.5, 4, +800,'Dado tu IMC deberias aumentar tu ingesta calorica por eso te aumento 800kcal diarias').
+recomendaciones(18.5, 24.9, 4, +500,'Dado tu IMC deberias aumentar tu ingesta calorica por eso te aumento 500kcal diaria').
+recomendaciones(25, 29.9, 4, -200,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 200kcal diarias').
+recomendaciones(30, 100, 4, -300,'Dado tu IMC deberias disminuir tu ingesta calorica por eso te disminuyo 300kcal diarias').
+
+% CONDICIONES MEDICAS
+% Celiaco (sin alimentos con gluten)
+condicion_medica(1, ['huevo', 'queso', 'jamon cocido', 'tofu', 'leche', 'yogur griego', 'batido de proteinas', 
+ 'pollo', 'carne', 'pescado', 'cerdo', 'soja', 'quinoa pop', 'arroz inflado', 'tortitas de arroz', 'fruta', 'arroz', 'fideos de arroz', 'papas', 'quinoa', 'batata', 'lentejas', 'queso deslactosado', 'leche deslactosada',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'crema de leche','fideos de legumbres']).
+
+% Intolerante a la lactosa (sin lacteos)
+condicion_medica(2, ['huevo', 'jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','pan']).
+
+% Diabetes (bajo en carbohidratos simples, preferencia por alimentos integrales)
+condicion_medica(3, ['huevo', 'jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'nueces', 'leche', 'queso','fideos de legumbres','pan']).
+
+% ALERGIAS
+% Alergia a los frutos secos
+alergias(1, ['huevo', 'jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'semillas de chia', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
+
+% Alergia al huevo
+alergias(2, ['jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
+
+% Alergia a la soja
+alergias(3, ['huevo', 'jamon cocido', 'pollo', 'carne', 'pescado', 'cerdo',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
+
+
+% PREFERENCIAS
+% Vegetariano
+preferencias(1, ['huevo', 'tofu','soja', 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos', 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 'almendras', 'nueces', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
+
+% Vegano
+preferencias(2, ['tofu','soja', 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos', 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 'almendras', 'nueces', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'nueces', 'fideos de arroz','fideos de legumbres','batido de proteinas','pan']).
+
+
+%COMIDAS
+% PROTEINAS "1"
+    % DESAYUNO/MERIENDA por 100g es valor "2"
+    comida(2, 1, 'huevo', 13).
+    comida(2, 1, 'queso', 11).
+    comida(2, 1, 'queso deslactosado', 11).
+    comida(2, 1, 'jamon cocido', 18).
+    comida(2, 1, 'tofu', 8).
+    comida(2, 1, 'leche', 3).
+    comida(2, 1, 'leche deslactosada', 3).
+    comida(2, 1, 'yogur griego', 10).
+    comida(2, 1, 'batido de proteinas', 20).
+
+    % ALMUERZO/CENA por 100g es valor "1"
+    comida(1, 1, 'pollo', 27).
+    comida(1, 1, 'carne', 26).
+    comida(1, 1, 'pescado', 22).
+    comida(1, 1, 'cerdo', 25).
+    comida(1, 1, 'tofu', 8).
+    comida(1, 1, 'huevo', 13).
+    comida(1, 1, 'soja', 51).
+
+
+% CARBOHIDRATOS "2"
+    % DESAYUNO/MERIENDA por 100g es valor "2"
+    comida(2, 2, 'avena', 66).
+    comida(2, 2, 'quinoa pop', 38).
+    comida(2, 2, 'pan', 50).
+    comida(2, 2, 'pan integral', 45).
+    comida(2, 2, 'arroz inflado', 81).
+    comida(2, 2, 'granola', 58).
+    comida(2, 2, 'tortitas de arroz', 80).
+    comida(2, 2, 'cereal de trigo', 67).
+    comida(2, 2, 'fruta', 17).
+    
+
+    % ALMUERZO/CENA por 100g es valor "1"
+    comida(1, 2, 'arroz', 28).
+    comida(1, 2, 'pasta', 25).
+    comida(1, 2, 'fideos de arroz', 25).
+    comida(1, 2, 'fideos de legumbres', 25).
+    comida(1, 2, 'papas', 17).
+    comida(1, 2, 'quinoa', 21).
+    comida(1, 2, 'batata', 20).
+    comida(1, 2, 'lentejas', 60).
+    comida(1, 2, 'porotos negros', 62).
+    comida(1, 2, 'garbanzos', 61).
+    comida(1, 2, 'verdura', 8).
+
+
+% GRASAS "3"
+    % DESAYUNO/MERIENDA por 100g es valor "2"
+    comida(2, 3, 'palta', 26).   
+    comida(2, 3, 'mantequilla de mani', 50).
+    comida(2, 3, 'semillas de chia', 31).
+    comida(2, 3, 'almendras', 50).
+    comida(2, 3, 'nueces', 65).
+    comida(2, 3, 'aceitunas', 15).
+
+    % ALMUERZO/CENA por 100g es valor "1"
+    comida(1, 3, 'aceite de oliva', 100).
+    comida(1, 3, 'aceite de coco', 100).
+    comida(1, 3, 'mantequilla', 81). 
+    comida(1, 3, 'palta', 26).
+    comida(1, 3, 'nueces', 65).
+    comida(1, 3, 'almendras', 50).
+    comida(1, 3, 'queso', 33).
+    comida(1, 3, 'crema de leche', 30).
+
+
+
+objetivo(1,'mantenimiento').
+objetivo(2,'perdida de grasa').
+objetivo(3,'aumento muscular').
+objetivo(4,'rendimiento deportivo').
