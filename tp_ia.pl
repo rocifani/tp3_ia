@@ -65,7 +65,7 @@ alergias(5, ['pollo', 'carne', 'pescado', 'huevo', 'frijoles', 'lentejas', 'arro
 preferencias(1, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja']).
 
 % Vegano
-preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja']).
+preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja','palta','avena']).
 
 
 %COMIDAS
@@ -136,9 +136,19 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
 
 
 % platos
-platos(['huevo', 'avena', 'palta'], 'Tortilla de huevo con avena y rodajas de palta, acompañada de fruta fresca.').
+% todos
+platos(['huevo', 'avena', 'palta'], 'Tortilla de huevo con avena y rodajas de palta, acompañada de fruta fresca.'). 
 platos(['pollo','arroz','aceite de oliva'],'Pollo a la plancha con arroz con aceite de oliva, y verduras hervidas.').
-platos(['tofu','avena','palta'],'').
+
+% vegano 
+platos(['tofu','avena','palta'],'Salteado de tofu con avena, palta y verduras.').
+
+% vegano y celiaco
+platos(['tofu','arroz','aceite de oliva'],'Tofu salteado con arroz').
+platos(['tofu','quinoa pop','palta'],'Ensalada de tofu con quinoa pop y palta').
+
+platos(['batido de proteinas','avena','palta'],'').
+platos(['batido de proteinas','avena','palta'],'').
 
 
 platos(['queso', 'pan integral', 'nueces'], 'Sándwich de queso con pan integral y nueces, acompañado de fruta fresca.').
@@ -275,13 +285,6 @@ sugerir_plato(ListaFiltrada, Plato) :-
     Plato = [Proteina, Carbohidrato, Grasa],
     write(Plato).
 
-/*encontrar_comida(ListaFiltrada, TipoMacronutriente, Alimento) :-
-    findall(Alimento, (member([_, TipoMacronutriente, Alimento, _], ListaFiltrada)), Alimentos),
-    (Alimentos == [] ->
-    Alimento = ''
-    ;
-    random_member(Alimento, Alimentos)).*/
-
     encontrar_comida(ListaFiltrada, TipoMacronutriente, Alimento) :-
     findall(Alimento, (member([_, TipoMacronutriente, Alimento, _], ListaFiltrada)), Alimentos),
     (Alimentos == [] ->
@@ -415,14 +418,9 @@ preguntar_condicion_medica(CondMedica) :-
 
 % Mostrar las opciones disponibles de preferencias alimenticias
 mostrar_opciones_cond_medica :-
-    write('1. Hipotiroidismo'), nl,
-    write('2. Celiaquia'), nl,
-    write('3. Intolerante a la lactosa'), nl,
-    write('4. Hipertenso'), nl,
-    write('5. Hipertiroidismo'), nl,
-    write('6. Diabetes'), nl,
-    write('7. Colesterol alto'), nl.
-
+    write('1. Celiaquia'), nl,
+    write('2. Intolerante a la lactosa'), nl,
+    write('3. Diabetes'), nl.
 
 % preguntar_alergias del usuario y almacenarlas en una lista
 preguntar_alergias(Alergias) :-
@@ -433,10 +431,8 @@ preguntar_alergias(Alergias) :-
 % Mostrar las opciones disponibles de alergias
 mostrar_opciones_alergias :-
     write('1. Alergia a los frutos secos'), nl,
-    write('2. Alergia a los mariscos'), nl,
-    write('3. Alergia al chocolates'), nl,
-    write('4. Alergia al huevo'), nl,
-    write('5. Alergia a la soja'), nl.
+    write('2. Alergia al huevo'), nl,
+    write('3. Alergia a la soja'), nl.
 
 % Leer las alergias seleccionadas y almacenarlas en una lista
 leer_array(ArrayAcumulado, ArrayFinal) :-
