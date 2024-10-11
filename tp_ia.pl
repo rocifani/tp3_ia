@@ -25,47 +25,48 @@ recomendaciones(30, 100, 4, -300,'Dado tu IMC deberias disminuir tu ingesta calo
 
 % CONDICIONES MEDICAS
 % Celiaco (sin alimentos con gluten)
-condicion_medica(2, ['pollo', 'carne','yogur griego', 'pescado', 'huevo', 'frutas', 'verduras', 'quinua', 'arroz', 'papas', 'frijoles', 'lentejas', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia', 'tofu', 'tempeh','queso','jamon cocido','batido de proteinas','soja','arroz','quinoa pop']).
+condicion_medica(1, ['huevo', 'queso', 'jamon cocido', 'tofu', 'leche', 'yogur griego', 'batido de proteinas', 
+ 'pollo', 'carne', 'pescado', 'cerdo', 'soja', 'quinoa pop', 'arroz inflado', 'tortitas de arroz', 'fruta', 'arroz', 'fideos de arroz', 'papas', 'quinoa', 'batata', 'lentejas', 'queso deslactosado', 'leche deslactosada',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'crema de leche','fideos de legumbres']).
 
 % Intolerante a la lactosa (sin lacteos)
-condicion_medica(3, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani', 'palta', 'semillas de chia', 'nueces', 'almendras', 'aceitunas','soja']).
-
-% Hipertenso (bajo en sodio, sin alimentos procesados)
-condicion_medica(4, ['pollo', 'pescado', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'frutas', 'verduras', 'palta', 'nueces', 'almendras', 'aceite de oliva','soja']).
-
-% Hipertiroidismo (evitar alimentos que puedan interferir con la funcion tiroidea)
-condicion_medica(5, ['pollo', 'carne', 'pescado', 'cerdo', 'frijoles', 'lentejas', 'arroz', 'papas', 'quinua', 'batata', 'nueces', 'almendras', 'aceite de oliva', 'palta','soja']).
+condicion_medica(2, ['huevo', 'jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','pan']).
 
 % Diabetes (bajo en carbohidratos simples, preferencia por alimentos integrales)
-condicion_medica(6, ['pollo', 'pescado', 'frijoles', 'lentejas', 'arroz', 'quinua', 'batata', 'verduras', 'palta', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva','soja']).
-
-% Colesterol alto (bajo en grasas saturadas y colesterol)
-condicion_medica(7, ['pescado', 'pollo sin piel', 'frutas', 'verduras', 'frijoles', 'lentejas', 'arroz', 'quinua', 'batata', 'palta', 'nueces', 'almendras', 'aceite de oliva', 'semillas de chia','soja']).
-
+condicion_medica(3, ['huevo', 'jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'nueces', 'leche', 'queso','fideos de legumbres','pan']).
 
 % ALERGIAS
 % Alergia a los frutos secos
-alergias(1, ['pollo', 'carne', 'pescado', 'cerdo', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'aceite de oliva', 'aceite de coco', 'mantequilla','queso','soja']).
-
-% Alergia a los mariscos
-alergias(2, ['pollo', 'carne', 'cerdo', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva','soja','avena','pan integral','tortitas de arroz', 'arroz inflado', 'granola', 'cereal de trigo']).
-
-% Alergia al chocolate
-alergias(3, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva', 'palta', 'semillas de chia','soja']).
+alergias(1, ['huevo', 'jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'semillas de chia', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
 
 % Alergia al huevo
-alergias(4, ['pollo', 'carne', 'pescado', 'tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'mantequilla de mani','soja']).
+alergias(2, ['jamon cocido', 'tofu', 'pollo', 'carne', 'pescado', 'cerdo', 'soja',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
 
 % Alergia a la soja
-alergias(5, ['pollo', 'carne', 'pescado', 'huevo', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'nueces', 'almendras', 'aceite de oliva']).
+alergias(3, ['huevo', 'jamon cocido', 'pollo', 'carne', 'pescado', 'cerdo',
+ 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos',
+ 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 
+ 'almendras', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
 
 
 % PREFERENCIAS
 % Vegetariano
-preferencias(1, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja']).
+preferencias(1, ['huevo', 'tofu','soja', 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'queso deslactosado', 'leche deslactosada', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos', 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 'almendras', 'nueces', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'manteca', 'nueces', 'fideos de arroz','fideos de legumbres','leche','queso','crema de leche', 'yogur griego','batido de proteinas','pan']).
 
 % Vegano
-preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'papas', 'quinua', 'batata', 'verduras', 'frutas', 'nueces', 'almendras', 'aceite de oliva', 'aceitunas', 'semillas de chia','soja','palta','avena']).
+preferencias(2, ['tofu','soja', 'avena', 'quinoa pop', 'pan integral', 'arroz inflado', 'granola', 'tortitas de arroz', 'cereal de trigo', 'fruta', 'arroz', 'pasta', 'papas', 'quinoa', 'batata', 'lentejas', 'porotos', 'porotos negros', 'garbanzos', 'verdura', 'palta', 'mantequilla de mani', 'semillas de chia', 'almendras', 'nueces', 'aceitunas', 'aceite de oliva', 'aceite de coco', 'nueces', 'fideos de arroz','fideos de legumbres','batido de proteinas','pan']).
 
 
 %COMIDAS
@@ -73,9 +74,11 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     % DESAYUNO/MERIENDA por 100g es valor "2"
     comida(2, 1, 'huevo', 13).
     comida(2, 1, 'queso', 11).
+    comida(2, 1, 'queso deslactosado', 11).
     comida(2, 1, 'jamon cocido', 18).
     comida(2, 1, 'tofu', 8).
     comida(2, 1, 'leche', 3).
+    comida(2, 1, 'leche deslactosada', 3).
     comida(2, 1, 'yogur griego', 10).
     comida(2, 1, 'batido de proteinas', 20).
 
@@ -85,16 +88,15 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     comida(1, 1, 'pescado', 22).
     comida(1, 1, 'cerdo', 25).
     comida(1, 1, 'tofu', 8).
-    comida(1, 1, 'tempeh', 19).
     comida(1, 1, 'huevo', 13).
     comida(1, 1, 'soja', 51).
-    comida(1, 1, 'frijoles', 9).
 
 
 % CARBOHIDRATOS "2"
     % DESAYUNO/MERIENDA por 100g es valor "2"
     comida(2, 2, 'avena', 66).
     comida(2, 2, 'quinoa pop', 38).
+    comida(2, 2, 'pan', 50).
     comida(2, 2, 'pan integral', 45).
     comida(2, 2, 'arroz inflado', 81).
     comida(2, 2, 'granola', 58).
@@ -106,11 +108,13 @@ preferencias(2, ['tofu', 'tempeh', 'frijoles', 'lentejas', 'arroz', 'pasta', 'pa
     % ALMUERZO/CENA por 100g es valor "1"
     comida(1, 2, 'arroz', 28).
     comida(1, 2, 'pasta', 25).
+    comida(1, 2, 'fideos de arroz', 25).
+    comida(1, 2, 'fideos de legumbres', 25).
     comida(1, 2, 'papas', 17).
-    comida(1, 2, 'quinua', 21).
+    comida(1, 2, 'quinoa', 21).
     comida(1, 2, 'batata', 20).
     comida(1, 2, 'lentejas', 60).
-    comida(1, 2, 'frijoles negros', 62).
+    comida(1, 2, 'porotos negros', 62).
     comida(1, 2, 'garbanzos', 61).
     comida(1, 2, 'verdura', 8).
 
