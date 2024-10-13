@@ -23,7 +23,7 @@ verificar_preferencias(_, 3).
 verificar_preferencias(Comida, Preferencias) :-
     preferencias(Preferencias, AlimentosPermitidos),
     member(Comida, AlimentosPermitidos),
-    !. % cambio
+    !. 
 
 % Verificar que una comida este permitida segun las condiciones medicas
 verificar_condiciones(_, []) :- !.
@@ -62,12 +62,12 @@ sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Ale
     % Desayuno merienda
     write('Desayuno y Merienda:'), 
     nl,
-    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2, 150, 'fruta',CondMedica,Alergias,Preferencias,ListaFiltradaDesayuno),
+    sugerir_comida(2, ProteinasDesayunoMerienda / 2, CarbohidratosDesayunoMerienda / 2, GrasasDesayunoMerienda / 2,CondMedica,Alergias,Preferencias,ListaFiltradaDesayuno),
     nl,
     % Almuerzo cena
     write('Almuerzo y Cena:'), 
     nl,
-    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, 200, 'verdura',CondMedica,Alergias,Preferencias,ListaFiltradaCena),
+    sugerir_comida(1, ProteinasAlmuerzoCena / 2, CarbohidratosAlmuerzoCena / 2, GrasasAlmuerzoCena / 2, CondMedica,Alergias,Preferencias,ListaFiltradaCena),
     nl,
     write('Platos sugerido para el desayuno o merienda: '), nl,
     sugerir_plato(ListaFiltradaDesayuno), nl,
@@ -77,17 +77,13 @@ sugerir_plan(ProteinasGramos, CarbohidratosGramos, GrasasGramos, CondMedica, Ale
 
     
 % Sugerir una comida especifica
-sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, FijoGramos, TipoFijo,CondMedica,Alergias,Preferencias,ListaFiltradaTotal) :-
+sugerir_comida(TipoComida, ProteinasRequeridas, CarbohidratosRequeridos, GrasasRequeridas, CondMedica,Alergias,Preferencias,ListaFiltradaTotal) :-
     % Luego, sugerimos las proteinas, carbohidratos y grasas
     write('Proteinas: '), nl,
     sugerir_comidas_por_macronutriente(1, ProteinasRequeridas, TipoComida, Preferencias, CondMedica, Alergias,ListaFiltradaProteinas),
 
     write('Carbohidratos: '), nl,
-     % Primero, agregar frutas o verduras segun el tipo de comida
-    sugerir_comida_fija(TipoFijo, FijoGramos),
-    comida(TipoComida, 2, TipoFijo, GramosARestar ), 
-    NuevaCarbohidratosRequeridos is CarbohidratosRequeridos - (GramosARestar*FijoGramos/100), % 10g de carbos en 100g de fruta/verdura
-    sugerir_comidas_por_macronutriente(2, NuevaCarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaCarbohidratos),
+    sugerir_comidas_por_macronutriente(2, CarbohidratosRequeridos, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaCarbohidratos),
     
     write('Grasas: '), nl,
     sugerir_comidas_por_macronutriente(3, GrasasRequeridas, TipoComida, Preferencias, CondMedica, Alergias, ListaFiltradaGrasas),
@@ -129,13 +125,6 @@ encontrar_comida(ListaFiltrada, TipoMacronutriente, Alimento) :-
     Alimento = ''
     ;
     random_member(Alimento, Alimentos)).
-
-% Sugerir comida fija (fruta o verduras)
-sugerir_comida_fija('fruta', 150) :-
-    write('150g de fruta'), nl.
-
-sugerir_comida_fija('verdura', 200) :-
-    write('200g de verduras'), nl.
 
 % Elegir comidas para cubrir la cantidad requerida
 elegir_comidas([], _) :- !.

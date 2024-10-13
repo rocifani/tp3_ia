@@ -1,5 +1,3 @@
-
-
 % Definicion del hecho para almacenar la informacion del usuario
 :- dynamic usuario/11.
 
